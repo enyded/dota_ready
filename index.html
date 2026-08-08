@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dota Ready — Remote Match Accept for Dota 2</title>
+  <meta name="description" content="Dota Ready lets you accept Dota 2 ready checks remotely from your phone. Never miss a queue again — get a push notification and accept the match without touching your PC.">
+
+  <!-- Pre-launch: keep this page out of search results until billing is live.
+       Remove this tag AND the Disallow rule in robots.txt at launch (see docs/PHASE10_PRODUCTION_PLAN.md, SEO section). -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Open Graph / Twitter card -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dota Ready — remotely accept Dota 2 matches from your phone">
+  <meta property="og:description" content="Get a push notification when a Dota 2 ready check appears and accept it from your phone — even away from your PC.">
+  <meta property="og:image" content="assets/screenshots/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dota Ready — remotely accept Dota 2 matches from your phone">
+  <meta name="twitter:description" content="Get a push notification when a Dota 2 ready check appears and accept it from your phone — even away from your PC.">
+  <meta name="twitter:image" content="assets/screenshots/og-cover.png">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Dota Ready",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Windows, Android",
+    "description": "Accept Dota 2 ready checks remotely from your phone via a push notification.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free tier: 1 remote accept per day. Paid subscription: unlimited remote accepts."
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">Dota Ready</div>
+      <div class="nav-links">
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+        <a href="#download" class="nav-cta">Download</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Dota Ready — remotely accept Dota 2 matches from your phone</h1>
+      <p class="subhead">Never miss a queue again. Get a push notification the instant a ready check
+        appears, and accept it from your phone — even when you're away from your PC.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#download-windows">Download for Windows</a>
+        <a class="btn btn-secondary" href="#download-android">Get the Android app</a>
+      </div>
+      <p class="hero-note">Free to try. 1 remote accept per day, no account hassle.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="how-it-works" class="section">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <div>
+            <h3>Install the desktop agent</h3>
+            <p>Runs quietly in the background while you queue. No border, no overlay, no interference
+              with DX11 or Vulkan.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <div>
+            <h3>Pair your phone</h3>
+            <p>Scan a QR code from the Dota Ready app once. The pairing is per-device and can be
+              revoked at any time.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <div>
+            <h3>Get notified</h3>
+            <p>A ready check appears — your phone buzzes with a push notification immediately.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <div>
+            <h3>Accept from anywhere</h3>
+            <p>Tap Accept in the notification or the app. Your PC clicks the match for you.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="background" class="section section-callout">
+      <div class="callout">
+        <div class="callout-text">
+          <h2>Make sure it works in the background</h2>
+          <p>Android aggressively kills background apps by default. For notifications to arrive
+            reliably, exempt Dota Ready from battery optimization and allow background activity in
+            your phone's settings. This takes 30 seconds and is required, not optional.</p>
+        </div>
+        <div class="callout-image">
+          <img src="assets/screenshots/background-permissions.png"
+               alt="Android battery optimization exemption setting for Dota Ready"
+               loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <h2>Features</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Works with your setup</h3>
+          <p>DX11 and Vulkan, borderless and windowed, 1920x1080 and 2560x1440.</p>
+        </div>
+        <div class="feature">
+          <h3>Locale-independent detection</h3>
+          <p>Recognizes the Accept button regardless of your Dota 2 client language.</p>
+        </div>
+        <div class="feature">
+          <h3>No visible capture</h3>
+          <p>No capture border or overlay while you're actually playing.</p>
+        </div>
+        <div class="feature">
+          <h3>Just a notification, or a real accept</h3>
+          <p>Free tier notifies you every time. The paid tier also clicks Accept for you, remotely.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy" class="section">
+      <h2>Privacy</h2>
+      <p>Dota Ready only looks at your Dota 2 window to detect the ready-check screen. It doesn't read
+        your screen otherwise, doesn't collect gameplay data, and doesn't share data with third
+        parties. Full details in the <a href="privacy.html">Privacy Policy</a>.</p>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Will this get me banned?</summary>
+          <p>Dota Ready doesn't read game state, doesn't automate gameplay, and doesn't touch memory
+            or the game process. It only detects the ready-check screen from a screenshot and sends a
+            single click — the same thing you'd do yourself. We can't make guarantees about anti-cheat
+            policy, but this is not gameplay automation.</p>
+        </details>
+        <details>
+          <summary>Does it work if my Dota client isn't in English?</summary>
+          <p>Yes. Ready-check detection is locale-independent and doesn't rely on reading any text.</p>
+        </details>
+        <details>
+          <summary>What happens if I'm already at my PC?</summary>
+          <p>Nothing changes — Dota Ready doesn't take over if you're present. It only clicks when the
+            remote accept command actually needs to run.</p>
+        </details>
+        <details>
+          <summary>Will it work if my phone is locked or the app is closed?</summary>
+          <p>Yes, as long as background activity is allowed (see the setup step above). The
+            notification arrives from the background, and accepting from it doesn't require opening
+            the app.</p>
+        </details>
+        <details>
+          <summary>What's free vs. paid?</summary>
+          <p>Notifications are always free. The free tier also includes one remote accept per day.
+            The paid subscription removes that limit.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="download" class="section section-download">
+      <h2>Download</h2>
+      <div class="download-grid">
+        <div class="download-card" id="download-windows">
+          <h3>Windows</h3>
+          <p>Installer, with automatic updates. Windows 10/11, 64-bit.</p>
+          <a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/DotaReady-Setup.exe">
+            Download for Windows
+          </a>
+        </div>
+        <div class="download-card" id="download-android">
+          <h3>Android</h3>
+          <p>Scan the QR code, or download the APK directly.</p>
+          <img class="qr" src="assets/screenshots/android-qr-placeholder.png"
+               alt="QR code to download the Dota Ready Android app" loading="lazy">
+          <a class="btn btn-secondary" href="https://github.com/enyded/dota_ready/releases/latest/download/DotaReady.apk">
+            Download APK
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://github.com/enyded/dota_ready/releases">Changelog</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:REPLACE_SUPPORT_EMAIL">Contact</a>
+    </div>
+    <p class="footer-note">Dota Ready is not affiliated with Valve Corporation. Dota 2 is a trademark
+      of Valve Corporation.</p>
+  </footer>
+
+</body>
+</html>

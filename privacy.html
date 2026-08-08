@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Dota Ready</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .doc { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+    .doc h1 { font-size: 1.8rem; }
+    .doc h2 { font-size: 1.2rem; text-align: left; margin-top: 2em; }
+    .doc p { color: var(--fg-dim); }
+    .doc .draft-note {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      color: var(--fg);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc">
+    <p><a href="index.html">&larr; Back to Dota Ready</a></p>
+    <h1>Privacy Policy — draft</h1>
+
+    <p class="draft-note"><strong>Not final.</strong> This is the working draft from
+      <code>docs/PRIVACY_POLICY.md</code>. Every bracketed field below must be replaced with real
+      values before this page is published/indexed alongside the rest of the site.</p>
+
+    <p><strong>Effective date:</strong> [DATE]<br>
+       <strong>Publisher:</strong> [PUBLISHER LEGAL NAME]<br>
+       <strong>Contact:</strong> [SUPPORT/PRIVACY EMAIL]</p>
+
+    <p>Dota Ready connects one Android device to one Windows PC so the user can receive a Dota 2
+      ready-check notification and request acceptance remotely.</p>
+
+    <h2>Data processed</h2>
+    <p>The service processes randomly generated installation identifiers, device and PC public
+      keys, the PC name supplied by Windows, pairing status, online/Armed status, match-event
+      identifiers and timestamps, requested actions, and execution results. The production hosting
+      provider may also process ordinary network metadata such as IP addresses and request
+      timestamps in access or security logs; document the deployed provider here:
+      [HOSTING AND LOGGING DETAILS].</p>
+    <p>The app does not upload Dota screenshots or captured pixels. Detection remains local on the
+      Windows PC. The Android app does not request direct camera permission and does not store QR
+      images; it receives only the scanned one-time pairing value from the system scanner. The
+      current app contains no advertising SDK or product analytics SDK.</p>
+
+    <h2>Purpose and sharing</h2>
+    <p>Data is used only to authenticate paired installations, relay connection state and match
+      events, prevent replay, diagnose service operation, and deliver the requested result. It is
+      not sold. It is disclosed only to infrastructure providers required to operate the service or
+      when legally required. List production processors here: [PROCESSORS].</p>
+
+    <h2>Storage and security</h2>
+    <p>Android private keys are generated in Android Keystore and are not sent to the backend. The
+      Windows Agent pins the backend command-signing public key. Pairing codes are random, one-time,
+      expire after three minutes, and are stored by the backend as hashes. Production clients
+      require encrypted HTTPS/WSS transport.</p>
+    <p>The current backend records installations, revoked pairing records, match events, and
+      commands in its database and has no automatic deletion schedule. Before public release, set
+      and state the production retention period here: [RETENTION POLICY]. Local Android history and
+      pairing settings remain on the device until app data is cleared or the app is uninstalled.</p>
+
+    <h2>User choices and deletion</h2>
+    <p>The user can Disarm event delivery or Unpair the phone and PC in Settings. Unpairing revokes
+      access but does not currently erase historical backend records. To request access or deletion,
+      contact [SUPPORT/PRIVACY EMAIL]. Document and operationally verify that request process before
+      public release.</p>
+
+    <h2>Children and changes</h2>
+    <p>The service is not directed to children. Material policy changes will be published at the
+      same stable URL with a new effective date. Questions may be sent to
+      [SUPPORT/PRIVACY EMAIL].</p>
+  </div>
+</body>
+</html>

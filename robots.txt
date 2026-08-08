@@ -1,0 +1,6 @@
+# Pre-launch: block all crawling until billing is live.
+# At launch, replace this with an "Allow: /" robots.txt, remove the
+# <meta name="robots" content="noindex, nofollow"> tags from index.html/privacy.html,
+# and add a sitemap.xml — see docs/PHASE10_PRODUCTION_PLAN.md, "SEO and indexing".
+User-agent: *
+Disallow: /
