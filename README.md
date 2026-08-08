@@ -28,13 +28,13 @@ without requiring a language switcher to exist yet — right now the page only r
 capturing screenshots per-locale from day one avoids a re-shoot later.
 
 Filenames must stay identical across locale folders so the fallback lookup is a pure path swap:
-- `app-main.png`, `app-match-found.png`, `app-settings.png`, `app-info.png`,
-  `app-allow-bg-activity.png` — Android app screens.
+- `app-main.png`, `app-match-found.png`, `app-notification.png`, `app-settings.png`,
+  `app-info.png`, `app-allow-bg-activity.png` — Android app screens.
 - `desk-main.png`, `desk-qr.png` — Windows desktop app screens.
 - `og-cover.png` — generated cover image, not a screenshot (locale-specific OG previews are a
   nice-to-have, not required).
-- `android-qr-placeholder.png` — still needed (see TODO below); a *download* QR for the APK, not
-  the in-app pairing QR (`desk-qr.png` already covers that one).
+- `android-qr-placeholder.png` — generated QR code, not a manual screenshot; points at the
+  APK download URL, which isn't a published release asset yet (see TODO below).
 
 ## Still TODO before launch
 
@@ -42,10 +42,11 @@ Filenames must stay identical across locale folders so the fallback lookup is a 
   (main window, pairing QR), Android app (home, match-found notification/dialog, settings,
   background-permission drill-down), and a generated `og-cover.png`. Other locales (`ru/`, etc.)
   still need their own pass once localized app builds exist.
-- [ ] **Download links** — point at `https://github.com/enyded/dota_ready/releases/latest/download/...`.
-  This repo is also where release assets should be published (per the "Release file distribution"
-  section of the production plan) — filenames must stay stable across releases for these links to
-  keep working. Deferred until the CI/CD technical design is written.
+- [ ] **Download links** — point at `https://github.com/enyded/dota_ready/releases/latest/download/...`;
+  the QR code in the Download section already encodes this URL. This repo is also where release
+  assets should be published (per the "Release file distribution" section of the production plan)
+  — filenames must stay stable across releases for these links (and the QR) to keep working.
+  Deferred until the CI/CD technical design is written; the links/QR will 404 until then.
 - [x] **Support email** — `support.d2r@gmail.com`, wired into the footer, `privacy.html`, and
   `docs/PRIVACY_POLICY.md`.
 - [ ] **Privacy Policy** — `privacy.html` mirrors `docs/PRIVACY_POLICY.md`, which is still a draft
@@ -60,3 +61,10 @@ Filenames must stay identical across locale folders so the fallback lookup is a 
   `docs/PHASE10_PRODUCTION_PLAN.md`, "SEO and indexing") — do not remove until the product with
   billing is actually live. At that point: drop the noindex tags, replace `robots.txt` with an
   allow-all version, add `sitemap.xml`, and submit to Search Console/Bing.
+- [x] **Mobile layout** — fixed a real overflow bug: flex items using non-stretch cross-axis
+  alignment (`align-items: center`/`flex-start`) size to their content's intrinsic width unless
+  given `min-width: 0` (or an explicit `width`), so a wide image or long heading blew out the
+  whole page width instead of shrinking. Fixed via `min-width: 0` on `.steps li`/`.steps li > div`/
+  `.callout-sequence figure`, and explicit `width: 100%` on the hero's flex children in the mobile
+  media query. Also simplified the mobile nav to just the brand + Download button (the anchor
+  links don't fit at phone widths and are redundant with the page's own sections).

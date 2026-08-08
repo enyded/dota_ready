@@ -2,10 +2,9 @@ Default/fallback locale screenshots (see `landing/README.md`, "Screenshots and l
 
 Present:
 - `desk-main.png`, `desk-qr.png` — Windows desktop app.
-- `app-main.png`, `app-match-found.png`, `app-settings.png`, `app-info.png`,
+- `app-main.png`, `app-match-found.png` (full phone screen), `app-notification.png` (cropped to
+  just the notification banner, used for "Get notified"), `app-settings.png`, `app-info.png`,
   `app-allow-bg-activity.png` — Android app.
 - `og-cover.png` — generated Open Graph/Twitter card preview.
-
-Still needed:
-- `android-qr-placeholder.png` — a QR code linking to the APK download (for the Download section),
-  distinct from `desk-qr.png` which is the in-app pairing QR.
+- `android-qr-placeholder.png` — generated QR pointing at the (not-yet-published) APK release
+  asset URL; will 404 until a release with that filename actually exists.

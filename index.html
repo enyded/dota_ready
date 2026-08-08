@@ -20,6 +20,7 @@
   <meta name="twitter:description" content="Get a push notification when a Dota 2 ready check appears and accept it from your phone — even away from your PC.">
   <meta name="twitter:image" content="assets/screenshots/en/og-cover.png">
 
+  <link rel="icon" href="assets/icon.png">
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -43,7 +44,10 @@
 
   <header class="hero">
     <nav class="nav">
-      <div class="brand">Dota Ready</div>
+      <div class="brand">
+        <img src="assets/icon.png" alt="" class="brand-icon">
+        Dota Ready
+      </div>
       <div class="nav-links">
         <a href="#how-it-works">How it works</a>
         <a href="#features">Features</a>
@@ -82,7 +86,7 @@
             <h3>Install the desktop agent</h3>
             <p>Runs quietly in the background while you queue. No border, no overlay, no interference
               with DX11 or Vulkan.</p>
-            <img class="step-shot" src="assets/screenshots/en/desk-main.png"
+            <img class="step-shot step-shot-wide" src="assets/screenshots/en/desk-main.png"
                  alt="Dota Ready desktop app showing server connected and Dota 2 detected">
           </div>
         </li>
@@ -92,7 +96,7 @@
             <h3>Pair your phone</h3>
             <p>Scan a QR code from the Dota Ready app once. The pairing is per-device and can be
               revoked at any time.</p>
-            <img class="step-shot" src="assets/screenshots/en/desk-qr.png"
+            <img class="step-shot step-pair-wide" src="assets/screenshots/en/desk-qr.png"
                  alt="One-time pairing QR code shown by the Dota Ready desktop app">
           </div>
         </li>
@@ -101,7 +105,7 @@
           <div>
             <h3>Get notified</h3>
             <p>A ready check appears — your phone buzzes with a push notification immediately.</p>
-            <img class="step-shot" src="assets/screenshots/en/app-match-found.png"
+            <img class="step-shot" src="assets/screenshots/en/app-notification.png"
                  alt="Phone notification showing a Dota match found, with Ignore and Accept actions">
           </div>
         </li>
@@ -110,8 +114,8 @@
           <div>
             <h3>Accept from anywhere</h3>
             <p>Tap Accept in the notification or the app. Your PC clicks the match for you.</p>
-            <img class="step-shot" src="assets/screenshots/en/app-main.png"
-                 alt="Dota Ready phone app home screen with server and PC status">
+            <img class="step-shot" src="assets/screenshots/en/app-match-found.png"
+                 alt="Dota Ready phone screen with the Match found dialog and Accept button">
           </div>
         </li>
       </ol>

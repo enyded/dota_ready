@@ -50,8 +50,18 @@ h1, h2, h3 {
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+.brand-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  display: block;
 }
 
 .nav-links {
@@ -197,6 +207,11 @@ h1, h2, h3 {
   display: flex;
   gap: 16px;
   align-items: flex-start;
+  min-width: 0;
+}
+
+.steps li > div {
+  min-width: 0;
 }
 
 .step-num {
@@ -229,6 +244,15 @@ h1, h2, h3 {
   border: 1px solid var(--border);
 }
 
+.step-shot-wide,
+.step-pair-wide {
+  max-width: 360px;
+  height: 280px;
+  object-fit: contain;
+  background: var(--bg-alt);
+  padding: 12px;
+}
+
 .steps-note {
   max-width: 720px;
   margin: 40px auto 0;
@@ -258,14 +282,16 @@ h1, h2, h3 {
 
 .callout-sequence figure {
   margin: 0;
+  min-width: 0;
 }
 
 .callout-sequence img {
   width: 100%;
+  max-width: 220px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   display: block;
-  margin-bottom: 12px;
+  margin: 0 auto 12px;
 }
 
 .callout-sequence figcaption {
@@ -387,9 +413,30 @@ h1, h2, h3 {
     grid-template-columns: 1fr;
   }
 
+  .nav {
+    padding: 16px 20px;
+  }
+
+  .brand {
+    font-size: 1.05rem;
+  }
+
   .nav-links {
     gap: 14px;
     font-size: 0.9rem;
+  }
+
+  .nav-links a:not(.nav-cta) {
+    display: none;
+  }
+
+  .nav-cta {
+    padding: 7px 12px;
+    font-size: 0.9rem;
+  }
+
+  .callout-sequence img {
+    max-width: 160px;
   }
 
   .hero-content h1 {
@@ -398,11 +445,17 @@ h1, h2, h3 {
 
   .hero-inner {
     flex-direction: column;
+    align-items: stretch;
     text-align: center;
   }
 
   .hero-inner .hero-content {
+    width: 100%;
     text-align: center;
+  }
+
+  .hero-shot {
+    width: 100%;
   }
 
   .hero-inner .cta-row {
