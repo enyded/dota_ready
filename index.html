@@ -14,11 +14,11 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Dota Ready — remotely accept Dota 2 matches from your phone">
   <meta property="og:description" content="Get a push notification when a Dota 2 ready check appears and accept it from your phone — even away from your PC.">
-  <meta property="og:image" content="assets/screenshots/og-cover.png">
+  <meta property="og:image" content="assets/screenshots/en/og-cover.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dota Ready — remotely accept Dota 2 matches from your phone">
   <meta name="twitter:description" content="Get a push notification when a Dota 2 ready check appears and accept it from your phone — even away from your PC.">
-  <meta name="twitter:image" content="assets/screenshots/og-cover.png">
+  <meta name="twitter:image" content="assets/screenshots/en/og-cover.png">
 
   <link rel="stylesheet" href="styles.css">
 
@@ -52,15 +52,22 @@
       </div>
     </nav>
 
-    <div class="hero-content">
-      <h1>Dota Ready — remotely accept Dota 2 matches from your phone</h1>
-      <p class="subhead">Never miss a queue again. Get a push notification the instant a ready check
-        appears, and accept it from your phone — even when you're away from your PC.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#download-windows">Download for Windows</a>
-        <a class="btn btn-secondary" href="#download-android">Get the Android app</a>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>Dota Ready — remotely accept Dota 2 matches from your phone</h1>
+        <p class="subhead">Never miss a queue again. Get a push notification the instant a ready
+          check appears, and accept it from your phone — even when you're away from your PC.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#download-windows">Download for Windows</a>
+          <a class="btn btn-secondary" href="#download-android">Get the Android app</a>
+        </div>
+        <p class="hero-note">Free to try — 3 remote accepts on us, no account hassle.</p>
       </div>
-      <p class="hero-note">Free to try — 3 remote accepts on us, no account hassle.</p>
+      <div class="hero-shot">
+        <img src="assets/screenshots/en/app-match-found.png"
+             alt="Dota Ready phone notification for a match found, with an Accept button"
+             loading="lazy">
+      </div>
     </div>
   </header>
 
@@ -75,6 +82,8 @@
             <h3>Install the desktop agent</h3>
             <p>Runs quietly in the background while you queue. No border, no overlay, no interference
               with DX11 or Vulkan.</p>
+            <img class="step-shot" src="assets/screenshots/en/desk-main.png"
+                 alt="Dota Ready desktop app showing server connected and Dota 2 detected">
           </div>
         </li>
         <li>
@@ -83,6 +92,8 @@
             <h3>Pair your phone</h3>
             <p>Scan a QR code from the Dota Ready app once. The pairing is per-device and can be
               revoked at any time.</p>
+            <img class="step-shot" src="assets/screenshots/en/desk-qr.png"
+                 alt="One-time pairing QR code shown by the Dota Ready desktop app">
           </div>
         </li>
         <li>
@@ -90,6 +101,8 @@
           <div>
             <h3>Get notified</h3>
             <p>A ready check appears — your phone buzzes with a push notification immediately.</p>
+            <img class="step-shot" src="assets/screenshots/en/app-match-found.png"
+                 alt="Phone notification showing a Dota match found, with Ignore and Accept actions">
           </div>
         </li>
         <li>
@@ -97,24 +110,42 @@
           <div>
             <h3>Accept from anywhere</h3>
             <p>Tap Accept in the notification or the app. Your PC clicks the match for you.</p>
+            <img class="step-shot" src="assets/screenshots/en/app-main.png"
+                 alt="Dota Ready phone app home screen with server and PC status">
           </div>
         </li>
       </ol>
+      <p class="steps-note">Tapping <strong>Ignore</strong> on the notification or
+        <strong>Cancel</strong> in the app only dismisses that notification on your phone — it does
+        not decline or cancel the actual Dota 2 match. If you don't act, the ready check just runs
+        its normal course in-game.</p>
     </section>
 
     <section id="background" class="section section-callout">
-      <div class="callout">
-        <div class="callout-text">
-          <h2>Make sure it works in the background</h2>
-          <p>Android aggressively kills background apps by default. For notifications to arrive
-            reliably, exempt Dota Ready from battery optimization and allow background activity in
-            your phone's settings. This takes 30 seconds and is required, not optional.</p>
-        </div>
-        <div class="callout-image">
-          <img src="assets/screenshots/background-permissions.png"
-               alt="Android battery optimization exemption setting for Dota Ready"
+      <h2>Make sure it works in the background</h2>
+      <p class="callout-intro">Android aggressively kills background apps by default. For
+        notifications to arrive reliably, exempt Dota Ready from battery optimization and allow
+        background activity in your phone's settings. This takes 30 seconds and is required, not
+        optional.</p>
+      <div class="callout-sequence">
+        <figure>
+          <img src="assets/screenshots/en/app-settings.png"
+               alt="Dota Ready in-app Settings screen with a Request unrestricted battery use button"
                loading="lazy">
-        </div>
+          <figcaption>1. In Dota Ready → Settings, request unrestricted battery use</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshots/en/app-info.png"
+               alt="Android App info screen for Dota Ready with Battery usage highlighted"
+               loading="lazy">
+          <figcaption>2. Open App info → Battery usage</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshots/en/app-allow-bg-activity.png"
+               alt="Android Battery usage screen with Allow background activity enabled"
+               loading="lazy">
+          <figcaption>3. Turn on "Allow background activity"</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -174,6 +205,12 @@
             the app.</p>
         </details>
         <details>
+          <summary>Does Ignore or Cancel decline the match?</summary>
+          <p>No. Ignore (on the notification) and Cancel (in the app) only dismiss that
+            notification on your phone — they don't send anything to Dota 2 or cancel the actual
+            ready check. The match itself is unaffected either way.</p>
+        </details>
+        <details>
           <summary>What's free vs. paid?</summary>
           <p>Notifications are always free, for every match. You also get 3 remote accepts free,
             total. After that, you'll still get the notification, but accepting remotely requires a
@@ -195,7 +232,7 @@
         <div class="download-card" id="download-android">
           <h3>Android</h3>
           <p>Scan the QR code, or download the APK directly.</p>
-          <img class="qr" src="assets/screenshots/android-qr-placeholder.png"
+          <img class="qr" src="assets/screenshots/en/android-qr-placeholder.png"
                alt="QR code to download the Dota Ready Android app" loading="lazy">
           <a class="btn btn-secondary" href="https://github.com/enyded/dota_ready/releases/latest/download/DotaReady.apk">
             Download APK
@@ -210,7 +247,7 @@
     <div class="footer-links">
       <a href="https://github.com/enyded/dota_ready/releases">Changelog</a>
       <a href="privacy.html">Privacy Policy</a>
-      <a href="mailto:REPLACE_SUPPORT_EMAIL">Contact</a>
+      <a href="mailto:support.d2r@gmail.com">Contact</a>
     </div>
     <p class="footer-note">Dota Ready is not affiliated with Valve Corporation. Dota 2 is a trademark
       of Valve Corporation.</p>
