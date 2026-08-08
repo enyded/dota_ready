@@ -53,9 +53,13 @@ Filenames must stay identical across locale folders so the fallback lookup is a 
   with bracketed placeholders ([DATE], [PUBLISHER LEGAL NAME], [HOSTING AND LOGGING DETAILS],
   [PROCESSORS], [RETENTION POLICY]). Fill those in before removing `noindex` — needs real legal/ops
   input, not something to fill in generically.
-- [ ] **Domain** — no custom domain wired up yet (pending the VPS/domain purchase decision in the
-  production plan's Open items). Until then this can be hosted via GitHub Pages on this repo
-  (Settings → Pages → deploy from `main`) at `https://enyded.github.io/dota_ready/`.
+- [ ] **Hosting** — deploying via GitHub Pages on this repo for now (Settings → Pages → Source:
+  Deploy from a branch → `main` → `/` (root) → Save), served at
+  `https://enyded.github.io/dota_ready/`. `.nojekyll` is committed so GitHub serves the static
+  files as-is instead of running them through a Jekyll build. Move to a custom domain + VPS once
+  that's set up (per the production plan's Open items) — swapping hosts doesn't need any code
+  changes here, just a new `CNAME` file (or DNS + reverse proxy config on the VPS) once a domain
+  exists.
 - [ ] **SEO flip at launch** — both HTML files carry `<meta name="robots" content="noindex, nofollow">`
   and `robots.txt` disallows everything. This is intentional pre-launch (see
   `docs/PHASE10_PRODUCTION_PLAN.md`, "SEO and indexing") — do not remove until the product with
