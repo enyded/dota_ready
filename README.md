@@ -36,6 +36,10 @@ Filenames must stay identical across locale folders so the fallback lookup is a 
 - `android-qr-placeholder.png` — generated QR code, not a manual screenshot; points at the
   stable `ReAccept.apk` release URL.
 
+Public asset URLs carry a shared `rev` query parameter in the HTML. Bump it whenever an image or
+stylesheet is replaced under the same filename so GitHub Pages and browser caches fetch the new
+file immediately.
+
 ## Still TODO before launch
 
 - [x] **Screenshots (`en/`)** — the product owner supplied the rebranded Windows and Android
