@@ -38,8 +38,8 @@ Filenames must stay identical across locale folders so the fallback lookup is a 
 
 ## Still TODO before launch
 
-- [ ] **Screenshots (`en/`)** — the product owner will replace screenshots containing the old
-  brand. The generated `og-cover.png` already uses the approved ReAccept icon and copy.
+- [x] **Screenshots (`en/`)** — the product owner supplied the rebranded Windows and Android
+  screenshots. The generated `og-cover.png` uses the same approved ReAccept icon and copy.
 - [x] **Download links** — point at the stable GitHub Release aliases `ReAccept-Setup.exe` and
   `ReAccept.apk`; the QR code encodes the same Android URL.
 - [x] **Support email** — `support.d2r@gmail.com`, wired into the footer, `privacy.html`, and
