@@ -108,6 +108,13 @@ h1, h2, h3 {
   font-size: 2.25rem;
 }
 
+.hero-tagline {
+  color: var(--fg);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
 .subhead {
   color: var(--fg-dim);
   font-size: 1.1rem;

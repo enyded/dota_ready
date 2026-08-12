@@ -1,6 +1,6 @@
-# Dota Ready — landing page
+# ReAccept — landing page
 
-Static site for the Dota Ready landing page. Plain HTML/CSS, no build step, no JS framework.
+Static site for the ReAccept landing page. Plain HTML/CSS, no build step, no JS framework.
 Content and structure follow the "Landing page" section of `docs/PHASE10_PRODUCTION_PLAN.md` in
 the main `dota` repo.
 
@@ -34,32 +34,25 @@ Filenames must stay identical across locale folders so the fallback lookup is a 
 - `og-cover.png` — generated cover image, not a screenshot (locale-specific OG previews are a
   nice-to-have, not required).
 - `android-qr-placeholder.png` — generated QR code, not a manual screenshot; points at the
-  APK download URL, which isn't a published release asset yet (see TODO below).
+  stable `ReAccept.apk` release URL.
 
 ## Still TODO before launch
 
-- [x] **Screenshots (`en/`)** — real screenshots captured and wired into the page: desktop app
-  (main window, pairing QR), Android app (home, match-found notification/dialog, settings,
-  background-permission drill-down), and a generated `og-cover.png`. Other locales (`ru/`, etc.)
-  still need their own pass once localized app builds exist.
-- [ ] **Download links** — point at `https://github.com/enyded/dota_ready/releases/latest/download/...`;
-  the QR code in the Download section already encodes this URL. This repo is also where release
-  assets should be published (per the "Release file distribution" section of the production plan)
-  — filenames must stay stable across releases for these links (and the QR) to keep working.
-  Deferred until the CI/CD technical design is written; the links/QR will 404 until then.
+- [ ] **Screenshots (`en/`)** — the product owner will replace screenshots containing the old
+  brand. The generated `og-cover.png` already uses the approved ReAccept icon and copy.
+- [x] **Download links** — point at the stable GitHub Release aliases `ReAccept-Setup.exe` and
+  `ReAccept.apk`; the QR code encodes the same Android URL.
 - [x] **Support email** — `support.d2r@gmail.com`, wired into the footer, `privacy.html`, and
   `docs/PRIVACY_POLICY.md`.
 - [ ] **Privacy Policy** — `privacy.html` mirrors `docs/PRIVACY_POLICY.md`, which is still a draft
   with bracketed placeholders ([DATE], [PUBLISHER LEGAL NAME], [HOSTING AND LOGGING DETAILS],
   [PROCESSORS], [RETENTION POLICY]). Fill those in before removing `noindex` — needs real legal/ops
   input, not something to fill in generically.
-- [ ] **Hosting** — deploying via GitHub Pages on this repo for now (Settings → Pages → Source:
+- [x] **Hosting** — deploying via GitHub Pages on this repo for now (Settings → Pages → Source:
   Deploy from a branch → `main` → `/` (root) → Save), served at
-  `https://enyded.github.io/dota_ready/`. `.nojekyll` is committed so GitHub serves the static
-  files as-is instead of running them through a Jekyll build. Move to a custom domain + VPS once
-  that's set up (per the production plan's Open items) — swapping hosts doesn't need any code
-  changes here, just a new `CNAME` file (or DNS + reverse proxy config on the VPS) once a domain
-  exists.
+  `https://re-accept.com/`. `.nojekyll` is committed so GitHub serves the static files as-is
+  instead of running them through a Jekyll build. DNS is managed by Cloudflare in DNS-only mode
+  for the GitHub Pages apex and `www` records; `www` redirects to the apex domain.
 - [ ] **SEO flip at launch** — both HTML files carry `<meta name="robots" content="noindex, nofollow">`
   and `robots.txt` disallows everything. This is intentional pre-launch (see
   `docs/PHASE10_PRODUCTION_PLAN.md`, "SEO and indexing") — do not remove until the product with

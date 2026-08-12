@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dota Ready — Remote Match Accept for Dota 2</title>
-  <meta name="description" content="Dota Ready lets you accept Dota 2 ready checks remotely from your phone. Never miss a queue again — get a push notification and accept the match without touching your PC.">
+  <title>ReAccept — Remote match companion for Dota 2</title>
+  <meta name="description" content="Get notified and accept found match from your phone.">
+  <link rel="canonical" href="https://re-accept.com/">
 
   <!-- Pre-launch: keep this page out of search results until billing is live.
        Remove this tag AND the Disallow rule in robots.txt at launch (see docs/PHASE10_PRODUCTION_PLAN.md, SEO section). -->
@@ -12,13 +13,14 @@
 
   <!-- Open Graph / Twitter card -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Dota Ready — remotely accept Dota 2 matches from your phone">
-  <meta property="og:description" content="Get a push notification when a Dota 2 ready check appears and accept it from your phone — even away from your PC.">
-  <meta property="og:image" content="assets/screenshots/en/og-cover.png">
+  <meta property="og:title" content="ReAccept — Remote match companion for Dota 2">
+  <meta property="og:description" content="Get notified and accept found match from your phone.">
+  <meta property="og:url" content="https://re-accept.com/">
+  <meta property="og:image" content="https://re-accept.com/assets/screenshots/en/og-cover.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Dota Ready — remotely accept Dota 2 matches from your phone">
-  <meta name="twitter:description" content="Get a push notification when a Dota 2 ready check appears and accept it from your phone — even away from your PC.">
-  <meta name="twitter:image" content="assets/screenshots/en/og-cover.png">
+  <meta name="twitter:title" content="ReAccept — Remote match companion for Dota 2">
+  <meta name="twitter:description" content="Get notified and accept found match from your phone.">
+  <meta name="twitter:image" content="https://re-accept.com/assets/screenshots/en/og-cover.png">
 
   <link rel="icon" href="assets/icon.png">
   <link rel="stylesheet" href="styles.css">
@@ -27,10 +29,11 @@
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Dota Ready",
+    "name": "ReAccept",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Windows, Android",
-    "description": "Accept Dota 2 ready checks remotely from your phone via a push notification.",
+    "url": "https://re-accept.com/",
+    "description": "Get notified and accept found match from your phone.",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -46,7 +49,7 @@
     <nav class="nav">
       <div class="brand">
         <img src="assets/icon.png" alt="" class="brand-icon">
-        Dota Ready
+        ReAccept
       </div>
       <div class="nav-links">
         <a href="#how-it-works">How it works</a>
@@ -58,9 +61,9 @@
 
     <div class="hero-inner">
       <div class="hero-content">
-        <h1>Dota Ready — remotely accept Dota 2 matches from your phone</h1>
-        <p class="subhead">Never miss a queue again. Get a push notification the instant a ready
-          check appears, and accept it from your phone — even when you're away from your PC.</p>
+        <h1>ReAccept</h1>
+        <p class="hero-tagline">Remote match companion for Dota 2</p>
+        <p class="subhead">Get notified and accept found match from your phone.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#download-windows">Download for Windows</a>
           <a class="btn btn-secondary" href="#download-android">Get the Android app</a>
@@ -69,7 +72,7 @@
       </div>
       <div class="hero-shot">
         <img src="assets/screenshots/en/app-match-found.png"
-             alt="Dota Ready phone notification for a match found, with an Accept button"
+             alt="ReAccept phone notification for a match found, with an Accept button"
              loading="lazy">
       </div>
     </div>
@@ -87,17 +90,17 @@
             <p>Runs quietly in the background while you queue. No border, no overlay, no interference
               with DX11 or Vulkan.</p>
             <img class="step-shot step-shot-wide" src="assets/screenshots/en/desk-main.png"
-                 alt="Dota Ready desktop app showing server connected and Dota 2 detected">
+                 alt="ReAccept desktop app showing server connected and Dota 2 detected">
           </div>
         </li>
         <li>
           <span class="step-num">2</span>
           <div>
             <h3>Pair your phone</h3>
-            <p>Scan a QR code from the Dota Ready app once. The pairing is per-device and can be
+            <p>Scan a QR code from the ReAccept app once. The pairing is per-device and can be
               revoked at any time.</p>
             <img class="step-shot step-pair-wide" src="assets/screenshots/en/desk-qr.png"
-                 alt="One-time pairing QR code shown by the Dota Ready desktop app">
+                 alt="One-time pairing QR code shown by the ReAccept desktop app">
           </div>
         </li>
         <li>
@@ -115,7 +118,7 @@
             <h3>Accept from anywhere</h3>
             <p>Tap Accept in the notification or the app. Your PC clicks the match for you.</p>
             <img class="step-shot" src="assets/screenshots/en/app-match-found.png"
-                 alt="Dota Ready phone screen with the Match found dialog and Accept button">
+                 alt="ReAccept phone screen with the Match found dialog and Accept button">
           </div>
         </li>
       </ol>
@@ -127,19 +130,19 @@
     <section id="background" class="section section-callout">
       <h2>Make sure it works in the background</h2>
       <p class="callout-intro">Android aggressively kills background apps by default. For
-        notifications to arrive reliably, exempt Dota Ready from battery optimization and allow
+        notifications to arrive reliably, exempt ReAccept from battery optimization and allow
         background activity in your phone's settings. This takes 30 seconds and is required, not
         optional.</p>
       <div class="callout-sequence">
         <figure>
           <img src="assets/screenshots/en/app-settings.png"
-               alt="Dota Ready in-app Settings screen with a Request unrestricted battery use button"
+               alt="ReAccept in-app Settings screen with a Request unrestricted battery use button"
                loading="lazy">
-          <figcaption>1. In Dota Ready → Settings, request unrestricted battery use</figcaption>
+          <figcaption>1. In ReAccept → Settings, request unrestricted battery use</figcaption>
         </figure>
         <figure>
           <img src="assets/screenshots/en/app-info.png"
-               alt="Android App info screen for Dota Ready with Battery usage highlighted"
+               alt="Android App info screen for ReAccept with Battery usage highlighted"
                loading="lazy">
           <figcaption>2. Open App info → Battery usage</figcaption>
         </figure>
@@ -177,7 +180,7 @@
 
     <section id="privacy" class="section">
       <h2>Privacy</h2>
-      <p>Dota Ready only looks at your Dota 2 window to detect the ready-check screen. It doesn't read
+      <p>ReAccept only looks at your Dota 2 window to detect the ready-check screen. It doesn't read
         your screen otherwise, doesn't collect gameplay data, and doesn't share data with third
         parties. Full details in the <a href="privacy.html">Privacy Policy</a>.</p>
     </section>
@@ -187,7 +190,7 @@
       <div class="faq-list">
         <details>
           <summary>Will this get me banned?</summary>
-          <p>Dota Ready doesn't read game state, doesn't automate gameplay, and doesn't touch memory
+          <p>ReAccept doesn't read game state, doesn't automate gameplay, and doesn't touch memory
             or the game process. It only detects the ready-check screen from a screenshot and sends a
             single click — the same thing you'd do yourself. We can't make guarantees about anti-cheat
             policy, but this is not gameplay automation.</p>
@@ -198,7 +201,7 @@
         </details>
         <details>
           <summary>What happens if I'm already at my PC?</summary>
-          <p>Nothing changes — Dota Ready doesn't take over if you're present. It only clicks when the
+          <p>Nothing changes — ReAccept doesn't take over if you're present. It only clicks when the
             remote accept command actually needs to run.</p>
         </details>
         <details>
@@ -228,7 +231,7 @@
         <div class="download-card" id="download-windows">
           <h3>Windows</h3>
           <p>Installer, with automatic updates. Windows 10/11, 64-bit.</p>
-          <a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/DotaReady-Setup.exe">
+          <a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe">
             Download for Windows
           </a>
         </div>
@@ -236,8 +239,8 @@
           <h3>Android</h3>
           <p>Scan the QR code, or download the APK directly.</p>
           <img class="qr" src="assets/screenshots/en/android-qr-placeholder.png"
-               alt="QR code to download the Dota Ready Android app" loading="lazy">
-          <a class="btn btn-secondary" href="https://github.com/enyded/dota_ready/releases/latest/download/DotaReady.apk">
+               alt="QR code to download the ReAccept Android app" loading="lazy">
+          <a class="btn btn-secondary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept.apk">
             Download APK
           </a>
         </div>
@@ -252,8 +255,9 @@
       <a href="privacy.html">Privacy Policy</a>
       <a href="mailto:support.d2r@gmail.com">Contact</a>
     </div>
-    <p class="footer-note">Dota Ready is not affiliated with Valve Corporation. Dota 2 is a trademark
-      of Valve Corporation.</p>
+    <p class="footer-note">ReAccept is an independent third-party application<br>
+      and is not affiliated with or endorsed by Valve Corporation.</p>
+    <p class="footer-note">Dota and Dota 2 are trademarks of Valve Corporation.</p>
   </footer>
 
 </body>
