@@ -28,8 +28,8 @@ without requiring a language switcher to exist yet — right now the page only r
 capturing screenshots per-locale from day one avoids a re-shoot later.
 
 Filenames must stay identical across locale folders so the fallback lookup is a pure path swap:
-- `app-main.png`, `app-match-found.png`, `app-notification.png`, `app-settings.png`,
-  `app-info.png`, `app-allow-bg-activity.png` — Android app screens.
+- `app-main.png`, `app-match-found.png`, `app-notification.png`, `app-party-notification.png`,
+  `app-settings.png`, `app-info.png`, `app-allow-bg-activity.png` — Android app screens.
 - `desk-main.png`, `desk-qr.png` — Windows desktop app screens.
 - `og-cover.png` — generated cover image, not a screenshot (locale-specific OG previews are a
   nice-to-have, not required).

@@ -251,6 +251,10 @@ h1, h2, h3 {
   border: 1px solid var(--border);
 }
 
+.step-shot + .step-shot {
+  margin-top: 12px;
+}
+
 .step-shot-wide,
 .step-pair-wide {
   max-width: 360px;
