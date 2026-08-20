@@ -46,7 +46,7 @@ file immediately.
   screenshots. The generated `og-cover.png` uses the same approved ReAccept icon and copy.
 - [x] **Download links** — point at the stable GitHub Release aliases `ReAccept-Setup.exe` and
   `ReAccept.apk`; the QR code encodes the same Android URL.
-- [x] **Support email** — `support.d2r@gmail.com`, wired into the footer, `privacy.html`, and
+- [x] **Support email** — `support@re-accept.com`, wired into the footer, `privacy.html`, and
   `docs/PRIVACY_POLICY.md`.
 - [ ] **Privacy Policy** — `privacy.html` mirrors `docs/PRIVACY_POLICY.md`, which is still a draft
   with bracketed placeholders ([DATE], [PUBLISHER LEGAL NAME], [HOSTING AND LOGGING DETAILS],

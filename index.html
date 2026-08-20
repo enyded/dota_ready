@@ -206,9 +206,12 @@
         pair using a one-time QR code or Telegram link — it does not provide general remote
         desktop access, does not read files on your PC, and does not read game memory or perform
         gameplay automation.</p>
-      <p>It only looks at your own Dota 2 window to detect the ready-check screen. It doesn't
-        read your screen otherwise, doesn't collect gameplay data, and doesn't share data with
-        third parties. Full details in the <a href="privacy.html">Privacy Policy</a>.</p>
+      <p>It only looks at your own Dota 2 window to detect ready checks and party invites —
+        never your full desktop. For party invites, a small cropped preview of the invite
+        dialog (which can include the inviting player's name and avatar) is relayed to your
+        phone or Telegram and automatically deleted after 40 days. ReAccept doesn't read your
+        screen otherwise, doesn't collect gameplay data, and doesn't sell data to third
+        parties. Full details in the <a href="privacy.html">Privacy Policy</a>.</p>
     </section>
 
     <section id="faq" class="section">
@@ -217,7 +220,8 @@
         <details>
           <summary>Will this get me banned?</summary>
           <p>ReAccept doesn't read game state, doesn't automate gameplay, and doesn't touch memory
-            or the game process. It only detects the ready-check screen from a screenshot and sends a
+            or the game process. It only detects the ready-check or party-invite screen from a
+            screenshot and sends a
             single click — the same thing you'd do yourself. We can't make guarantees about anti-cheat
             policy, but this is not gameplay automation.</p>
         </details>
@@ -297,7 +301,7 @@
     <div class="footer-links">
       <a href="https://github.com/enyded/dota_ready/releases">Changelog</a>
       <a href="privacy.html">Privacy Policy</a>
-      <a href="mailto:support.d2r@gmail.com">Contact</a>
+      <a href="mailto:support@re-accept.com">Contact</a>
     </div>
     <p class="footer-note">ReAccept is an independent third-party application<br>
       and is not affiliated with or endorsed by Valve Corporation.</p>
