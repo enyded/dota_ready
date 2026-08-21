@@ -1,6 +1,7 @@
-# Pre-launch: block all crawling until billing is live.
-# At launch, replace this with an "Allow: /" robots.txt, remove the
-# <meta name="robots" content="noindex, nofollow"> tags from index.html/privacy.html,
-# and add a sitemap.xml — see docs/PHASE10_PRODUCTION_PLAN.md, "SEO and indexing".
+# Pre-launch: keep the product landing page out of search while allowing the
+# public Privacy Policy required by Google Play to be crawled.
 User-agent: *
+Allow: /privacy.html
+Allow: /assets/icon.png
+Allow: /styles.css
 Disallow: /

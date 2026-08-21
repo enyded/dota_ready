@@ -48,20 +48,23 @@ file immediately.
   `ReAccept.apk`; the QR code encodes the same Android URL.
 - [x] **Support email** — `support@re-accept.com`, wired into the footer, `privacy.html`, and
   `docs/PRIVACY_POLICY.md`.
-- [ ] **Privacy Policy** — `privacy.html` mirrors `docs/PRIVACY_POLICY.md`, which is still a draft
-  with bracketed placeholders ([DATE], [PUBLISHER LEGAL NAME], [HOSTING AND LOGGING DETAILS],
-  [PROCESSORS], [RETENTION POLICY]). Fill those in before removing `noindex` — needs real legal/ops
-  input, not something to fill in generically.
+- [x] **Privacy Policy text prepared** — `privacy.html` mirrors the English disclosure in
+  `docs/PRIVACY_POLICY.md`, including Firebase/Crashlytics, Telegram, Google Play subscriptions,
+  retention, security, and deletion requests. Do not deploy this version until the planned
+  protected-admin support deletion flow is operationally verified; the main repo tracks that
+  launch gate. The policy has no `noindex` directive and `robots.txt` allows its HTML and
+  presentation assets while the rest of the site remains pre-launch.
 - [x] **Hosting** — deploying via GitHub Pages on this repo for now (Settings → Pages → Source:
   Deploy from a branch → `main` → `/` (root) → Save), served at
   `https://re-accept.com/`. `.nojekyll` is committed so GitHub serves the static files as-is
   instead of running them through a Jekyll build. DNS is managed by Cloudflare in DNS-only mode
   for the GitHub Pages apex and `www` records; `www` redirects to the apex domain.
-- [ ] **SEO flip at launch** — both HTML files carry `<meta name="robots" content="noindex, nofollow">`
-  and `robots.txt` disallows everything. This is intentional pre-launch (see
-  `docs/PHASE10_PRODUCTION_PLAN.md`, "SEO and indexing") — do not remove until the product with
-  billing is actually live. At that point: drop the noindex tags, replace `robots.txt` with an
-  allow-all version, add `sitemap.xml`, and submit to Search Console/Bing.
+- [ ] **SEO flip at launch** — `index.html` still carries
+  `<meta name="robots" content="noindex, nofollow">`, and `robots.txt` blocks the product site
+  except for the already-public Privacy Policy and its presentation assets. This is intentional
+  pre-launch (see `docs/PHASE10_PRODUCTION_PLAN.md`, "SEO and indexing"). At launch: drop the
+  landing-page noindex tag, replace `robots.txt` with an allow-all version, add `sitemap.xml`, and
+  submit to Search Console/Bing.
 - [x] **Mobile layout** — fixed a real overflow bug: flex items using non-stretch cross-axis
   alignment (`align-items: center`/`flex-start`) size to their content's intrinsic width unless
   given `min-width: 0` (or an explicit `width`), so a wide image or long heading blew out the

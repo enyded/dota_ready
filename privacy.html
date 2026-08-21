@@ -4,101 +4,203 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — ReAccept</title>
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Privacy Policy for the ReAccept Android app, Windows Agent, backend service, Telegram companion, and website.">
   <link rel="canonical" href="https://re-accept.com/privacy.html">
   <link rel="icon" href="assets/icon.png?rev=20260819-1">
   <link rel="stylesheet" href="styles.css?rev=20260819-1">
   <style>
-    .doc { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+    .doc { max-width: 760px; margin: 0 auto; padding: 64px 24px; }
     .doc h1 { font-size: 1.8rem; }
     .doc h2 { font-size: 1.2rem; text-align: left; margin-top: 2em; }
-    .doc p { color: var(--fg-dim); }
-    .doc .draft-note {
-      background: var(--bg-alt);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 16px;
-      color: var(--fg);
-      font-size: 0.9rem;
-    }
+    .doc h3 { font-size: 1rem; text-align: left; margin-top: 1.5em; }
+    .doc p, .doc li { color: var(--fg-dim); }
+    .doc li + li { margin-top: 0.55em; }
   </style>
 </head>
 <body>
-  <div class="doc">
+  <main class="doc">
     <p><a href="index.html">&larr; Back to ReAccept</a></p>
-    <h1>Privacy Policy — draft</h1>
+    <h1>ReAccept Privacy Policy</h1>
 
-    <p class="draft-note"><strong>Not final.</strong> This is the working draft from
-      <code>docs/PRIVACY_POLICY.md</code>. Every bracketed field below must be replaced with real
-      values before this page is published/indexed alongside the rest of the site.</p>
-
-    <p><strong>Effective date:</strong> 2026-08-20<br>
+    <p><strong>Effective date:</strong> August 21, 2026<br>
        <strong>Publisher:</strong> ReAccept<br>
-       <strong>Contact:</strong> support@re-accept.com</p>
+       <strong>Privacy contact:</strong> <a href="mailto:support@re-accept.com">support@re-accept.com</a></p>
 
-    <p>ReAccept connects one Android device to one Windows PC so the user can receive a Dota 2
-      ready-check notification and request acceptance remotely.</p>
+    <p>ReAccept connects an Android device to a Windows PC so that a user can receive Dota 2
+      ready-check and party-invite notifications and request an action remotely. This policy
+      explains what data ReAccept processes, why it is processed, when it is shared, and how it
+      can be deleted. It applies to the ReAccept Android app, Windows Agent, backend service,
+      Telegram companion, and website.</p>
 
-    <h2>Data processed</h2>
-    <p>The service processes randomly generated installation identifiers, device and PC public
-      keys, the PC name supplied by Windows, pairing status, online/Armed status, match-event
-      identifiers and timestamps, requested actions, and execution results. The production backend
-      runs on a KVM VPS from QDE (qde.com), with Cloudflare in front as a reverse proxy for DNS,
-      TLS termination, and DDoS protection. The origin server's own request/access logging is
-      intentionally disabled; Cloudflare, as the edge proxy, may still process and log ordinary
-      connection metadata (IP address, request timestamps) per its own logging and retention
-      practices.</p>
-    <p>Ready-check (match-found) detection is entirely local: the Windows Agent never uploads a
-      screenshot or any captured pixels for that flow. Party-invite detection is different: to
-      show who is inviting you, the agent crops a small, bounded region of the party-invite
-      dialog (never the full desktop) — this can include the inviting player's Steam display
-      name and avatar image — encodes it as WebP (roughly 420×110px, capped at 100 KB), and
-      uploads it to the backend so it can be relayed to your phone and, if you've linked
-      Telegram, sent as a Telegram photo. This preview is stored in the backend database (to
-      support resending it if your phone reconnects) and is hard-deleted along with its
-      party-invite event after the same 40-day retention window described below; it is excluded
-      from the internal admin/support panel and is never written to application logs or metrics.
-      Capture is best-effort — if it fails, a plain-text notification is sent instead. The
-      Android app does not request direct camera permission and does not store QR images; it
-      receives only the scanned one-time pairing value from the system scanner. The current app
-      contains no advertising SDK or product analytics SDK.</p>
+    <h2>Data we process</h2>
 
-    <h2>Purpose and sharing</h2>
-    <p>Data is used only to authenticate paired installations, relay connection state and match
-      events, prevent replay, diagnose service operation, and deliver the requested result. It is
-      not sold. It is disclosed only to infrastructure providers required to operate the service or
-      when legally required. Production processors: QDE (VPS hosting), Cloudflare (reverse proxy,
-      DNS, and DDoS protection), Google Firebase (Firebase Authentication, for device identity),
-      and Telegram (Telegram Bot API, only for users who choose to link a Telegram companion;
-      this can include forwarding a party-invite preview image as described under "Data
-      processed" above).</p>
+    <h3>Service, device, and account data</h3>
+    <p>ReAccept processes randomly generated installation and pairing identifiers, an anonymous
+      Firebase Authentication user identifier, a one-way hash derived on the device from
+      <code>ANDROID_ID</code>, device and PC public keys, the PC name supplied by Windows,
+      platform and app version, pairing and revocation records, online/Armed state, last-seen and
+      event timestamps, requested actions, and execution results. The hashed device identifier is
+      used to preserve the free-use counter after a normal reinstall; ReAccept does not receive
+      the original <code>ANDROID_ID</code> value.</p>
+    <p>The Firebase identity is an anonymous app-install identity. ReAccept does not require a
+      name, email address, phone number, or Google sign-in for the Android service account.</p>
+    <p>For the Telegram companion, ReAccept similarly derives a one-way SHA-256 fingerprint from
+      the Telegram user identifier. The original Telegram identifier is processed while the
+      companion is linked as described below; the separate hash is used to preserve the same
+      lifetime free-use counter if that Telegram account is linked again.</p>
 
-    <h2>Storage and security</h2>
+    <h3>Match events and party-invite previews</h3>
+    <p>Ready-check detection is performed locally by the Windows Agent. It does not upload a
+      screenshot or captured pixels for a ready check.</p>
+    <p>For a party invite, the Agent may crop a small, bounded region of the invite dialog, never
+      the full desktop. The crop can contain the inviting player's Steam display name and avatar.
+      It is encoded as WebP (approximately 420×110 pixels and capped at 100 KB), uploaded to the
+      backend, and relayed to the paired phone. If the user has linked Telegram, it can also be
+      sent as a Telegram photo. The preview is excluded from the internal admin/support panel and
+      is not written to application logs or metrics. If capture fails, ReAccept sends a text-only
+      notification.</p>
+
+    <h3>QR scanning and local app data</h3>
+    <p>The Android app uses the Google Play services code scanner. It does not request direct
+      camera permission and does not store QR images; it receives only the scanned, one-time
+      pairing value from the system scanner. Pairing settings, preferences, and recent local
+      history are stored on the device.</p>
+
+    <h3>Stability diagnostics</h3>
+    <p>Firebase Crashlytics automatically processes crash stack traces, exception details,
+      relevant application and device state, device model and operating-system information,
+      app/version information, timestamps, and per-installation/session identifiers to diagnose
+      crashes and application-not-responding errors. ReAccept does not attach a Firebase user ID,
+      support ID, custom user ID, custom keys, or application logs to Crashlytics reports.</p>
+    <p>The current app contains no advertising SDK and no product analytics SDK. Google Analytics
+      is not included.</p>
+
+    <h3>Google Play subscriptions</h3>
+    <p>When Google Play subscriptions are enabled and a user starts or restores a subscription,
+      Google processes the payment method and billing transaction under Google's own terms and
+      privacy policy. ReAccept does not receive or store the user's full card number, bank account
+      details, or Google account password.</p>
+    <p>The app and backend process the subscription product ID, purchase token, order or
+      transaction identifier when available, purchase time, purchase and acknowledgement state,
+      auto-renewal and entitlement status, expiry time when applicable, environment, and
+      verification timestamps. This data is linked to the anonymous Firebase identity and is used
+      to verify the purchase with Google Play, grant or restore Premium access, prevent duplicate
+      or fraudulent claims, process subscription state changes, and assist with refunds or support
+      requests.</p>
+    <p>Managing or cancelling a Google Play subscription takes place through Google Play.
+      Deleting ReAccept data does not itself cancel an active Google Play subscription or delete
+      records held by Google.</p>
+
+    <h3>Optional Telegram companion and purchases</h3>
+    <p>If a user links the optional Telegram companion, ReAccept processes the Telegram user and
+      chat identifiers, available display name, link status and timestamps, messages and button
+      actions sent to the bot, and notification delivery state. Telegram receives the messages,
+      notifications, and optional party-invite previews needed to provide this feature.</p>
+    <p>If a user makes a Telegram Stars purchase, Telegram processes the payment. ReAccept receives
+      and stores the Telegram payment charge identifier, selected product/tier, linked Telegram
+      identity, purchase time, and resulting entitlement so the purchase can be granted once and
+      supported later. ReAccept does not receive the user's underlying payment-card details.</p>
+
+    <h3>Connection metadata and website</h3>
+    <p>The production backend runs on a QDE KVM VPS with Cloudflare in front for DNS, TLS
+      termination, reverse proxying, and DDoS protection. The origin server's request/access
+      logging is intentionally disabled. Cloudflare and other network providers may process
+      ordinary connection metadata such as IP addresses and request timestamps under their own
+      logging and retention practices. The static ReAccept website does not use advertising or
+      analytics cookies.</p>
+
+    <h2>How we use data</h2>
+    <p>ReAccept uses data to:</p>
+    <ul>
+      <li>authenticate installations and pair a phone with a PC;</li>
+      <li>relay connection state, ready checks, party invites, and requested actions;</li>
+      <li>enforce free and paid feature entitlements and restore verified purchases;</li>
+      <li>prevent replay, duplicate purchase claims, fraud, and abuse;</li>
+      <li>diagnose crashes, reliability problems, and support requests;</li>
+      <li>maintain service security and comply with legal obligations.</li>
+    </ul>
+    <p>ReAccept does not sell personal data and does not use it for third-party advertising or
+      cross-service tracking.</p>
+
+    <h2>Service providers and sharing</h2>
+    <p>Data is shared only when needed to operate a requested feature, maintain the service, or
+      comply with law. Current or planned processors for the described features are:</p>
+    <ul>
+      <li><strong>QDE:</strong> production VPS hosting;</li>
+      <li><strong>Cloudflare:</strong> DNS, TLS termination, reverse proxy, and DDoS protection;</li>
+      <li><strong>Google Firebase:</strong> anonymous authentication and Crashlytics stability diagnostics;</li>
+      <li><strong>Google Play:</strong> app distribution, subscription checkout, purchase verification,
+        and subscription lifecycle notifications when Play Billing is enabled;</li>
+      <li><strong>Telegram:</strong> the optional bot, notifications, party-invite previews, and
+        Telegram Stars purchases when the user chooses those features.</li>
+    </ul>
+    <p>These providers may process data in countries other than the user's country and apply their
+      own privacy and retention terms. ReAccept may also disclose data when required by law or
+      when necessary to protect users, the service, or legal rights.</p>
+
+    <h2>Storage, security, and retention</h2>
     <p>Android private keys are generated in Android Keystore and are not sent to the backend. The
-      Windows Agent pins the backend command-signing public key. Pairing codes are random, one-time,
-      expire after three minutes, and are stored by the backend as hashes. Production clients
-      require encrypted HTTPS/WSS transport.</p>
-    <p>The current backend records installations, revoked pairing records, match events, and
-      commands in its database. Match events, party invites, and their associated commands are
-      automatically hard-deleted after 40 days (configurable). Device/PC installation records and
-      revoked pairing records have no automatic deletion schedule and are retained until removed
-      on request (see "User choices and deletion" below). Local Android history and pairing
-      settings remain on the device until app data is cleared or the app is uninstalled.</p>
+      Windows Agent pins the backend command-signing public key. Pairing values are random,
+      single-use, expire after three minutes, and are stored by the backend as hashes. Production
+      clients require encrypted HTTPS/WSS transport. Access to production systems is restricted.</p>
+    <p>ReAccept applies the following retention rules:</p>
+    <ul>
+      <li>terminal match events, party invites, their associated commands, and party-invite preview
+        images are automatically hard-deleted after 40 days;</li>
+      <li>installation, pairing, revocation, anonymous identity, entitlement, Telegram-link, and
+        purchase-verification records are retained while needed to operate or restore the service,
+        resolve disputes, and meet legal obligations, or until a verified deletion request where
+        no overriding obligation applies;</li>
+      <li>after a verified deletion request, ReAccept retains the existing one-way hashed Android
+        or Telegram fingerprint and highest free-use count without the former Firebase UID,
+        Telegram user ID, device ID, system ID, PC name, pairing, purchase token, or event history.
+        This minimal record is used only to prevent repeated resets of the lifetime free-use
+        allowance and is retained while that free tier and anti-abuse purpose remain in operation;</li>
+      <li>subscription and payment records required for accounting, fraud prevention, refunds,
+        disputes, or legal compliance may be retained after service-data deletion and are removed
+        when the applicable purpose or retention obligation ends;</li>
+      <li>local Android data remains until it is cleared in system settings or the app is uninstalled;</li>
+      <li>Firebase states that Crashlytics crash traces and associated Crashlytics/Firebase
+        installation identifiers are retained for 90 days before removal from live and backup
+        systems begins;</li>
+      <li>infrastructure providers retain connection and transaction records according to their
+        own policies.</li>
+    </ul>
 
-    <h2>User choices and deletion</h2>
-    <p>The user can Disarm event delivery or Unpair the phone and PC in Settings. Unpairing revokes
-      access but does not currently erase historical backend records. To request access or deletion,
-      contact support@re-accept.com. Document and operationally verify that request process before
-      public release.</p>
+    <h2 id="data-deletion">User choices, access, and deletion</h2>
+    <p>Users can Disarm event delivery, unlink Telegram, or Unpair the phone and PC in Settings.
+      Unpairing or unlinking revokes that connection but does not by itself erase historical
+      backend or provider records.</p>
+    <p>To request access, correction, or deletion of ReAccept data, email
+      <a href="mailto:support@re-accept.com?subject=Privacy%20request">support@re-accept.com</a>
+      with the subject <strong>Privacy request</strong> and include the Support ID shown in the app
+      where available. ReAccept may ask for additional proof tied to the installation or pairing
+      to avoid deleting another user's data. After verification, ReAccept will delete associated
+      service data without an intentional waiting period, except for the minimized hashed Android
+      or Telegram fingerprint/free-use record described above and any records whose retention is
+      required for accounting, refunds, security, fraud prevention, dispute resolution, or law.
+      ReAccept will respond within the period required by applicable law.</p>
+    <p>Clearing app data or uninstalling removes local data but may leave backend records. A Google
+      Play subscription must be cancelled separately in Google Play, and a Telegram relationship
+      may also leave records controlled independently by Telegram.</p>
+    <p>Depending on location, users may have additional rights to object to or restrict processing
+      or to lodge a complaint with a data-protection authority. Contact the privacy address above
+      to exercise an applicable right.</p>
 
-    <h2>Children and changes</h2>
-    <p>The service is not directed to children. Material policy changes will be published at the
-      same stable URL with a new effective date. Questions may be sent to
-      support@re-accept.com.</p>
+    <h2>Children</h2>
+    <p>ReAccept is not directed to children under 13, or the higher minimum age required in a
+      user's country, and does not knowingly collect personal data from children. Contact
+      <a href="mailto:support@re-accept.com">support@re-accept.com</a> if you believe a child has
+      provided data so it can be reviewed and deleted as appropriate.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>Material changes will be published at the same stable URL with an updated effective date.
+      Continued use after the effective date is subject to the updated policy where permitted by
+      law.</p>
 
     <h2>Independent application and trademarks</h2>
     <p>ReAccept is an independent third-party application and is not affiliated with or endorsed
       by Valve Corporation. Dota and Dota 2 are trademarks of Valve Corporation.</p>
-  </div>
+  </main>
 </body>
 </html>
