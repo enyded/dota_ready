@@ -147,10 +147,15 @@
     <ul>
       <li>terminal match events, party invites, their associated commands, and party-invite preview
         images are automatically hard-deleted after 40 days;</li>
-      <li>installation, pairing, revocation, anonymous identity, entitlement, Telegram-link, and
-        purchase-verification records are retained while needed to operate or restore the service,
-        resolve disputes, and meet legal obligations, or until a verified deletion request where
-        no overriding obligation applies;</li>
+      <li>once a week, Android anonymous identities and their installation, pairing, entitlement,
+        and expired purchase-verification records are automatically deleted after 40 days with no
+        device activity, provided no active subscription remains. Inactive desktop installations
+        and their system-scoped links are also deleted after 40 days. One-way fingerprint/free-use
+        records are retained separately as described below. Telegram identities are not
+        automatically classified as inactive because Telegram does not provide a reliable
+        last-activity signal;</li>
+      <li>expired pairing sessions, old revoked/unlinked relationships, and processed Google Play
+        notification deduplication records are automatically deleted after 40 days;</li>
       <li>after a verified deletion request, ReAccept retains the existing one-way hashed Android
         or Telegram fingerprint and highest free-use count without the former Firebase UID,
         Telegram user ID, device ID, system ID, PC name, pairing, purchase token, or event history.
