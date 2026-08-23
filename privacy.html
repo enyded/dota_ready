@@ -22,7 +22,7 @@
     <p><a href="index.html">&larr; Back to ReAccept</a></p>
     <h1>ReAccept Privacy Policy</h1>
 
-    <p><strong>Effective date:</strong> August 21, 2026<br>
+    <p><strong>Effective date:</strong> August 23, 2026<br>
        <strong>Publisher:</strong> ReAccept<br>
        <strong>Privacy contact:</strong> <a href="mailto:support@re-accept.com">support@re-accept.com</a></p>
 
@@ -66,14 +66,26 @@
       pairing value from the system scanner. Pairing settings, preferences, and recent local
       history are stored on the device.</p>
 
-    <h3>Stability diagnostics</h3>
+    <h3>Stability diagnostics and optional product analytics</h3>
     <p>Firebase Crashlytics automatically processes crash stack traces, exception details,
       relevant application and device state, device model and operating-system information,
       app/version information, timestamps, and per-installation/session identifiers to diagnose
       crashes and application-not-responding errors. ReAccept does not attach a Firebase user ID,
       support ID, custom user ID, custom keys, or application logs to Crashlytics reports.</p>
-    <p>The current app contains no advertising SDK and no product analytics SDK. Google Analytics
-      is not included.</p>
+    <p>The Android app offers optional Google Analytics for Firebase collection. Collection is
+      disabled until the user explicitly allows it and can be disabled again in Settings.
+      Advertising personalization remains disabled. When enabled, Google Analytics processes an
+      app-instance and device/advertising identifiers, app and device information, approximate
+      region derived from network information, campaign/referrer attribution, and the following
+      product events: pairing started/completed, match notification received, successful remote
+      accept, free-use limit reached, paywall viewed, checkout begun, free/Premium state changed,
+      and purchase restored. Google Analytics also collects its standard automatic app lifecycle
+      and Google Play purchase events.</p>
+    <p>ReAccept sends only low-cardinality state, source, method, remaining-free-use, localized
+      price, currency, product/base-plan, and notification-created parameters with those events.
+      It does not set an Analytics user ID or send pairing codes, pairing or match event
+      identifiers, PC names, Firebase Authentication identifiers, purchase tokens, or
+      message/preview contents to Analytics.</p>
 
     <h3>Google Play subscriptions</h3>
     <p>When Google Play subscriptions are enabled and a user starts or restores a subscription,
@@ -117,6 +129,8 @@
       <li>enforce free and paid feature entitlements and restore verified purchases;</li>
       <li>prevent replay, duplicate purchase claims, fraud, and abuse;</li>
       <li>diagnose crashes, reliability problems, and support requests;</li>
+      <li>with consent, measure acquisition campaigns, activation, feature use, and subscription
+        conversion so ReAccept can improve the product and its marketing;</li>
       <li>maintain service security and comply with legal obligations.</li>
     </ul>
     <p>ReAccept does not sell personal data and does not use it for third-party advertising or
@@ -128,7 +142,8 @@
     <ul>
       <li><strong>QDE:</strong> production VPS hosting;</li>
       <li><strong>Cloudflare:</strong> DNS, TLS termination, reverse proxy, and DDoS protection;</li>
-      <li><strong>Google Firebase:</strong> anonymous authentication and Crashlytics stability diagnostics;</li>
+      <li><strong>Google Firebase:</strong> anonymous authentication, Crashlytics stability
+        diagnostics, and optional consent-based Google Analytics measurement;</li>
       <li><strong>Google Play:</strong> app distribution, subscription checkout, purchase verification,
         and subscription lifecycle notifications when Play Billing is enabled;</li>
       <li><strong>Telegram:</strong> the optional bot, notifications, party-invite previews, and
@@ -165,6 +180,10 @@
         disputes, or legal compliance may be retained after service-data deletion and are removed
         when the applicable purpose or retention obligation ends;</li>
       <li>local Android data remains until it is cleared in system settings or the app is uninstalled;</li>
+      <li>Google Analytics data is retained according to the Firebase/Google Analytics property
+        settings and Google's applicable retention practices. Disabling analytics stops further
+        collection and resets the app's local Analytics identity; previously processed aggregate
+        or provider records may remain for their configured retention period;</li>
       <li>Firebase states that Crashlytics crash traces and associated Crashlytics/Firebase
         installation identifiers are retained for 90 days before removal from live and backup
         systems begins;</li>
@@ -173,7 +192,8 @@
     </ul>
 
     <h2 id="data-deletion">User choices, access, and deletion</h2>
-    <p>Users can Disarm event delivery, unlink Telegram, or Unpair the phone and PC in Settings.
+    <p>Users can enable or disable Google Analytics collection, Disarm event delivery, unlink
+      Telegram, or Unpair the phone and PC in Settings.
       Unpairing or unlinking revokes that connection but does not by itself erase historical
       backend or provider records.</p>
     <p>To request access, correction, or deletion of ReAccept data, email
