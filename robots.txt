@@ -1,7 +1,4 @@
-# Pre-launch: keep the product landing page out of search while allowing the
-# public Privacy Policy required by Google Play to be crawled.
 User-agent: *
-Allow: /privacy.html
-Allow: /assets/icon.png
-Allow: /styles.css
-Disallow: /
+Allow: /
+
+Sitemap: https://re-accept.com/sitemap.xml

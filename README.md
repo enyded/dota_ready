@@ -59,12 +59,10 @@ file immediately.
   `https://re-accept.com/`. `.nojekyll` is committed so GitHub serves the static files as-is
   instead of running them through a Jekyll build. DNS is managed by Cloudflare in DNS-only mode
   for the GitHub Pages apex and `www` records; `www` redirects to the apex domain.
-- [ ] **SEO flip at launch** — `index.html` still carries
-  `<meta name="robots" content="noindex, nofollow">`, and `robots.txt` blocks the product site
-  except for the already-public Privacy Policy and its presentation assets. This is intentional
-  pre-launch (see `docs/PHASE10_PRODUCTION_PLAN.md`, "SEO and indexing"). At launch: drop the
-  landing-page noindex tag, replace `robots.txt` with an allow-all version, add `sitemap.xml`, and
-  submit to Search Console/Bing.
+- [x] **SEO launch gate opened** — removed the landing-page `noindex`, changed `robots.txt` to
+  allow crawling, and published `sitemap.xml` for the landing page and Privacy Policy.
+- [ ] Submit `https://re-accept.com/sitemap.xml` to Google Search Console and Bing Webmaster
+  Tools after the updated GitHub Pages deployment is live.
 - [x] **Mobile layout** — fixed a real overflow bug: flex items using non-stretch cross-axis
   alignment (`align-items: center`/`flex-start`) size to their content's intrinsic width unless
   given `min-width: 0` (or an explicit `width`), so a wide image or long heading blew out the
