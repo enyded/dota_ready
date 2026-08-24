@@ -46,23 +46,22 @@ file immediately.
   screenshots. The generated `og-cover.png` uses the same approved ReAccept icon and copy.
 - [x] **Download links** — point at the stable GitHub Release aliases `ReAccept-Setup.exe` and
   `ReAccept.apk`; the QR code encodes the same Android URL.
-- [x] **Support email** — `support@re-accept.com`, wired into the footer, `privacy.html`, and
-  `docs/PRIVACY_POLICY.md`.
-- [x] **Privacy Policy text prepared** — `privacy.html` mirrors the English disclosure in
-  `docs/PRIVACY_POLICY.md`, including Firebase/Crashlytics, Telegram, Google Play subscriptions,
-  retention, security, and deletion requests. Do not deploy this version until the planned
-  protected-admin support deletion flow is operationally verified; the main repo tracks that
-  launch gate. The policy has no `noindex` directive and `robots.txt` allows its HTML and
-  presentation assets while the rest of the site remains pre-launch.
+- [x] **Support email** — `support@re-accept.com`, wired into the footer and every legal page;
+  the source documents live under `docs/legal/` in the main repository.
+- [x] **Legal pages published** — `privacy.html`, `terms.html`, and `disclaimer.html` publish the
+  English documents maintained under `docs/legal/`, including Firebase/Crashlytics, Telegram,
+  Google Play subscriptions, retention, security, and verified support deletion. The policy has
+  no `noindex` directive and `robots.txt` allows every public page and presentation asset.
 - [x] **Hosting** — deploying via GitHub Pages on this repo for now (Settings → Pages → Source:
   Deploy from a branch → `main` → `/` (root) → Save), served at
   `https://re-accept.com/`. `.nojekyll` is committed so GitHub serves the static files as-is
   instead of running them through a Jekyll build. DNS is managed by Cloudflare in DNS-only mode
   for the GitHub Pages apex and `www` records; `www` redirects to the apex domain.
 - [x] **SEO launch gate opened** — removed the landing-page `noindex`, changed `robots.txt` to
-  allow crawling, and published `sitemap.xml` for the landing page and Privacy Policy.
-- [ ] Submit `https://re-accept.com/sitemap.xml` to Google Search Console and Bing Webmaster
-  Tools after the updated GitHub Pages deployment is live.
+  allow crawling, and published `sitemap.xml` for the landing page, focused search page, and
+  legal pages.
+- [x] Submit `https://re-accept.com/sitemap.xml` to Google Search Console.
+- [ ] Submit `https://re-accept.com/sitemap.xml` to Bing Webmaster Tools.
 - [x] **Mobile layout** — fixed a real overflow bug: flex items using non-stretch cross-axis
   alignment (`align-items: center`/`flex-start`) size to their content's intrinsic width unless
   given `min-width: 0` (or an explicit `width`), so a wide image or long heading blew out the
@@ -70,3 +69,19 @@ file immediately.
   `.callout-sequence figure`, and explicit `width: 100%` on the hero's flex children in the mobile
   media query. Also simplified the mobile nav to just the brand + Download button (the anchor
   links don't fit at phone widths and are redundant with the page's own sections).
+
+## Next phase: landing localization
+
+Localize the landing for the same languages bundled in Android and used by the Play listing:
+English, German, Spanish, Indonesian, Polish, Brazilian Portuguese, Russian, Turkish, Ukrainian,
+and Vietnamese.
+
+- [ ] Use stable locale paths (`/de/`, `/es/`, `/id/`, `/pl/`, `/pt-br/`, `/ru/`, `/tr/`,
+  `/uk/`, `/vi/`) while keeping English at `/` as `x-default`.
+- [ ] Localize the home page and `/accept-dota-2-match-from-phone/` copy, titles, descriptions,
+  Open Graph text, accessibility text, and calls to action without changing product claims.
+- [ ] Add reciprocal `hreflang` links and localized entries to `sitemap.xml`.
+- [ ] Reuse English screenshots as fallback and replace only captures containing visible text
+  when an approved localized version exists.
+- [ ] Keep English as the controlling legal version until reviewed legal translations exist;
+  label convenience translations clearly rather than silently changing their effect.

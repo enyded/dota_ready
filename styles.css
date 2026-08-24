@@ -55,7 +55,11 @@ h1, h2, h3 {
   gap: 8px;
   font-weight: 700;
   font-size: 1.2rem;
+  color: var(--fg);
+  text-decoration: none;
 }
+
+.brand:hover { text-decoration: none; }
 
 .brand-icon {
   width: 28px;
@@ -405,6 +409,7 @@ h1, h2, h3 {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
   margin-bottom: 16px;
@@ -420,8 +425,60 @@ h1, h2, h3 {
   margin: 0;
 }
 
+.doc {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+.doc h1 { font-size: 1.8rem; }
+.doc h2 { font-size: 1.2rem; text-align: left; margin-top: 2em; }
+.doc h3 { font-size: 1rem; text-align: left; margin-top: 1.5em; }
+.doc p, .doc li { color: var(--fg-dim); }
+.doc li + li { margin-top: 0.55em; }
+
+.doc-nav,
+.legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+}
+
+.doc-nav { margin-bottom: 32px; }
+
+.legal-links {
+  padding-top: 20px;
+  margin-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.guide-hero .hero-shot { flex-basis: 420px; }
+.guide-hero .hero-shot img { max-width: 500px; }
+.guide-hero .hero-shot img + img { margin-top: 18px; }
+
+.guide-intro {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  color: var(--fg-dim);
+  text-align: center;
+}
+
+.guide-steps { grid-template-columns: repeat(3, 1fr); }
+
+.guide-panel {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-alt);
+}
+
+.guide-panel p:last-child { margin-bottom: 0; }
+
 @media (max-width: 720px) {
   .steps,
+  .guide-steps,
   .feature-grid,
   .download-grid,
   .callout-sequence {
@@ -480,6 +537,15 @@ h1, h2, h3 {
 
   .hero-shot {
     width: 100%;
+    min-width: 0;
+  }
+
+  .guide-hero .hero-shot {
+    flex-basis: auto;
+  }
+
+  .guide-hero .hero-shot img {
+    max-width: 100%;
   }
 
   .hero-inner .cta-row {

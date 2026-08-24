@@ -7,23 +7,19 @@
   <meta name="description" content="Privacy Policy for the ReAccept Android app, Windows Agent, backend service, Telegram companion, and website.">
   <link rel="canonical" href="https://re-accept.com/privacy.html">
   <link rel="icon" href="assets/icon.png?rev=20260819-1">
-  <link rel="stylesheet" href="styles.css?rev=20260819-1">
-  <style>
-    .doc { max-width: 760px; margin: 0 auto; padding: 64px 24px; }
-    .doc h1 { font-size: 1.8rem; }
-    .doc h2 { font-size: 1.2rem; text-align: left; margin-top: 2em; }
-    .doc h3 { font-size: 1rem; text-align: left; margin-top: 1.5em; }
-    .doc p, .doc li { color: var(--fg-dim); }
-    .doc li + li { margin-top: 0.55em; }
-  </style>
+  <link rel="stylesheet" href="styles.css?rev=20260824-1">
 </head>
 <body>
   <main class="doc">
-    <p><a href="index.html">&larr; Back to ReAccept</a></p>
+    <nav class="doc-nav" aria-label="Legal navigation">
+      <a href="index.html">&larr; ReAccept</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </nav>
     <h1>ReAccept Privacy Policy</h1>
 
-    <p><strong>Effective date:</strong> August 23, 2026<br>
-       <strong>Publisher:</strong> ReAccept<br>
+    <p><strong>Effective date:</strong> August 24, 2026<br>
+       <strong>Publisher:</strong> REACCEPT<br>
        <strong>Privacy contact:</strong> <a href="mailto:support@re-accept.com">support@re-accept.com</a></p>
 
     <p>ReAccept connects an Android device to a Windows PC so that a user can receive Dota 2
@@ -78,9 +74,9 @@
       app-instance and device/advertising identifiers, app and device information, approximate
       region derived from network information, campaign/referrer attribution, and the following
       product events: pairing started/completed, match notification received, successful remote
-      accept, free-use limit reached, paywall viewed, checkout begun, free/Premium state changed,
-      and purchase restored. Google Analytics also collects its standard automatic app lifecycle
-      and Google Play purchase events.</p>
+      accept, remote game launch requested, free-use limit reached, paywall viewed, checkout
+      begun, free/Premium state changed, and purchase restored. Google Analytics also collects
+      its standard automatic app lifecycle and Google Play purchase events.</p>
     <p>ReAccept sends only low-cardinality state, source, method, remaining-free-use, localized
       price, currency, product/base-plan, and notification-created parameters with those events.
       It does not set an Analytics user ID or send pairing codes, pairing or match event
@@ -129,16 +125,17 @@
       <li>enforce free and paid feature entitlements and restore verified purchases;</li>
       <li>prevent replay, duplicate purchase claims, fraud, and abuse;</li>
       <li>diagnose crashes, reliability problems, and support requests;</li>
-      <li>with consent, measure acquisition campaigns, activation, feature use, and subscription
-        conversion so ReAccept can improve the product and its marketing;</li>
+      <li>with consent, measure acquisition sources, activation, feature use, and subscription
+        conversion so ReAccept can improve the product and understand how users discover it;</li>
       <li>maintain service security and comply with legal obligations.</li>
     </ul>
-    <p>ReAccept does not sell personal data and does not use it for third-party advertising or
-      cross-service tracking.</p>
+    <p>ReAccept does not sell personal data, display third-party ads, use Analytics data for
+      personalized advertising, or use it for cross-service tracking. ReAccept does not currently
+      link its Google Analytics property to Google Ads.</p>
 
     <h2>Service providers and sharing</h2>
     <p>Data is shared only when needed to operate a requested feature, maintain the service, or
-      comply with law. Current or planned processors for the described features are:</p>
+      comply with law. Current processors for the described features are:</p>
     <ul>
       <li><strong>QDE:</strong> production VPS hosting;</li>
       <li><strong>Cloudflare:</strong> DNS, TLS termination, reverse proxy, and DDoS protection;</li>
@@ -226,6 +223,12 @@
     <h2>Independent application and trademarks</h2>
     <p>ReAccept is an independent third-party application and is not affiliated with or endorsed
       by Valve Corporation. Dota and Dota 2 are trademarks of Valve Corporation.</p>
+
+    <nav class="legal-links" aria-label="Related legal documents">
+      <a href="terms.html">Terms of Use</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="mailto:support@re-accept.com">Contact support</a>
+    </nav>
   </main>
 </body>
 </html>
