@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="$lang">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$title</title>
+  <meta name="description" content="$description">
+  <link rel="canonical" href="$canonical">
+$hreflang
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="$title">
+  <meta property="og:description" content="$description">
+  <meta property="og:url" content="$canonical">
+  <meta property="og:image" content="https://re-accept.com/assets/screenshots/en/og-cover.png?rev=20260820-1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="$title">
+  <meta name="twitter:description" content="$description">
+  <meta name="twitter:image" content="https://re-accept.com/assets/screenshots/en/og-cover.png?rev=20260820-1">
+  <link rel="icon" href="${assets}icon.png">
+  <link rel="stylesheet" href="$styles">
+  <script type="application/ld+json">$json_ld</script>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a class="brand" href="$canonical"><img src="${assets}icon.png?rev=20260820-1" alt="" class="brand-icon">ReAccept</a>
+      <div class="nav-links"><a href="#how-it-works">$nav_how</a><a href="$guide_url">$nav_guide</a><a href="#features">$nav_features</a><a href="#faq">FAQ</a><a href="#download" class="nav-cta">$nav_download</a>$language_switcher</div>
+    </nav>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>ReAccept</h1><p class="hero-tagline">$tagline</p><p class="subhead">$subhead</p>
+        <div class="cta-row"><a class="btn btn-primary" href="#download-windows">$download_windows</a><a class="btn btn-secondary" href="#download-android">$get_android</a></div>
+        <p class="hero-note">$trial_note</p><p class="hero-note">$telegram_note</p>
+      </div>
+      <div class="hero-shot"><img src="${assets}screenshots/en/app-match-found.png?rev=20260820-1" alt="$hero_alt" loading="eager"></div>
+    </div>
+  </header>
+  <main>
+    <section id="how-it-works" class="section"><h2>$how_title</h2><ol class="steps">$steps</ol><p class="steps-note">$steps_note</p><p class="steps-note"><a href="$guide_url">$guide_link</a></p></section>
+    <section id="background" class="section section-callout"><h2>$background_title</h2><p class="callout-intro">$background_intro</p><div class="callout-sequence">$background_steps</div></section>
+    <section id="features" class="section"><h2>$features_title</h2><div class="feature-grid">$features</div></section>
+    <section id="privacy" class="section"><h2>$privacy_title</h2><p>$privacy_text <a href="$privacy_url">$privacy_link</a>.</p></section>
+    <section id="faq" class="section"><h2>FAQ</h2><div class="faq-list">$faq</div></section>
+    <section id="download" class="section section-download"><h2>$nav_download</h2><div class="download-grid">
+      <div class="download-card" id="download-windows"><h3>Windows</h3><p>$windows_description</p><a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe">$download_windows</a></div>
+      <div class="download-card" id="download-android"><h3>Android</h3><p>$android_description</p><a class="btn btn-secondary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept.apk">$download_apk</a></div>
+    </div></section>
+  </main>
+  <footer class="footer"><div class="footer-links"><a href="https://github.com/enyded/dota_ready/releases">$changelog</a><a href="$privacy_url">$privacy_link ($english)</a><a href="$terms_url">$terms_link ($english)</a><a href="$disclaimer_url">$disclaimer_link ($english)</a><a href="mailto:support@re-accept.com">$contact</a></div><p class="footer-note">$independent_notice</p><p class="footer-note">$trademark_notice</p></footer>
+</body>
+</html>

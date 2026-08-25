@@ -1,0 +1,502 @@
+{
+  "de": {
+    "common": {
+      "nav_how": "So funktioniert es", "nav_guide": "Handy-Anleitung", "nav_features": "Funktionen", "nav_download": "Download",
+      "download_windows": "Für Windows herunterladen", "get_android": "Android-App holen", "download_apk": "APK herunterladen",
+      "privacy_link": "Datenschutzerklärung", "terms_link": "Nutzungsbedingungen", "disclaimer_link": "Haftungsausschluss", "contact": "Kontakt", "changelog": "Änderungen", "english": "Englisch", "home": "Startseite",
+      "independent_notice": "ReAccept ist eine unabhängige Drittanbieter-Anwendung und ist weder mit Valve Corporation verbunden noch von ihr empfohlen.",
+      "trademark_notice": "Dota und Dota 2 sind Marken der Valve Corporation."
+    },
+    "home": {
+      "title": "ReAccept — Dota-2-Matches vom Handy annehmen",
+      "description": "Erhalte eine Benachrichtigung und nimm gefundene Dota-2-Matches, Partyeinladungen und den Spielstart sicher über deinen eigenen PC an.",
+      "offer_description": "Kostenlos: insgesamt 3 Remote-Annahmen. Abonnement: unbegrenzte Remote-Annahmen.",
+      "tagline": "Remote-Begleiter für Dota 2", "subhead": "Lass dich benachrichtigen, nimm gefundene Matches und Partyeinladungen an oder starte Dota 2 aus der Ferne — sicher über deinen gekoppelten PC.",
+      "trial_note": "Kostenlos testen — 3 Remote-Annahmen ohne zusätzliches Konto.", "telegram_note": "Du kannst statt der Android-App auch Telegram mit der Desktop-App verbinden.",
+      "hero_alt": "ReAccept auf Android mit einem gefundenen Dota-2-Match und Annahme-Schaltfläche",
+      "how_title": "So funktioniert es", "steps_note": "Abbrechen in der App schließt nur die Meldung auf dem Handy und lehnt das eigentliche Match nicht ab.", "guide_link": "Ausführliche Anleitung: Dota-2-Match vom Handy annehmen",
+      "steps": [
+        {"title": "Desktop-Agent installieren", "text": "Er bleibt auf deinem Windows-PC aktiv, während du nach einem Match suchst.", "alt": "ReAccept-Desktop-App ist verbunden und erkennt Dota 2"},
+        {"title": "Begleiter koppeln", "text": "Scanne einmal den QR-Code mit Android oder öffne den Telegram-Link.", "alt": "Einmaliger QR-Code zum Koppeln von ReAccept"},
+        {"title": "Benachrichtigung erhalten", "text": "Sobald Dota 2 ein Match findet, erscheint die Meldung auf deinem Handy.", "alt": "Dota-2-Match-Benachrichtigung mit Annehmen-Schaltfläche"},
+        {"title": "Von überall annehmen", "text": "Tippe auf Annehmen; die Desktop-App führt die Ready-Check-Eingabe auf deinem PC aus.", "alt": "Gefundenes Match in ReAccept mit Annehmen-Schaltfläche"}
+      ],
+      "background_title": "Zuverlässig im Hintergrund", "background_intro": "Android beendet Hintergrund-Apps oft aggressiv. Nimm ReAccept von der Akkuoptimierung aus und erlaube Hintergrundaktivität, damit Benachrichtigungen zuverlässig ankommen.",
+      "background_steps": [
+        {"caption": "In ReAccept unter Einstellungen uneingeschränkte Akkunutzung anfordern", "alt": "ReAccept-Einstellungen mit Schaltfläche für uneingeschränkte Akkunutzung"},
+        {"caption": "App-Info und anschließend Akkuverbrauch öffnen", "alt": "Android-App-Info für ReAccept mit hervorgehobenem Akkuverbrauch"},
+        {"caption": "Hintergrundaktivität zulassen", "alt": "Android-Akkueinstellungen mit erlaubter Hintergrundaktivität"}
+      ],
+      "features_title": "Funktionen", "features": [
+        {"title": "Für dein Setup", "text": "DX11 und Vulkan, randlos oder im Fenster, bei jeder Auflösung und Skalierung."},
+        {"title": "Sprachunabhängige Erkennung", "text": "Erkennt die Annehmen-Schaltfläche unabhängig von der Sprache des Dota-2-Clients."},
+        {"title": "Partyeinladungen", "text": "Erhalte Einladungen und antworte direkt über Android oder Telegram."},
+        {"title": "Dota 2 remote starten", "text": "Starte Dota 2 auf deinem PC, bevor du wieder am Schreibtisch bist."},
+        {"title": "Android oder Telegram", "text": "Nutze die App, Telegram oder beide Begleiter gleichzeitig."},
+        {"title": "Sicher gekoppelt", "text": "Befehle werden nur an deinen ausdrücklich gekoppelten PC weitergeleitet."}
+      ],
+      "privacy_title": "Datenschutz und Vertrauen", "privacy_text": "ReAccept steuert nur den von dir gekoppelten Desktop-Agenten, liest keinen Spielspeicher und bietet keinen allgemeinen Remote-Desktop-Zugriff. Weitere Angaben stehen in der", "privacy_link": "Datenschutzerklärung",
+      "faq": [
+        {"question": "Kann ReAccept zu einer Sperre führen?", "answer": "ReAccept liest keinen Spielspeicher und automatisiert kein Gameplay. Es erkennt den Ready Check lokal und führt nur die von dir angeforderte Eingabe aus. Eine Garantie zu Anti-Cheat-Richtlinien können wir nicht geben."},
+        {"question": "Funktioniert es bei einem nicht englischen Dota-2-Client?", "answer": "Ja. Die Ready-Check-Erkennung ist sprachunabhängig und liest keinen Text."},
+        {"question": "Funktioniert es bei gesperrtem Handy?", "answer": "Ja, wenn Hintergrundaktivität und Benachrichtigungen für ReAccept erlaubt sind."},
+        {"question": "Was ist kostenlos?", "answer": "Match-Benachrichtigungen bleiben kostenlos. Drei Remote-Annahmen sind enthalten; danach ist für weitere Remote-Annahmen ein Abonnement erforderlich."}
+      ],
+      "windows_description": "Installer mit automatischen Updates für Windows 10/11 (64 Bit).", "android_description": "Android-App direkt installieren oder über Google Play aktualisieren."
+    },
+    "guide": {
+      "title": "Dota-2-Match vom Handy annehmen — ReAccept", "description": "Nimm einen Dota-2-Ready-Check über dein Android-Handy oder Telegram an. Kopple ReAccept einmal mit deinem PC und antworte aus der Ferne.",
+      "h1": "So nimmst du ein Dota-2-Match vom Handy an", "intro_one": "Während der Matchsuche musst du nicht am PC sitzen bleiben.", "keyphrase": "Dota-2-Match vom Handy annehmen", "intro_two": "ReAccept meldet ein gefundenes Match auf Android oder Telegram und leitet deine Antwort sicher an den gekoppelten PC weiter.",
+      "notification_alt": "ReAccept-Benachrichtigung zum Annehmen eines gefundenen Dota-2-Matches", "party_alt": "ReAccept-Benachrichtigung für eine Partyeinladung mit Annehmen und Ablehnen",
+      "nav_steps": "Drei Schritte", "nav_requirements": "Voraussetzungen", "steps_title": "In drei Schritten annehmen", "steps_intro": "Kopple Android oder Telegram einmal mit dem Windows-Agenten. Danach ist die Verbindung bei jeder Suche bereit.",
+      "steps": [
+        {"title": "Matchsuche in Dota 2 starten", "text": "Lass Dota 2 und den ReAccept-Desktop-Agenten auf dem PC laufen.", "alt": ""},
+        {"title": "Vom PC weggehen", "text": "Hol dir etwas zu trinken oder erledige etwas, während die Suche weiterläuft.", "alt": ""},
+        {"title": "Match am Handy annehmen", "text": "Tippe in der Android-Benachrichtigung, App oder im Telegram-Chat auf Annehmen.", "alt": ""}
+      ],
+      "requirements_title": "Was muss weiterlaufen?", "requirements_one": "Dein Windows-PC muss eingeschaltet, online und mit laufendem ReAccept-Agenten bleiben. Dota 2 muss während der Suche geöffnet sein.", "requirements_two": "Der Agent erkennt den Ready Check lokal. Er liest keinen Spielspeicher und injiziert keinen Code in Dota 2.",
+      "choices_title": "Android oder Telegram", "choices_one": "Android bietet Push-Benachrichtigungen, In-App-Dialoge, Käufe und Remote-Aktionen.", "choices_two": "Alternativ kannst du Telegram in der Desktop-App verbinden. Benachrichtigungen sind kostenlos; nach drei Remote-Annahmen ist für unbegrenzte Annahmen ein Abonnement nötig.",
+      "setup_title": "ReAccept einrichten", "setup_intro": "Installiere den Windows-Agenten, kopple Android oder Telegram und führe vor der nächsten Suche einen Test durch.", "go_downloads": "Zu den Downloads", "full_setup": "Vollständige Einrichtung ansehen"
+    }
+  },
+  "es": {
+    "common": {
+      "nav_how": "Cómo funciona", "nav_guide": "Guía para móvil", "nav_features": "Funciones", "nav_download": "Descargar",
+      "download_windows": "Descargar para Windows", "get_android": "Obtener la app Android", "download_apk": "Descargar APK",
+      "privacy_link": "Política de privacidad", "terms_link": "Términos de uso", "disclaimer_link": "Aviso legal", "contact": "Contacto", "changelog": "Cambios", "english": "inglés", "home": "Inicio",
+      "independent_notice": "ReAccept es una aplicación independiente de terceros y no está afiliada ni respaldada por Valve Corporation.", "trademark_notice": "Dota y Dota 2 son marcas comerciales de Valve Corporation."
+    },
+    "home": {
+      "title": "ReAccept — Acepta partidas de Dota 2 desde el móvil", "description": "Recibe avisos y acepta partidas de Dota 2, invitaciones de grupo o inicia el juego de forma remota y segura en tu propio PC.", "offer_description": "Gratis: 3 aceptaciones remotas en total. Suscripción: aceptaciones remotas ilimitadas.",
+      "tagline": "Compañero remoto para Dota 2", "subhead": "Recibe avisos, acepta partidas e invitaciones de grupo e inicia Dota 2 de forma remota mediante tu PC vinculado.", "trial_note": "Pruébalo gratis: 3 aceptaciones remotas sin crear otra cuenta.", "telegram_note": "También puedes vincular Telegram desde la aplicación de escritorio.", "hero_alt": "ReAccept muestra una partida de Dota 2 encontrada y el botón Aceptar",
+      "how_title": "Cómo funciona", "steps_note": "Cancelar en la app solo cierra el aviso del móvil; no rechaza la partida de Dota 2.", "guide_link": "Guía completa para aceptar una partida de Dota 2 desde el móvil",
+      "steps": [
+        {"title": "Instala el agente de escritorio", "text": "Permanece activo en tu PC Windows mientras buscas partida.", "alt": "Aplicación de escritorio ReAccept conectada y con Dota 2 detectado"},
+        {"title": "Vincula tu Companion", "text": "Escanea una vez el QR desde Android o abre el enlace de Telegram.", "alt": "Código QR de vinculación de ReAccept"},
+        {"title": "Recibe el aviso", "text": "Cuando Dota 2 encuentra partida, tu móvil recibe una notificación.", "alt": "Notificación de partida de Dota 2 con botón Aceptar"},
+        {"title": "Acepta desde cualquier lugar", "text": "Pulsa Aceptar y la aplicación de escritorio completa la confirmación en tu PC.", "alt": "Pantalla de partida encontrada de ReAccept"}
+      ],
+      "background_title": "Funcionamiento fiable en segundo plano", "background_intro": "Android suele cerrar las aplicaciones en segundo plano. Excluye ReAccept de la optimización de batería y permite la actividad en segundo plano para recibir las notificaciones de forma fiable.",
+      "background_steps": [
+        {"caption": "En Ajustes de ReAccept, solicita uso de batería sin restricciones", "alt": "Ajustes de ReAccept con el botón para solicitar uso de batería sin restricciones"},
+        {"caption": "Abre Información de la aplicación y Uso de batería", "alt": "Información de la aplicación ReAccept con Uso de batería resaltado"},
+        {"caption": "Activa Permitir actividad en segundo plano", "alt": "Ajustes de batería de Android con actividad en segundo plano permitida"}
+      ],
+      "features_title": "Funciones", "features": [
+        {"title": "Compatible con tu configuración", "text": "DX11 y Vulkan, ventana o sin bordes, con cualquier resolución y escala."},
+        {"title": "Detección independiente del idioma", "text": "Reconoce el botón Aceptar sin importar el idioma de Dota 2."},
+        {"title": "Invitaciones de grupo", "text": "Recibe invitaciones y responde desde Android o Telegram."},
+        {"title": "Inicia Dota 2 a distancia", "text": "Arranca Dota 2 en tu PC antes de volver al escritorio."},
+        {"title": "Android o Telegram", "text": "Usa la app, Telegram o ambos al mismo tiempo."},
+        {"title": "Vinculación segura", "text": "Las acciones solo se envían al PC que hayas vinculado expresamente."}
+      ],
+      "privacy_title": "Privacidad y confianza", "privacy_text": "ReAccept solo controla el agente de escritorio vinculado, no lee la memoria del juego ni ofrece acceso remoto general al PC. Consulta la", "privacy_link": "Política de privacidad",
+      "faq": [
+        {"question": "¿Puede causar un bloqueo?", "answer": "ReAccept no lee la memoria ni automatiza la partida. Detecta localmente la confirmación y realiza únicamente la acción solicitada. No podemos garantizar políticas antitrampas."},
+        {"question": "¿Funciona si Dota 2 no está en inglés?", "answer": "Sí. La detección no depende del idioma ni de leer texto."},
+        {"question": "¿Funciona con el móvil bloqueado?", "answer": "Sí, si permites las notificaciones y la actividad en segundo plano de ReAccept."},
+        {"question": "¿Qué incluye gratis?", "answer": "Las notificaciones son siempre gratuitas. Incluye tres aceptaciones remotas; después se necesita una suscripción para seguir aceptando a distancia."}
+      ],
+      "windows_description": "Instalador con actualizaciones automáticas para Windows 10/11 de 64 bits.", "android_description": "Instala la app Android directamente o mantenla actualizada mediante Google Play."
+    },
+    "guide": {
+      "title": "Cómo aceptar una partida de Dota 2 desde el móvil — ReAccept", "description": "Acepta una confirmación de Dota 2 desde Android o Telegram. Vincula ReAccept con tu PC una vez y responde a distancia.",
+      "h1": "Cómo aceptar una partida de Dota 2 desde el móvil", "intro_one": "Buscar partida en Dota 2 no significa que debas quedarte delante del PC.", "keyphrase": "Aceptar una partida de Dota 2 desde el móvil", "intro_two": "ReAccept te avisa en Android o Telegram y envía tu respuesta de forma segura al PC vinculado.",
+      "notification_alt": "Notificación ReAccept para aceptar una partida de Dota 2", "party_alt": "Notificación ReAccept de invitación de grupo con Aceptar y Rechazar",
+      "nav_steps": "Tres pasos", "nav_requirements": "Requisitos", "steps_title": "Acepta en tres pasos", "steps_intro": "Vincula Android o Telegram una vez con el agente de Windows. La conexión quedará lista para las siguientes búsquedas.",
+      "steps": [
+        {"title": "Inicia la búsqueda en Dota 2", "text": "Mantén Dota 2 y el agente de ReAccept abiertos en el PC.", "alt": ""},
+        {"title": "Aléjate del PC", "text": "Puedes ir a por café o hacer otra cosa mientras continúa la búsqueda.", "alt": ""},
+        {"title": "Acepta desde el móvil", "text": "Pulsa Aceptar en la notificación, la app Android o el chat de Telegram.", "alt": ""}
+      ],
+      "requirements_title": "¿Qué debe seguir funcionando?", "requirements_one": "El PC Windows debe permanecer encendido, conectado a internet y con el agente ReAccept activo. Dota 2 debe seguir abierto.", "requirements_two": "El agente detecta la confirmación localmente. No lee memoria ni inyecta código en Dota 2.",
+      "choices_title": "Android o Telegram", "choices_one": "Android ofrece notificaciones push, diálogo en la app, compras y acciones remotas.", "choices_two": "También puedes vincular Telegram desde el escritorio. Los avisos son gratuitos; tras tres aceptaciones remotas necesitas una suscripción para uso ilimitado.",
+      "setup_title": "Configura ReAccept", "setup_intro": "Instala el agente de Windows, vincula Android o Telegram y haz una prueba antes de tu próxima búsqueda.", "go_downloads": "Ir a descargas", "full_setup": "Ver la configuración completa"
+    }
+  },
+  "id": {
+    "common": {
+      "nav_how": "Cara kerja", "nav_guide": "Panduan HP", "nav_features": "Fitur", "nav_download": "Unduh",
+      "download_windows": "Unduh untuk Windows", "get_android": "Dapatkan aplikasi Android", "download_apk": "Unduh APK",
+      "privacy_link": "Kebijakan Privasi", "terms_link": "Ketentuan Penggunaan", "disclaimer_link": "Penafian", "contact": "Kontak", "changelog": "Catatan perubahan", "english": "bahasa Inggris", "home": "Beranda",
+      "independent_notice": "ReAccept adalah aplikasi pihak ketiga independen dan tidak berafiliasi atau didukung oleh Valve Corporation.", "trademark_notice": "Dota dan Dota 2 adalah merek dagang Valve Corporation."
+    },
+    "home": {
+      "title": "ReAccept — Terima match Dota 2 dari HP", "description": "Dapatkan notifikasi dan terima match Dota 2, undangan party, atau jalankan game dari jarak jauh melalui PC milikmu sendiri.", "offer_description": "Gratis: total 3 remote accept. Langganan: remote accept tanpa batas.",
+      "tagline": "Pendamping jarak jauh untuk Dota 2", "subhead": "Dapatkan notifikasi, terima match dan undangan party, serta jalankan Dota 2 dari jarak jauh melalui PC yang sudah dipasangkan.", "trial_note": "Coba gratis — 3 remote accept tanpa membuat akun tambahan.", "telegram_note": "Kamu juga dapat menautkan Telegram dari aplikasi desktop.", "hero_alt": "ReAccept menampilkan match Dota 2 yang ditemukan dengan tombol Accept",
+      "how_title": "Cara kerja", "steps_note": "Cancel di aplikasi hanya menutup notifikasi di HP dan tidak menolak match Dota 2.", "guide_link": "Baca panduan menerima match Dota 2 dari HP",
+      "steps": [
+        {"title": "Instal agen desktop", "text": "Agen tetap berjalan di PC Windows saat kamu mencari match.", "alt": "Aplikasi desktop ReAccept terhubung dan mendeteksi Dota 2"},
+        {"title": "Pasangkan Companion", "text": "Pindai kode QR sekali dari Android atau buka tautan Telegram.", "alt": "Kode QR untuk memasangkan ReAccept"},
+        {"title": "Terima notifikasi", "text": "Saat Dota 2 menemukan match, notifikasi langsung muncul di HP.", "alt": "Notifikasi match Dota 2 dengan tombol Accept"},
+        {"title": "Terima dari mana saja", "text": "Ketuk Accept dan aplikasi desktop menyelesaikan ready check di PC.", "alt": "Layar match ditemukan di ReAccept"}
+      ],
+      "background_title": "Tetap andal di latar belakang", "background_intro": "Android sering menutup aplikasi latar belakang. Kecualikan ReAccept dari pengoptimalan baterai dan izinkan aktivitas latar belakang agar notifikasi tiba dengan andal.",
+      "background_steps": [
+        {"caption": "Di Pengaturan ReAccept, minta penggunaan baterai tanpa batas", "alt": "Pengaturan ReAccept dengan tombol penggunaan baterai tanpa batas"},
+        {"caption": "Buka Info aplikasi lalu Penggunaan baterai", "alt": "Info aplikasi Android untuk ReAccept dengan Penggunaan baterai disorot"},
+        {"caption": "Aktifkan Izinkan aktivitas latar belakang", "alt": "Pengaturan baterai Android dengan aktivitas latar belakang diizinkan"}
+      ],
+      "features_title": "Fitur", "features": [
+        {"title": "Cocok dengan setup-mu", "text": "DX11 dan Vulkan, borderless atau windowed, semua resolusi dan skala."},
+        {"title": "Deteksi tanpa bergantung bahasa", "text": "Mengenali tombol Accept apa pun bahasa klien Dota 2."},
+        {"title": "Undangan party", "text": "Dapatkan undangan dan jawab dari Android atau Telegram."},
+        {"title": "Jalankan Dota 2 dari jauh", "text": "Mulai Dota 2 di PC sebelum kembali ke meja."},
+        {"title": "Android atau Telegram", "text": "Gunakan aplikasi, Telegram, atau keduanya sekaligus."},
+        {"title": "Pasangan yang aman", "text": "Perintah hanya diteruskan ke PC yang kamu pasangkan sendiri."}
+      ],
+      "privacy_title": "Privasi dan kepercayaan", "privacy_text": "ReAccept hanya mengontrol agen desktop yang kamu pasangkan, tidak membaca memori game, dan tidak memberi akses remote desktop umum. Baca", "privacy_link": "Kebijakan Privasi",
+      "faq": [
+        {"question": "Apakah ini bisa membuat akun diblokir?", "answer": "ReAccept tidak membaca memori game atau mengotomatiskan gameplay. Aplikasi mendeteksi ready check secara lokal dan hanya menjalankan input yang kamu minta. Kami tidak dapat menjamin kebijakan anti-cheat."},
+        {"question": "Apakah bekerja jika Dota 2 bukan bahasa Inggris?", "answer": "Ya. Deteksi ready check tidak bergantung bahasa dan tidak membaca teks."},
+        {"question": "Apakah bekerja saat HP terkunci?", "answer": "Ya, jika notifikasi dan aktivitas latar belakang ReAccept diizinkan."},
+        {"question": "Apa yang gratis?", "answer": "Notifikasi match selalu gratis. Tiga remote accept tersedia gratis; setelah itu diperlukan langganan untuk accept jarak jauh berikutnya."}
+      ],
+      "windows_description": "Installer dengan pembaruan otomatis untuk Windows 10/11 64-bit.", "android_description": "Instal aplikasi Android secara langsung atau perbarui melalui Google Play."
+    },
+    "guide": {
+      "title": "Cara menerima match Dota 2 dari HP — ReAccept", "description": "Terima ready check Dota 2 melalui Android atau Telegram. Pasangkan ReAccept sekali dengan PC lalu jawab dari jarak jauh.",
+      "h1": "Cara menerima match Dota 2 dari HP", "intro_one": "Mencari match Dota 2 bukan berarti kamu harus terus berada di depan PC.", "keyphrase": "Menerima match Dota 2 dari HP", "intro_two": "ReAccept memberi notifikasi lewat Android atau Telegram dan mengirim jawaban dengan aman ke PC yang dipasangkan.",
+      "notification_alt": "Notifikasi ReAccept untuk menerima match Dota 2", "party_alt": "Notifikasi undangan party ReAccept dengan tombol Accept dan Decline",
+      "nav_steps": "Tiga langkah", "nav_requirements": "Persyaratan", "steps_title": "Terima dalam tiga langkah", "steps_intro": "Pasangkan Android atau Telegram sekali dengan agen Windows. Setelah itu koneksi siap setiap kali kamu mencari match.",
+      "steps": [
+        {"title": "Mulai matchmaking di Dota 2", "text": "Biarkan Dota 2 dan agen desktop ReAccept berjalan di PC.", "alt": ""},
+        {"title": "Tinggalkan PC", "text": "Ambil minuman atau lakukan hal lain sementara pencarian berlanjut.", "alt": ""},
+        {"title": "Terima match dari HP", "text": "Ketuk Accept di notifikasi Android, aplikasi, atau chat Telegram.", "alt": ""}
+      ],
+      "requirements_title": "Apa yang harus tetap berjalan?", "requirements_one": "PC Windows harus menyala, terhubung ke internet, dan menjalankan agen ReAccept. Dota 2 harus tetap terbuka saat matchmaking.", "requirements_two": "Agen mendeteksi ready check secara lokal. Agen tidak membaca memori game atau menyuntikkan kode ke Dota 2.",
+      "choices_title": "Android atau Telegram", "choices_one": "Android menyediakan push notification, dialog dalam aplikasi, pembelian, dan aksi jarak jauh.", "choices_two": "Atau tautkan Telegram dari desktop. Notifikasi gratis; setelah tiga remote accept, langganan diperlukan untuk accept tanpa batas.",
+      "setup_title": "Siapkan ReAccept", "setup_intro": "Instal agen Windows, pasangkan Android atau Telegram, lalu lakukan satu tes sebelum matchmaking berikutnya.", "go_downloads": "Buka unduhan", "full_setup": "Lihat panduan lengkap"
+    }
+  },
+  "pl": {
+    "common": {
+      "nav_how": "Jak to działa", "nav_guide": "Poradnik na telefon", "nav_features": "Funkcje", "nav_download": "Pobierz",
+      "download_windows": "Pobierz dla Windows", "get_android": "Pobierz aplikację Android", "download_apk": "Pobierz APK",
+      "privacy_link": "Polityka prywatności", "terms_link": "Warunki użytkowania", "disclaimer_link": "Zastrzeżenia", "contact": "Kontakt", "changelog": "Lista zmian", "english": "angielski", "home": "Strona główna",
+      "independent_notice": "ReAccept jest niezależną aplikacją firmy trzeciej i nie jest powiązany ani wspierany przez Valve Corporation.", "trademark_notice": "Dota i Dota 2 są znakami towarowymi Valve Corporation."
+    },
+    "home": {
+      "title": "ReAccept — Akceptuj mecze Dota 2 z telefonu", "description": "Otrzymuj powiadomienia i akceptuj znalezione mecze Dota 2, zaproszenia do drużyny oraz uruchamiaj grę zdalnie na własnym komputerze.", "offer_description": "Bezpłatnie: łącznie 3 zdalne akceptacje. Subskrypcja: nielimitowane zdalne akceptacje.",
+      "tagline": "Zdalny pomocnik do Dota 2", "subhead": "Otrzymuj powiadomienia, akceptuj mecze i zaproszenia oraz uruchamiaj Dota 2 zdalnie przez sparowany komputer.", "trial_note": "Wypróbuj bezpłatnie — 3 zdalne akceptacje bez dodatkowego konta.", "telegram_note": "Zamiast aplikacji Android możesz połączyć Telegram z aplikacją desktopową.", "hero_alt": "ReAccept pokazuje znaleziony mecz Dota 2 i przycisk Akceptuj",
+      "how_title": "Jak to działa", "steps_note": "Anulowanie w aplikacji zamyka tylko powiadomienie w telefonie i nie odrzuca meczu Dota 2.", "guide_link": "Poradnik: jak zaakceptować mecz Dota 2 z telefonu",
+      "steps": [
+        {"title": "Zainstaluj agenta desktopowego", "text": "Pozostaje aktywny na komputerze z Windows podczas wyszukiwania meczu.", "alt": "Aplikacja ReAccept połączona i wykrywająca Dota 2"},
+        {"title": "Sparuj Companion", "text": "Zeskanuj kod QR w Androidzie albo otwórz link Telegram.", "alt": "Jednorazowy kod QR do sparowania ReAccept"},
+        {"title": "Otrzymaj powiadomienie", "text": "Gdy Dota 2 znajdzie mecz, telefon od razu otrzyma powiadomienie.", "alt": "Powiadomienie o meczu Dota 2 z przyciskiem Akceptuj"},
+        {"title": "Akceptuj z dowolnego miejsca", "text": "Dotknij Akceptuj, a aplikacja desktopowa potwierdzi gotowość na twoim komputerze.", "alt": "Ekran znalezionego meczu w ReAccept"}
+      ],
+      "background_title": "Niezawodne działanie w tle", "background_intro": "Android często zamyka aplikacje działające w tle. Wyłącz optymalizację baterii dla ReAccept i zezwól na działanie w tle, aby powiadomienia docierały niezawodnie.",
+      "background_steps": [
+        {"caption": "W Ustawieniach ReAccept poproś o nieograniczone użycie baterii", "alt": "Ustawienia ReAccept z przyciskiem nieograniczonego użycia baterii"},
+        {"caption": "Otwórz Informacje o aplikacji i Użycie baterii", "alt": "Informacje o aplikacji ReAccept z wyróżnioną sekcją Użycie baterii"},
+        {"caption": "Włącz Zezwalaj na aktywność w tle", "alt": "Ustawienia baterii Androida z dozwoloną aktywnością w tle"}
+      ],
+      "features_title": "Funkcje", "features": [
+        {"title": "Działa z twoją konfiguracją", "text": "DX11 i Vulkan, tryb okienkowy lub bez ramek, dowolna rozdzielczość i skala."},
+        {"title": "Wykrywanie niezależne od języka", "text": "Rozpoznaje przycisk Akceptuj niezależnie od języka klienta Dota 2."},
+        {"title": "Zaproszenia do drużyny", "text": "Odbieraj zaproszenia i odpowiadaj przez Android lub Telegram."},
+        {"title": "Zdalne uruchamianie Dota 2", "text": "Uruchom Dota 2 na komputerze, zanim wrócisz do biurka."},
+        {"title": "Android lub Telegram", "text": "Używaj aplikacji, Telegrama albo obu jednocześnie."},
+        {"title": "Bezpieczne parowanie", "text": "Polecenia trafiają wyłącznie do komputera, który sam sparujesz."}
+      ],
+      "privacy_title": "Prywatność i zaufanie", "privacy_text": "ReAccept steruje wyłącznie sparowanym agentem, nie odczytuje pamięci gry i nie zapewnia ogólnego zdalnego pulpitu. Szczegóły zawiera", "privacy_link": "Polityka prywatności",
+      "faq": [
+        {"question": "Czy mogę dostać bana?", "answer": "ReAccept nie odczytuje pamięci gry i nie automatyzuje rozgrywki. Lokalnie wykrywa potwierdzenie gotowości i wykonuje tylko zlecone działanie. Nie możemy zagwarantować interpretacji zasad anti-cheat."},
+        {"question": "Czy działa z innym językiem Dota 2?", "answer": "Tak. Wykrywanie nie zależy od języka ani od odczytywania tekstu."},
+        {"question": "Czy działa przy zablokowanym telefonie?", "answer": "Tak, jeśli zezwolisz ReAccept na powiadomienia i działanie w tle."},
+        {"question": "Co jest bezpłatne?", "answer": "Powiadomienia o meczach są zawsze bezpłatne. Otrzymujesz trzy zdalne akceptacje; później kolejne wymagają subskrypcji."}
+      ],
+      "windows_description": "Instalator z automatycznymi aktualizacjami dla Windows 10/11 64-bit.", "android_description": "Zainstaluj aplikację Android bezpośrednio lub aktualizuj ją przez Google Play."
+    },
+    "guide": {
+      "title": "Jak zaakceptować mecz Dota 2 z telefonu — ReAccept", "description": "Zaakceptuj potwierdzenie Dota 2 przez Android lub Telegram. Raz sparuj ReAccept z komputerem i odpowiadaj zdalnie.",
+      "h1": "Jak zaakceptować mecz Dota 2 z telefonu", "intro_one": "Wyszukiwanie meczu Dota 2 nie oznacza, że musisz siedzieć przy komputerze.", "keyphrase": "Zaakceptuj mecz Dota 2 z telefonu", "intro_two": "ReAccept powiadomi cię przez Android lub Telegram i bezpiecznie przekaże odpowiedź do sparowanego komputera.",
+      "notification_alt": "Powiadomienie ReAccept do zaakceptowania meczu Dota 2", "party_alt": "Powiadomienie ReAccept o zaproszeniu z przyciskami Akceptuj i Odrzuć",
+      "nav_steps": "Trzy kroki", "nav_requirements": "Wymagania", "steps_title": "Akceptuj w trzech krokach", "steps_intro": "Raz sparuj Android lub Telegram z agentem Windows. Połączenie będzie gotowe przy każdym wyszukiwaniu.",
+      "steps": [
+        {"title": "Rozpocznij wyszukiwanie w Dota 2", "text": "Pozostaw uruchomione Dota 2 i agenta ReAccept na komputerze.", "alt": ""},
+        {"title": "Odejdź od komputera", "text": "Możesz zrobić kawę lub zająć się czymś innym podczas wyszukiwania.", "alt": ""},
+        {"title": "Zaakceptuj mecz z telefonu", "text": "Dotknij Akceptuj w powiadomieniu, aplikacji Android lub czacie Telegram.", "alt": ""}
+      ],
+      "requirements_title": "Co musi pozostać uruchomione?", "requirements_one": "Komputer z Windows musi być włączony, online i uruchamiać agenta ReAccept. Dota 2 musi pozostać otwarta podczas wyszukiwania.", "requirements_two": "Agent wykrywa potwierdzenie lokalnie. Nie odczytuje pamięci gry ani nie wstrzykuje kodu do Dota 2.",
+      "choices_title": "Android lub Telegram", "choices_one": "Android zapewnia push, dialog w aplikacji, zakupy i zdalne działania.", "choices_two": "Możesz też połączyć Telegram z desktopu. Powiadomienia są bezpłatne; po trzech zdalnych akceptacjach nielimitowane użycie wymaga subskrypcji.",
+      "setup_title": "Skonfiguruj ReAccept", "setup_intro": "Zainstaluj agenta Windows, sparuj Android lub Telegram i wykonaj test przed następnym wyszukiwaniem.", "go_downloads": "Przejdź do pobierania", "full_setup": "Zobacz pełną konfigurację"
+    }
+  },
+  "pt-BR": {
+    "common": {
+      "nav_how": "Como funciona", "nav_guide": "Guia para celular", "nav_features": "Recursos", "nav_download": "Baixar",
+      "download_windows": "Baixar para Windows", "get_android": "Obter app Android", "download_apk": "Baixar APK",
+      "privacy_link": "Política de Privacidade", "terms_link": "Termos de Uso", "disclaimer_link": "Aviso legal", "contact": "Contato", "changelog": "Novidades", "english": "inglês", "home": "Início",
+      "independent_notice": "ReAccept é um aplicativo independente de terceiros e não é afiliado nem endossado pela Valve Corporation.", "trademark_notice": "Dota e Dota 2 são marcas comerciais da Valve Corporation."
+    },
+    "home": {
+      "title": "ReAccept — Aceite partidas de Dota 2 pelo celular", "description": "Receba notificações e aceite partidas de Dota 2, convites de grupo ou inicie o jogo remotamente no seu próprio PC.", "offer_description": "Grátis: 3 aceites remotos no total. Assinatura: aceites remotos ilimitados.",
+      "tagline": "Companion remoto para Dota 2", "subhead": "Receba avisos, aceite partidas e convites e inicie Dota 2 remotamente pelo seu PC pareado.", "trial_note": "Experimente grátis — 3 aceites remotos sem criar outra conta.", "telegram_note": "Você também pode vincular o Telegram pelo aplicativo desktop.", "hero_alt": "ReAccept mostra uma partida de Dota 2 encontrada e o botão Aceitar",
+      "how_title": "Como funciona", "steps_note": "Cancelar no app fecha apenas o aviso no celular e não recusa a partida de Dota 2.", "guide_link": "Guia completo para aceitar uma partida de Dota 2 pelo celular",
+      "steps": [
+        {"title": "Instale o agente desktop", "text": "Ele permanece ativo no PC Windows enquanto você busca uma partida.", "alt": "Aplicativo desktop ReAccept conectado e detectando Dota 2"},
+        {"title": "Pareie seu Companion", "text": "Escaneie o QR uma vez pelo Android ou abra o link do Telegram.", "alt": "Código QR de pareamento do ReAccept"},
+        {"title": "Receba a notificação", "text": "Quando Dota 2 encontra uma partida, seu celular é avisado imediatamente.", "alt": "Notificação de partida Dota 2 com botão Aceitar"},
+        {"title": "Aceite de qualquer lugar", "text": "Toque em Aceitar e o aplicativo desktop confirma a partida no PC.", "alt": "Tela de partida encontrada no ReAccept"}
+      ],
+      "background_title": "Funcionamento confiável em segundo plano", "background_intro": "O Android costuma encerrar aplicativos em segundo plano. Remova o ReAccept da otimização de bateria e permita atividade em segundo plano para receber notificações com confiança.",
+      "background_steps": [
+        {"caption": "Nas Configurações do ReAccept, solicite uso de bateria irrestrito", "alt": "Configurações do ReAccept com botão para uso irrestrito da bateria"},
+        {"caption": "Abra Informações do app e Uso da bateria", "alt": "Informações do app ReAccept com Uso da bateria destacado"},
+        {"caption": "Ative Permitir atividade em segundo plano", "alt": "Configurações de bateria do Android com atividade em segundo plano permitida"}
+      ],
+      "features_title": "Recursos", "features": [
+        {"title": "Funciona com sua configuração", "text": "DX11 e Vulkan, janela ou sem bordas, qualquer resolução e escala."},
+        {"title": "Detecção independente do idioma", "text": "Reconhece o botão Aceitar em qualquer idioma do cliente Dota 2."},
+        {"title": "Convites de grupo", "text": "Receba convites e responda pelo Android ou Telegram."},
+        {"title": "Inicie Dota 2 remotamente", "text": "Abra Dota 2 no PC antes de voltar para a mesa."},
+        {"title": "Android ou Telegram", "text": "Use o app, o Telegram ou os dois ao mesmo tempo."},
+        {"title": "Pareamento seguro", "text": "As ações são enviadas somente ao PC que você pareou explicitamente."}
+      ],
+      "privacy_title": "Privacidade e confiança", "privacy_text": "ReAccept controla apenas o agente pareado, não lê a memória do jogo e não oferece acesso remoto geral ao computador. Veja a", "privacy_link": "Política de Privacidade",
+      "faq": [
+        {"question": "Isso pode causar banimento?", "answer": "ReAccept não lê a memória nem automatiza a jogabilidade. Ele detecta o ready check localmente e executa apenas a ação solicitada. Não podemos garantir interpretações de políticas anticheat."},
+        {"question": "Funciona se Dota 2 não estiver em inglês?", "answer": "Sim. A detecção não depende do idioma nem da leitura de texto."},
+        {"question": "Funciona com o celular bloqueado?", "answer": "Sim, se notificações e atividade em segundo plano estiverem permitidas para ReAccept."},
+        {"question": "O que é grátis?", "answer": "As notificações são sempre grátis. Três aceites remotos estão incluídos; depois disso é necessária uma assinatura para continuar aceitando remotamente."}
+      ],
+      "windows_description": "Instalador com atualizações automáticas para Windows 10/11 64 bits.", "android_description": "Instale o aplicativo Android diretamente ou mantenha-o atualizado pelo Google Play."
+    },
+    "guide": {
+      "title": "Como aceitar uma partida de Dota 2 pelo celular — ReAccept", "description": "Aceite o ready check de Dota 2 pelo Android ou Telegram. Pareie ReAccept uma vez com o PC e responda remotamente.",
+      "h1": "Como aceitar uma partida de Dota 2 pelo celular", "intro_one": "Buscar uma partida de Dota 2 não significa ficar preso ao PC.", "keyphrase": "Aceitar uma partida de Dota 2 pelo celular", "intro_two": "ReAccept avisa pelo Android ou Telegram e envia sua resposta com segurança ao PC pareado.",
+      "notification_alt": "Notificação ReAccept para aceitar uma partida de Dota 2", "party_alt": "Notificação ReAccept de convite com Aceitar e Recusar",
+      "nav_steps": "Três passos", "nav_requirements": "Requisitos", "steps_title": "Aceite em três passos", "steps_intro": "Pareie Android ou Telegram uma vez com o agente Windows. Depois disso a conexão fica pronta em cada busca.",
+      "steps": [
+        {"title": "Inicie a busca no Dota 2", "text": "Mantenha Dota 2 e o agente desktop ReAccept em execução no PC.", "alt": ""},
+        {"title": "Afaste-se do PC", "text": "Pegue um café ou faça outra coisa enquanto a busca continua.", "alt": ""},
+        {"title": "Aceite pelo celular", "text": "Toque em Aceitar na notificação, no app Android ou no chat do Telegram.", "alt": ""}
+      ],
+      "requirements_title": "O que precisa continuar ligado?", "requirements_one": "O PC Windows deve ficar ligado, conectado à internet e executando o agente ReAccept. Dota 2 deve permanecer aberto durante a busca.", "requirements_two": "O agente detecta o ready check localmente. Ele não lê memória nem injeta código em Dota 2.",
+      "choices_title": "Android ou Telegram", "choices_one": "Android oferece push, diálogo no app, compras e ações remotas.", "choices_two": "Você também pode vincular o Telegram pelo desktop. Notificações são grátis; depois de três aceites remotos, o uso ilimitado requer assinatura.",
+      "setup_title": "Configure o ReAccept", "setup_intro": "Instale o agente Windows, pareie Android ou Telegram e faça um teste antes da próxima busca.", "go_downloads": "Ir para downloads", "full_setup": "Ver configuração completa"
+    }
+  },
+  "ru": {
+    "common": {
+      "nav_how": "Как это работает", "nav_guide": "Инструкция для телефона", "nav_features": "Возможности", "nav_download": "Скачать",
+      "download_windows": "Скачать для Windows", "get_android": "Установить Android-приложение", "download_apk": "Скачать APK",
+      "privacy_link": "Политика конфиденциальности", "terms_link": "Условия использования", "disclaimer_link": "Отказ от ответственности", "contact": "Поддержка", "changelog": "История изменений", "english": "на английском", "home": "Главная",
+      "independent_notice": "ReAccept — независимое стороннее приложение, не связанное с Valve Corporation и не одобренное ею.", "trademark_notice": "Dota и Dota 2 являются товарными знаками Valve Corporation."
+    },
+    "home": {
+      "title": "ReAccept — Принять матч Dota 2 с телефона", "description": "Получайте уведомления и принимайте найденные матчи Dota 2 и приглашения в группу или запускайте игру удалённо на своём ПК.", "offer_description": "Бесплатно: всего 3 удалённых принятия. Подписка: неограниченные удалённые принятия.",
+      "tagline": "Удалённый помощник для Dota 2", "subhead": "Получайте уведомления, принимайте найденные матчи и приглашения в группу и запускайте Dota 2 через привязанный компьютер.", "trial_note": "Попробуйте бесплатно — 3 удалённых принятия без отдельного аккаунта.", "telegram_note": "Вместо Android-приложения можно привязать Telegram в приложении для Windows.", "hero_alt": "ReAccept показывает найденный матч Dota 2 и кнопку Принять",
+      "how_title": "Как это работает", "steps_note": "Кнопка Отмена в приложении закрывает уведомление на телефоне, но не отклоняет матч Dota 2.", "guide_link": "Подробная инструкция: как принять матч Dota 2 с телефона",
+      "steps": [
+        {"title": "Установите приложение для Windows", "text": "Оно остаётся запущенным на вашем ПК во время поиска матча.", "alt": "Приложение ReAccept подключено и обнаружило Dota 2"},
+        {"title": "Привяжите Companion", "text": "Один раз отсканируйте QR-код в Android или откройте ссылку Telegram.", "alt": "Одноразовый QR-код для привязки ReAccept"},
+        {"title": "Получите уведомление", "text": "Как только Dota 2 найдёт матч, на телефон сразу придёт уведомление.", "alt": "Уведомление о найденном матче Dota 2 с кнопкой Принять"},
+        {"title": "Примите матч откуда угодно", "text": "Нажмите Принять, и приложение на компьютере подтвердит готовность в Dota 2.", "alt": "Экран найденного матча в ReAccept"}
+      ],
+      "background_title": "Надёжная работа в фоне", "background_intro": "Android часто завершает фоновые приложения. Отключите оптимизацию батареи для ReAccept и разрешите работу в фоне, чтобы уведомления приходили стабильно.",
+      "background_steps": [
+        {"caption": "В настройках ReAccept запросите неограниченное использование батареи", "alt": "Настройки ReAccept с кнопкой запроса неограниченного использования батареи"},
+        {"caption": "Откройте сведения о приложении и раздел использования батареи", "alt": "Сведения о приложении ReAccept с выделенным разделом использования батареи"},
+        {"caption": "Включите разрешение на работу в фоновом режиме", "alt": "Настройки батареи Android с разрешённой фоновой активностью"}
+      ],
+      "features_title": "Возможности", "features": [
+        {"title": "Работает с вашей конфигурацией", "text": "DX11 и Vulkan, оконный и безрамочный режим, любое разрешение и масштаб."},
+        {"title": "Не зависит от языка", "text": "Распознаёт кнопку принятия независимо от языка клиента Dota 2."},
+        {"title": "Приглашения в группу", "text": "Получайте приглашения и отвечайте через Android или Telegram."},
+        {"title": "Удалённый запуск Dota 2", "text": "Запустите Dota 2 на ПК ещё до возвращения к компьютеру."},
+        {"title": "Android или Telegram", "text": "Используйте приложение, Telegram или оба варианта одновременно."},
+        {"title": "Безопасная привязка", "text": "Команды отправляются только на компьютер, который вы привязали сами."}
+      ],
+      "privacy_title": "Конфиденциальность и доверие", "privacy_text": "ReAccept управляет только явно привязанным приложением на вашем ПК, не читает память игры и не предоставляет общий удалённый доступ к компьютеру. Подробнее в", "privacy_link": "Политике конфиденциальности",
+      "faq": [
+        {"question": "Могут ли за это заблокировать?", "answer": "ReAccept не читает память игры и не автоматизирует игровой процесс. Он локально обнаруживает ready check и выполняет только запрошенное вами действие. Мы не можем гарантировать трактовку правил античита."},
+        {"question": "Работает ли с Dota 2 не на английском?", "answer": "Да. Обнаружение ready check не зависит от языка и не читает текст."},
+        {"question": "Работает ли при заблокированном телефоне?", "answer": "Да, если для ReAccept разрешены уведомления и фоновая работа."},
+        {"question": "Что доступно бесплатно?", "answer": "Уведомления о матчах всегда бесплатны. Также доступны три удалённых принятия; после них для дальнейшего принятия нужна подписка."}
+      ],
+      "windows_description": "Установщик с автоматическими обновлениями для 64-битных Windows 10/11.", "android_description": "Установите Android-приложение напрямую или обновляйте его через Google Play."
+    },
+    "guide": {
+      "title": "Как принять матч Dota 2 с телефона — ReAccept", "description": "Примите ready check Dota 2 через Android или Telegram. Один раз привяжите ReAccept к компьютеру и отвечайте удалённо.",
+      "h1": "Как принять матч Dota 2 с телефона", "intro_one": "Во время поиска матча Dota 2 необязательно оставаться у компьютера.", "keyphrase": "Принять матч Dota 2 с телефона", "intro_two": "ReAccept отправит уведомление в Android или Telegram и безопасно передаст ваш ответ на привязанный ПК.",
+      "notification_alt": "Уведомление ReAccept с кнопкой принятия матча Dota 2", "party_alt": "Уведомление ReAccept о приглашении в группу с кнопками Принять и Отклонить",
+      "nav_steps": "Три шага", "nav_requirements": "Требования", "steps_title": "Примите матч за три шага", "steps_intro": "Один раз привяжите Android или Telegram к приложению Windows. После этого соединение будет готово при каждом поиске.",
+      "steps": [
+        {"title": "Начните поиск матча в Dota 2", "text": "Оставьте Dota 2 и приложение ReAccept запущенными на компьютере.", "alt": ""},
+        {"title": "Отойдите от компьютера", "text": "Можно сделать кофе или заняться делами, пока поиск продолжается.", "alt": ""},
+        {"title": "Примите матч с телефона", "text": "Нажмите Принять в уведомлении Android, приложении или чате Telegram.", "alt": ""}
+      ],
+      "requirements_title": "Что должно оставаться включённым?", "requirements_one": "Компьютер Windows должен быть включён, подключён к интернету и запускать ReAccept. Dota 2 должна оставаться открытой во время поиска.", "requirements_two": "Приложение обнаруживает ready check локально. Оно не читает память игры и не внедряет код в Dota 2.",
+      "choices_title": "Android или Telegram", "choices_one": "Android предоставляет push-уведомления, диалог в приложении, покупки и удалённые действия.", "choices_two": "Можно вместо этого привязать Telegram. Уведомления бесплатны; после трёх удалённых принятий для неограниченного использования нужна подписка.",
+      "setup_title": "Настройте ReAccept", "setup_intro": "Установите приложение Windows, привяжите Android или Telegram и выполните тест перед следующим поиском.", "go_downloads": "Перейти к загрузкам", "full_setup": "Посмотреть полную настройку"
+    }
+  },
+  "tr": {
+    "common": {
+      "nav_how": "Nasıl çalışır", "nav_guide": "Telefon rehberi", "nav_features": "Özellikler", "nav_download": "İndir",
+      "download_windows": "Windows için indir", "get_android": "Android uygulamasını edin", "download_apk": "APK indir",
+      "privacy_link": "Gizlilik Politikası", "terms_link": "Kullanım Koşulları", "disclaimer_link": "Yasal Uyarı", "contact": "İletişim", "changelog": "Değişiklikler", "english": "İngilizce", "home": "Ana sayfa",
+      "independent_notice": "ReAccept bağımsız bir üçüncü taraf uygulamasıdır; Valve Corporation ile bağlantılı değildir ve Valve tarafından desteklenmez.", "trademark_notice": "Dota ve Dota 2, Valve Corporation'ın ticari markalarıdır."
+    },
+    "home": {
+      "title": "ReAccept — Dota 2 maçını telefondan kabul et", "description": "Dota 2 maçları ve parti davetleri için bildirim al, kabul et veya oyunu kendi bilgisayarında uzaktan başlat.", "offer_description": "Ücretsiz: toplam 3 uzaktan kabul. Abonelik: sınırsız uzaktan kabul.",
+      "tagline": "Dota 2 için uzaktan companion", "subhead": "Bildirim al, bulunan maçları ve parti davetlerini kabul et, Dota 2'yi eşleştirdiğin bilgisayarda uzaktan başlat.", "trial_note": "Ücretsiz dene — ek hesap açmadan 3 uzaktan kabul.", "telegram_note": "Android uygulaması yerine masaüstü uygulamasından Telegram'ı da bağlayabilirsin.", "hero_alt": "ReAccept bulunan Dota 2 maçını ve Kabul Et düğmesini gösteriyor",
+      "how_title": "Nasıl çalışır", "steps_note": "Uygulamadaki İptal yalnızca telefondaki bildirimi kapatır; Dota 2 maçını reddetmez.", "guide_link": "Dota 2 maçını telefondan kabul etme rehberi",
+      "steps": [
+        {"title": "Masaüstü aracını kur", "text": "Maç ararken Windows bilgisayarında çalışmaya devam eder.", "alt": "ReAccept masaüstü uygulaması bağlı ve Dota 2 algılandı"},
+        {"title": "Companion'ı eşleştir", "text": "Android ile QR kodunu bir kez tara veya Telegram bağlantısını aç.", "alt": "ReAccept eşleştirme QR kodu"},
+        {"title": "Bildirim al", "text": "Dota 2 maç bulduğunda telefonuna hemen bildirim gelir.", "alt": "Kabul Et düğmeli Dota 2 maç bildirimi"},
+        {"title": "Her yerden kabul et", "text": "Kabul Et'e dokun; masaüstü uygulaması bilgisayardaki ready check'i tamamlar.", "alt": "ReAccept bulunan maç ekranı"}
+      ],
+      "background_title": "Arka planda güvenilir çalışma", "background_intro": "Android arka plan uygulamalarını sıkça kapatır. Bildirimlerin güvenilir biçimde gelmesi için ReAccept'i pil optimizasyonundan çıkar ve arka plan etkinliğine izin ver.",
+      "background_steps": [
+        {"caption": "ReAccept Ayarları'nda sınırsız pil kullanımı iste", "alt": "Sınırsız pil kullanımı düğmesini gösteren ReAccept ayarları"},
+        {"caption": "Uygulama bilgisi ve Pil kullanımı bölümünü aç", "alt": "Pil kullanımı vurgulanmış ReAccept Android uygulama bilgisi"},
+        {"caption": "Arka plan etkinliğine izin ver", "alt": "Arka plan etkinliğine izin verilmiş Android pil ayarları"}
+      ],
+      "features_title": "Özellikler", "features": [
+        {"title": "Kurulumunla çalışır", "text": "DX11 ve Vulkan, pencereli veya kenarlıksız, her çözünürlük ve ölçek."},
+        {"title": "Dilden bağımsız algılama", "text": "Dota 2 istemcisinin dili ne olursa olsun Kabul Et düğmesini tanır."},
+        {"title": "Parti davetleri", "text": "Davetleri al ve Android ya da Telegram üzerinden yanıtla."},
+        {"title": "Dota 2'yi uzaktan başlat", "text": "Masanın başına dönmeden önce Dota 2'yi bilgisayarında başlat."},
+        {"title": "Android veya Telegram", "text": "Uygulamayı, Telegram'ı ya da ikisini birlikte kullan."},
+        {"title": "Güvenli eşleştirme", "text": "Komutlar yalnızca açıkça eşleştirdiğin bilgisayara iletilir."}
+      ],
+      "privacy_title": "Gizlilik ve güven", "privacy_text": "ReAccept yalnızca eşleştirdiğin masaüstü aracını kontrol eder, oyun belleğini okumaz ve genel uzak masaüstü erişimi sunmaz. Ayrıntılar için", "privacy_link": "Gizlilik Politikası",
+      "faq": [
+        {"question": "Bu yüzden yasaklanabilir miyim?", "answer": "ReAccept oyun belleğini okumaz ve oynanışı otomatikleştirmez. Ready check'i yerel olarak algılar ve yalnızca istediğin girdiyi uygular. Anti-cheat politikaları konusunda garanti veremeyiz."},
+        {"question": "Dota 2 İngilizce değilse çalışır mı?", "answer": "Evet. Algılama dile bağlı değildir ve metin okumaz."},
+        {"question": "Telefon kilitliyken çalışır mı?", "answer": "Evet, ReAccept için bildirimlere ve arka plan etkinliğine izin verirsen."},
+        {"question": "Neler ücretsiz?", "answer": "Maç bildirimleri her zaman ücretsizdir. Üç uzaktan kabul dahildir; sonrasında uzaktan kabul için abonelik gerekir."}
+      ],
+      "windows_description": "64 bit Windows 10/11 için otomatik güncellemeli kurulum.", "android_description": "Android uygulamasını doğrudan kur veya Google Play üzerinden güncel tut."
+    },
+    "guide": {
+      "title": "Dota 2 maçını telefondan kabul etme — ReAccept", "description": "Dota 2 ready check'ini Android veya Telegram ile kabul et. ReAccept'i bilgisayarınla bir kez eşleştir ve uzaktan yanıtla.",
+      "h1": "Dota 2 maçı telefondan nasıl kabul edilir?", "intro_one": "Dota 2'de maç ararken bilgisayarın başında kalmak zorunda değilsin.", "keyphrase": "Dota 2 maçını telefondan kabul et", "intro_two": "ReAccept Android veya Telegram üzerinden bildirim gönderir ve yanıtını eşleştirilmiş bilgisayarına güvenle iletir.",
+      "notification_alt": "Dota 2 maçını kabul etmek için ReAccept bildirimi", "party_alt": "Kabul Et ve Reddet düğmeli ReAccept parti daveti bildirimi",
+      "nav_steps": "Üç adım", "nav_requirements": "Gereksinimler", "steps_title": "Üç adımda kabul et", "steps_intro": "Android veya Telegram'ı Windows aracıyla bir kez eşleştir. Sonraki her aramada bağlantı hazır olur.",
+      "steps": [
+        {"title": "Dota 2'de eşleştirmeyi başlat", "text": "Dota 2 ve ReAccept masaüstü aracını bilgisayarında açık bırak.", "alt": ""},
+        {"title": "Bilgisayardan uzaklaş", "text": "Arama sürerken kahve alabilir veya başka bir işle ilgilenebilirsin.", "alt": ""},
+        {"title": "Maçı telefondan kabul et", "text": "Android bildiriminde, uygulamada veya Telegram sohbetinde Kabul Et'e dokun.", "alt": ""}
+      ],
+      "requirements_title": "Neler açık kalmalı?", "requirements_one": "Windows bilgisayarın açık, internete bağlı ve ReAccept çalışır durumda olmalı. Eşleştirme sırasında Dota 2 açık kalmalı.", "requirements_two": "Araç ready check'i yerel olarak algılar. Oyun belleğini okumaz ve Dota 2'ye kod enjekte etmez.",
+      "choices_title": "Android veya Telegram", "choices_one": "Android push bildirimleri, uygulama içi iletişim kutusu, satın alma ve uzaktan işlemler sunar.", "choices_two": "Telegram'ı masaüstünden de bağlayabilirsin. Bildirimler ücretsizdir; üç uzaktan kabulden sonra sınırsız kullanım abonelik gerektirir.",
+      "setup_title": "ReAccept'i kur", "setup_intro": "Windows aracını kur, Android veya Telegram'ı eşleştir ve sonraki aramadan önce bir test yap.", "go_downloads": "İndirmelere git", "full_setup": "Tam kurulumu gör"
+    }
+  },
+  "uk": {
+    "common": {
+      "nav_how": "Як це працює", "nav_guide": "Інструкція для телефона", "nav_features": "Можливості", "nav_download": "Завантажити",
+      "download_windows": "Завантажити для Windows", "get_android": "Установити Android-застосунок", "download_apk": "Завантажити APK",
+      "privacy_link": "Політика конфіденційності", "terms_link": "Умови використання", "disclaimer_link": "Відмова від відповідальності", "contact": "Підтримка", "changelog": "Історія змін", "english": "англійською", "home": "Головна",
+      "independent_notice": "ReAccept — незалежний сторонній застосунок, не пов'язаний із Valve Corporation і не схвалений нею.", "trademark_notice": "Dota та Dota 2 є товарними знаками Valve Corporation."
+    },
+    "home": {
+      "title": "ReAccept — Прийняти матч Dota 2 з телефона", "description": "Отримуйте сповіщення та приймайте знайдені матчі Dota 2 і запрошення до групи або запускайте гру віддалено на власному ПК.", "offer_description": "Безкоштовно: загалом 3 віддалені прийняття. Підписка: необмежені віддалені прийняття.",
+      "tagline": "Віддалений помічник для Dota 2", "subhead": "Отримуйте сповіщення, приймайте матчі й запрошення та запускайте Dota 2 через прив'язаний комп'ютер.", "trial_note": "Спробуйте безкоштовно — 3 віддалені прийняття без окремого акаунта.", "telegram_note": "Замість Android-застосунку можна прив'язати Telegram у застосунку для Windows.", "hero_alt": "ReAccept показує знайдений матч Dota 2 і кнопку Прийняти",
+      "how_title": "Як це працює", "steps_note": "Кнопка Скасувати в застосунку закриває сповіщення на телефоні, але не відхиляє матч Dota 2.", "guide_link": "Докладна інструкція: як прийняти матч Dota 2 з телефона",
+      "steps": [
+        {"title": "Установіть застосунок для Windows", "text": "Він працює на вашому ПК під час пошуку матчу.", "alt": "Застосунок ReAccept підключений і виявив Dota 2"},
+        {"title": "Прив'яжіть Companion", "text": "Один раз відскануйте QR-код в Android або відкрийте посилання Telegram.", "alt": "Одноразовий QR-код для прив'язки ReAccept"},
+        {"title": "Отримайте сповіщення", "text": "Щойно Dota 2 знайде матч, телефон одразу отримає сповіщення.", "alt": "Сповіщення про знайдений матч Dota 2 з кнопкою Прийняти"},
+        {"title": "Прийміть матч звідусіль", "text": "Натисніть Прийняти, і застосунок на комп'ютері підтвердить готовність.", "alt": "Екран знайденого матчу в ReAccept"}
+      ],
+      "background_title": "Надійна робота у фоні", "background_intro": "Android часто завершує фонові застосунки. Вимкніть оптимізацію батареї для ReAccept і дозвольте роботу у фоні, щоб сповіщення надходили стабільно.",
+      "background_steps": [
+        {"caption": "У налаштуваннях ReAccept запитайте необмежене використання батареї", "alt": "Налаштування ReAccept із кнопкою запиту необмеженого використання батареї"},
+        {"caption": "Відкрийте відомості про застосунок і розділ використання батареї", "alt": "Відомості про застосунок ReAccept із виділеним розділом використання батареї"},
+        {"caption": "Увімкніть дозвіл на фонову активність", "alt": "Налаштування батареї Android із дозволеною фоновою активністю"}
+      ],
+      "features_title": "Можливості", "features": [
+        {"title": "Працює з вашою конфігурацією", "text": "DX11 і Vulkan, віконний і безрамковий режим, будь-яка роздільність і масштаб."},
+        {"title": "Не залежить від мови", "text": "Розпізнає кнопку прийняття незалежно від мови клієнта Dota 2."},
+        {"title": "Запрошення до групи", "text": "Отримуйте запрошення та відповідайте через Android або Telegram."},
+        {"title": "Віддалений запуск Dota 2", "text": "Запустіть Dota 2 на ПК ще до повернення до комп'ютера."},
+        {"title": "Android або Telegram", "text": "Використовуйте застосунок, Telegram або обидва одночасно."},
+        {"title": "Безпечна прив'язка", "text": "Команди надсилаються лише на комп'ютер, який ви прив'язали самі."}
+      ],
+      "privacy_title": "Конфіденційність і довіра", "privacy_text": "ReAccept керує лише явно прив'язаним застосунком на вашому ПК, не читає пам'ять гри та не надає загальний віддалений доступ до комп'ютера. Докладніше в", "privacy_link": "Політиці конфіденційності",
+      "faq": [
+        {"question": "Чи можуть за це заблокувати?", "answer": "ReAccept не читає пам'ять гри й не автоматизує ігровий процес. Він локально виявляє ready check і виконує лише запитану вами дію. Ми не можемо гарантувати трактування правил античита."},
+        {"question": "Чи працює Dota 2 не англійською?", "answer": "Так. Виявлення ready check не залежить від мови й не читає текст."},
+        {"question": "Чи працює із заблокованим телефоном?", "answer": "Так, якщо для ReAccept дозволені сповіщення та фонова робота."},
+        {"question": "Що доступно безкоштовно?", "answer": "Сповіщення про матчі завжди безкоштовні. Також доступні три віддалені прийняття; після них потрібна підписка."}
+      ],
+      "windows_description": "Інсталятор з автоматичними оновленнями для 64-бітних Windows 10/11.", "android_description": "Установіть Android-застосунок напряму або оновлюйте його через Google Play."
+    },
+    "guide": {
+      "title": "Як прийняти матч Dota 2 з телефона — ReAccept", "description": "Прийміть ready check Dota 2 через Android або Telegram. Один раз прив'яжіть ReAccept до комп'ютера та відповідайте віддалено.",
+      "h1": "Як прийняти матч Dota 2 з телефона", "intro_one": "Під час пошуку матчу Dota 2 необов'язково залишатися біля комп'ютера.", "keyphrase": "Прийняти матч Dota 2 з телефона", "intro_two": "ReAccept надішле сповіщення в Android або Telegram і безпечно передасть вашу відповідь на прив'язаний ПК.",
+      "notification_alt": "Сповіщення ReAccept із кнопкою прийняття матчу Dota 2", "party_alt": "Сповіщення ReAccept про запрошення до групи з кнопками Прийняти та Відхилити",
+      "nav_steps": "Три кроки", "nav_requirements": "Вимоги", "steps_title": "Прийміть матч за три кроки", "steps_intro": "Один раз прив'яжіть Android або Telegram до застосунку Windows. Після цього з'єднання буде готове під час кожного пошуку.",
+      "steps": [
+        {"title": "Почніть пошук матчу в Dota 2", "text": "Залиште Dota 2 та застосунок ReAccept запущеними на комп'ютері.", "alt": ""},
+        {"title": "Відійдіть від комп'ютера", "text": "Можна зробити каву або зайнятися справами, поки пошук триває.", "alt": ""},
+        {"title": "Прийміть матч із телефона", "text": "Натисніть Прийняти у сповіщенні Android, застосунку або чаті Telegram.", "alt": ""}
+      ],
+      "requirements_title": "Що має залишатися ввімкненим?", "requirements_one": "Комп'ютер Windows має бути ввімкнений, підключений до інтернету та запускати ReAccept. Dota 2 має залишатися відкритою під час пошуку.", "requirements_two": "Застосунок виявляє ready check локально. Він не читає пам'ять гри та не впроваджує код у Dota 2.",
+      "choices_title": "Android або Telegram", "choices_one": "Android надає push-сповіщення, діалог у застосунку, покупки та віддалені дії.", "choices_two": "Також можна прив'язати Telegram. Сповіщення безкоштовні; після трьох віддалених прийнять для необмеженого використання потрібна підписка.",
+      "setup_title": "Налаштуйте ReAccept", "setup_intro": "Установіть застосунок Windows, прив'яжіть Android або Telegram і виконайте тест перед наступним пошуком.", "go_downloads": "Перейти до завантажень", "full_setup": "Переглянути повне налаштування"
+    }
+  },
+  "vi": {
+    "common": {
+      "nav_how": "Cách hoạt động", "nav_guide": "Hướng dẫn điện thoại", "nav_features": "Tính năng", "nav_download": "Tải xuống",
+      "download_windows": "Tải cho Windows", "get_android": "Cài ứng dụng Android", "download_apk": "Tải APK",
+      "privacy_link": "Chính sách quyền riêng tư", "terms_link": "Điều khoản sử dụng", "disclaimer_link": "Tuyên bố miễn trừ", "contact": "Liên hệ", "changelog": "Nhật ký thay đổi", "english": "tiếng Anh", "home": "Trang chủ",
+      "independent_notice": "ReAccept là ứng dụng độc lập của bên thứ ba, không liên kết và không được Valve Corporation chứng thực.", "trademark_notice": "Dota và Dota 2 là nhãn hiệu của Valve Corporation."
+    },
+    "home": {
+      "title": "ReAccept — Chấp nhận trận Dota 2 bằng điện thoại", "description": "Nhận thông báo và chấp nhận trận Dota 2, lời mời tổ đội hoặc khởi chạy trò chơi từ xa trên chính PC của bạn.", "offer_description": "Miễn phí: tổng cộng 3 lần chấp nhận từ xa. Thuê bao: chấp nhận từ xa không giới hạn.",
+      "tagline": "Ứng dụng đồng hành từ xa cho Dota 2", "subhead": "Nhận thông báo, chấp nhận trận và lời mời tổ đội, đồng thời khởi chạy Dota 2 từ xa qua PC đã ghép nối.", "trial_note": "Dùng thử miễn phí — 3 lần chấp nhận từ xa, không cần tài khoản bổ sung.", "telegram_note": "Bạn cũng có thể liên kết Telegram từ ứng dụng desktop thay cho Android.", "hero_alt": "ReAccept hiển thị trận Dota 2 đã tìm thấy và nút Chấp nhận",
+      "how_title": "Cách hoạt động", "steps_note": "Hủy trong ứng dụng chỉ đóng thông báo trên điện thoại, không từ chối trận Dota 2.", "guide_link": "Hướng dẫn chấp nhận trận Dota 2 bằng điện thoại",
+      "steps": [
+        {"title": "Cài ứng dụng desktop", "text": "Ứng dụng tiếp tục chạy trên PC Windows trong lúc bạn tìm trận.", "alt": "Ứng dụng desktop ReAccept đã kết nối và phát hiện Dota 2"},
+        {"title": "Ghép nối Companion", "text": "Quét mã QR một lần bằng Android hoặc mở liên kết Telegram.", "alt": "Mã QR ghép nối ReAccept"},
+        {"title": "Nhận thông báo", "text": "Khi Dota 2 tìm thấy trận, điện thoại sẽ nhận thông báo ngay.", "alt": "Thông báo trận Dota 2 với nút Chấp nhận"},
+        {"title": "Chấp nhận ở bất kỳ đâu", "text": "Nhấn Chấp nhận và ứng dụng desktop sẽ hoàn tất ready check trên PC.", "alt": "Màn hình tìm thấy trận trong ReAccept"}
+      ],
+      "background_title": "Hoạt động ổn định trong nền", "background_intro": "Android thường đóng các ứng dụng chạy nền. Hãy loại ReAccept khỏi tối ưu hóa pin và cho phép hoạt động nền để nhận thông báo ổn định.",
+      "background_steps": [
+        {"caption": "Trong Cài đặt ReAccept, yêu cầu sử dụng pin không hạn chế", "alt": "Cài đặt ReAccept với nút yêu cầu sử dụng pin không hạn chế"},
+        {"caption": "Mở Thông tin ứng dụng rồi Mức sử dụng pin", "alt": "Thông tin ứng dụng ReAccept với mục Mức sử dụng pin được đánh dấu"},
+        {"caption": "Bật Cho phép hoạt động trong nền", "alt": "Cài đặt pin Android cho phép hoạt động trong nền"}
+      ],
+      "features_title": "Tính năng", "features": [
+        {"title": "Hoạt động với cấu hình của bạn", "text": "DX11 và Vulkan, cửa sổ hoặc không viền, mọi độ phân giải và tỷ lệ."},
+        {"title": "Phát hiện không phụ thuộc ngôn ngữ", "text": "Nhận diện nút Chấp nhận bất kể ngôn ngữ của Dota 2."},
+        {"title": "Lời mời tổ đội", "text": "Nhận lời mời và phản hồi qua Android hoặc Telegram."},
+        {"title": "Khởi chạy Dota 2 từ xa", "text": "Mở Dota 2 trên PC trước khi bạn quay lại bàn."},
+        {"title": "Android hoặc Telegram", "text": "Dùng ứng dụng, Telegram hoặc cả hai cùng lúc."},
+        {"title": "Ghép nối an toàn", "text": "Lệnh chỉ được chuyển đến PC mà bạn đã chủ động ghép nối."}
+      ],
+      "privacy_title": "Quyền riêng tư và tin cậy", "privacy_text": "ReAccept chỉ điều khiển ứng dụng desktop đã ghép nối, không đọc bộ nhớ trò chơi và không cung cấp quyền truy cập desktop từ xa nói chung. Xem", "privacy_link": "Chính sách quyền riêng tư",
+      "faq": [
+        {"question": "Việc này có thể khiến tôi bị cấm không?", "answer": "ReAccept không đọc bộ nhớ trò chơi và không tự động hóa lối chơi. Ứng dụng phát hiện ready check cục bộ và chỉ thực hiện thao tác bạn yêu cầu. Chúng tôi không thể đảm bảo cách áp dụng chính sách chống gian lận."},
+        {"question": "Có hoạt động nếu Dota 2 không dùng tiếng Anh không?", "answer": "Có. Việc phát hiện không phụ thuộc ngôn ngữ và không đọc văn bản."},
+        {"question": "Có hoạt động khi điện thoại bị khóa không?", "answer": "Có, nếu bạn cho phép ReAccept gửi thông báo và chạy nền."},
+        {"question": "Nội dung nào miễn phí?", "answer": "Thông báo trận luôn miễn phí. Bạn có ba lần chấp nhận từ xa; sau đó cần thuê bao để tiếp tục chấp nhận từ xa."}
+      ],
+      "windows_description": "Trình cài đặt có cập nhật tự động cho Windows 10/11 64-bit.", "android_description": "Cài ứng dụng Android trực tiếp hoặc cập nhật qua Google Play."
+    },
+    "guide": {
+      "title": "Cách chấp nhận trận Dota 2 bằng điện thoại — ReAccept", "description": "Chấp nhận ready check Dota 2 qua Android hoặc Telegram. Ghép nối ReAccept với PC một lần rồi phản hồi từ xa.",
+      "h1": "Cách chấp nhận trận Dota 2 bằng điện thoại", "intro_one": "Tìm trận Dota 2 không có nghĩa là bạn phải ngồi trước PC.", "keyphrase": "Chấp nhận trận Dota 2 bằng điện thoại", "intro_two": "ReAccept gửi thông báo qua Android hoặc Telegram và chuyển phản hồi an toàn đến PC đã ghép nối.",
+      "notification_alt": "Thông báo ReAccept để chấp nhận trận Dota 2", "party_alt": "Thông báo lời mời tổ đội ReAccept với nút Chấp nhận và Từ chối",
+      "nav_steps": "Ba bước", "nav_requirements": "Yêu cầu", "steps_title": "Chấp nhận trong ba bước", "steps_intro": "Ghép nối Android hoặc Telegram với ứng dụng Windows một lần. Sau đó kết nối sẵn sàng cho mỗi lần tìm trận.",
+      "steps": [
+        {"title": "Bắt đầu tìm trận trong Dota 2", "text": "Giữ Dota 2 và ứng dụng desktop ReAccept chạy trên PC.", "alt": ""},
+        {"title": "Rời khỏi PC", "text": "Bạn có thể đi lấy đồ uống hoặc làm việc khác trong lúc tiếp tục tìm trận.", "alt": ""},
+        {"title": "Chấp nhận trận bằng điện thoại", "text": "Nhấn Chấp nhận trong thông báo Android, ứng dụng hoặc cuộc trò chuyện Telegram.", "alt": ""}
+      ],
+      "requirements_title": "Những gì phải tiếp tục chạy?", "requirements_one": "PC Windows phải bật, kết nối internet và chạy ReAccept. Dota 2 phải mở trong lúc tìm trận.", "requirements_two": "Ứng dụng phát hiện ready check cục bộ. Nó không đọc bộ nhớ trò chơi hoặc chèn mã vào Dota 2.",
+      "choices_title": "Android hoặc Telegram", "choices_one": "Android cung cấp push notification, hộp thoại trong ứng dụng, giao dịch mua và thao tác từ xa.", "choices_two": "Bạn cũng có thể liên kết Telegram từ desktop. Thông báo miễn phí; sau ba lần chấp nhận từ xa, sử dụng không giới hạn cần thuê bao.",
+      "setup_title": "Thiết lập ReAccept", "setup_intro": "Cài ứng dụng Windows, ghép nối Android hoặc Telegram và thử một lần trước lần tìm trận tiếp theo.", "go_downloads": "Đi đến tải xuống", "full_setup": "Xem hướng dẫn đầy đủ"
+    }
+  }
+}

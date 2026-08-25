@@ -70,18 +70,31 @@ file immediately.
   media query. Also simplified the mobile nav to just the brand + Download button (the anchor
   links don't fit at phone widths and are redundant with the page's own sections).
 
-## Next phase: landing localization
+## Landing localization
 
 Localize the landing for the same languages bundled in Android and used by the Play listing:
 English, German, Spanish, Indonesian, Polish, Brazilian Portuguese, Russian, Turkish, Ukrainian,
 and Vietnamese.
 
-- [ ] Use stable locale paths (`/de/`, `/es/`, `/id/`, `/pl/`, `/pt-br/`, `/ru/`, `/tr/`,
+- [x] Use stable locale paths (`/de/`, `/es/`, `/id/`, `/pl/`, `/pt-br/`, `/ru/`, `/tr/`,
   `/uk/`, `/vi/`) while keeping English at `/` as `x-default`.
-- [ ] Localize the home page and `/accept-dota-2-match-from-phone/` copy, titles, descriptions,
+- [x] Localize the home page and `/accept-dota-2-match-from-phone/` copy, titles, descriptions,
   Open Graph text, accessibility text, and calls to action without changing product claims.
-- [ ] Add reciprocal `hreflang` links and localized entries to `sitemap.xml`.
-- [ ] Reuse English screenshots as fallback and replace only captures containing visible text
+- [x] Add reciprocal `hreflang` links and localized entries to `sitemap.xml`.
+- [x] Reuse English screenshots as fallback and replace only captures containing visible text
   when an approved localized version exists.
-- [ ] Keep English as the controlling legal version until reviewed legal translations exist;
+- [x] Keep English as the controlling legal version until reviewed legal translations exist;
   label convenience translations clearly rather than silently changing their effect.
+
+Localized copy is maintained in `locales/pages.json`; shared markup lives in `templates/`.
+Generated locale pages and `sitemap.xml` are committed so GitHub Pages can serve them without a
+build step. After changing copy or templates, regenerate and validate from the landing repository:
+
+```powershell
+python scripts/build_locales.py
+python scripts/validate_locales.py
+```
+
+The validator checks canonical URLs, reciprocal `hreflang`, structured data, page language,
+internal links, local assets, and the localized sitemap URL set. English remains hand-maintained
+at `/` and `/accept-dota-2-match-from-phone/`; the validator includes both English pages.

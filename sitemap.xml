@@ -1,23 +1,306 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://re-accept.com/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/id/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/pt-br/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/uk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/vi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/" />
+    <lastmod>2026-08-25</lastmod>
   </url>
   <url>
     <loc>https://re-accept.com/accept-dota-2-match-from-phone/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <lastmod>2026-08-25</lastmod>
   </url>
   <url>
-    <loc>https://re-accept.com/privacy.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://re-accept.com/de/accept-dota-2-match-from-phone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <lastmod>2026-08-25</lastmod>
   </url>
   <url>
-    <loc>https://re-accept.com/terms.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://re-accept.com/es/accept-dota-2-match-from-phone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <lastmod>2026-08-25</lastmod>
   </url>
   <url>
-    <loc>https://re-accept.com/disclaimer.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <loc>https://re-accept.com/id/accept-dota-2-match-from-phone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <lastmod>2026-08-25</lastmod>
   </url>
+  <url>
+    <loc>https://re-accept.com/pl/accept-dota-2-match-from-phone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/pt-br/accept-dota-2-match-from-phone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/ru/accept-dota-2-match-from-phone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/tr/accept-dota-2-match-from-phone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/uk/accept-dota-2-match-from-phone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://re-accept.com/vi/accept-dota-2-match-from-phone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://re-accept.com/de/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://re-accept.com/es/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://re-accept.com/id/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://re-accept.com/pl/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://re-accept.com/pt-br/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://re-accept.com/ru/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://re-accept.com/tr/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://re-accept.com/uk/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://re-accept.com/vi/accept-dota-2-match-from-phone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://re-accept.com/accept-dota-2-match-from-phone/" />
+    <lastmod>2026-08-25</lastmod>
+  </url>
+  <url><loc>https://re-accept.com/privacy.html</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://re-accept.com/terms.html</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://re-accept.com/disclaimer.html</loc><lastmod>2026-08-24</lastmod></url>
 </urlset>
