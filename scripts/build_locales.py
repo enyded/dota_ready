@@ -9,6 +9,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE_URL = "https://re-accept.com"
+PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.dotaremoteaccept"
 LOCALE_DIRS = {
     "de": "de",
     "es": "es",
@@ -33,7 +34,7 @@ LANGUAGE_NAMES = {
     "uk": "Українська",
     "vi": "Tiếng Việt",
 }
-LAST_MODIFIED = "2026-08-25"
+LAST_MODIFIED = "2026-08-27"
 
 
 def absolute_url(language: str, page: str) -> str:
@@ -145,6 +146,7 @@ def render_home(language: str, catalog: dict[str, Any], template: Template) -> s
         "hreflang": hreflang_links("home"),
         "language_switcher": language_switcher(language, "home"),
         "guide_url": absolute_url(language, "guide"),
+        "play_store_url": PLAY_STORE_URL,
         "assets": "../assets/",
         "styles": "../styles.css?rev=20260825-1",
         "privacy_url": f"{BASE_URL}/privacy.html",
@@ -198,6 +200,7 @@ def render_guide(language: str, catalog: dict[str, Any], template: Template) -> 
         "hreflang": hreflang_links("guide"),
         "language_switcher": language_switcher(language, "guide"),
         "home_url": absolute_url(language, "home"),
+        "play_store_url": PLAY_STORE_URL,
         "assets": "../../assets/",
         "styles": "../../styles.css?rev=20260825-1",
         "privacy_url": f"{BASE_URL}/privacy.html",

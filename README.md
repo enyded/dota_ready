@@ -33,8 +33,8 @@ Filenames must stay identical across locale folders so the fallback lookup is a 
 - `desk-main.png`, `desk-qr.png` — Windows desktop app screens.
 - `og-cover.png` — generated cover image, not a screenshot (locale-specific OG previews are a
   nice-to-have, not required).
-- `android-qr-placeholder.png` — generated QR code, not a manual screenshot; points at the
-  stable `ReAccept.apk` release URL.
+- `android-qr-placeholder.png` — generated QR code, not a manual screenshot; opens the official
+  ReAccept listing on Google Play.
 
 Public asset URLs carry a shared `rev` query parameter in the HTML. Bump it whenever an image or
 stylesheet is replaced under the same filename so GitHub Pages and browser caches fetch the new
@@ -44,8 +44,8 @@ file immediately.
 
 - [x] **Screenshots (`en/`)** — the product owner supplied the rebranded Windows and Android
   screenshots. The generated `og-cover.png` uses the same approved ReAccept icon and copy.
-- [x] **Download links** — point at the stable GitHub Release aliases `ReAccept-Setup.exe` and
-  `ReAccept.apk`; the QR code encodes the same Android URL.
+- [x] **Download links** — the Windows button points at the stable GitHub Release alias
+  `ReAccept-Setup.exe`; Android buttons and the QR code open the official Google Play listing.
 - [x] **Support email** — `support@re-accept.com`, wired into the footer and every legal page;
   the source documents live under `docs/legal/` in the main repository.
 - [x] **Legal pages published** — `privacy.html`, `terms.html`, and `disclaimer.html` publish the

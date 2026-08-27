@@ -7,7 +7,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse
 
-from build_locales import ALL_LANGUAGES, BASE_URL, LOCALE_DIRS, absolute_url
+from build_locales import ALL_LANGUAGES, BASE_URL, LOCALE_DIRS, PLAY_STORE_URL, absolute_url
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -116,6 +116,8 @@ def validate_page(language: str, page: str, failures: list[str]) -> None:
         "complete hreflang": parser.alternates == expected_alternates,
         "no template placeholders": "$" not in source,
         "indexable": "noindex" not in source.lower(),
+        "Google Play Android distribution": PLAY_STORE_URL in parser.links,
+        "no legacy GitHub APK link": "ReAccept.apk" not in source,
     }
     for name, valid in checks.items():
         if not valid:

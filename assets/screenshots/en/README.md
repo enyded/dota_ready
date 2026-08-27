@@ -7,5 +7,5 @@ Present:
   invite notification banner, shown alongside it in the same step), `app-settings.png`,
   `app-info.png`, `app-allow-bg-activity.png` — Android app.
 - `og-cover.png` — generated Open Graph/Twitter card preview.
-- `android-qr-placeholder.png` — generated QR pointing at the (not-yet-published) APK release
+- `android-qr-placeholder.png` — generated QR pointing at the official Google Play listing
   asset URL; will 404 until a release with that filename actually exists.

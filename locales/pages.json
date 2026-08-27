@@ -2,7 +2,7 @@
   "de": {
     "common": {
       "nav_how": "So funktioniert es", "nav_guide": "Handy-Anleitung", "nav_features": "Funktionen", "nav_download": "Download",
-      "download_windows": "Für Windows herunterladen", "get_android": "Android-App holen", "download_apk": "APK herunterladen",
+      "download_windows": "Für Windows herunterladen", "get_android": "Android-App holen", "download_apk": "Bei Google Play herunterladen",
       "privacy_link": "Datenschutzerklärung", "terms_link": "Nutzungsbedingungen", "disclaimer_link": "Haftungsausschluss", "contact": "Kontakt", "changelog": "Änderungen", "english": "Englisch", "home": "Startseite",
       "independent_notice": "ReAccept ist eine unabhängige Drittanbieter-Anwendung und ist weder mit Valve Corporation verbunden noch von ihr empfohlen.",
       "trademark_notice": "Dota und Dota 2 sind Marken der Valve Corporation."
@@ -42,7 +42,7 @@
         {"question": "Funktioniert es bei gesperrtem Handy?", "answer": "Ja, wenn Hintergrundaktivität und Benachrichtigungen für ReAccept erlaubt sind."},
         {"question": "Was ist kostenlos?", "answer": "Match-Benachrichtigungen bleiben kostenlos. Drei Remote-Annahmen sind enthalten; danach ist für weitere Remote-Annahmen ein Abonnement erforderlich."}
       ],
-      "windows_description": "Installer mit automatischen Updates für Windows 10/11 (64 Bit).", "android_description": "Android-App direkt installieren oder über Google Play aktualisieren."
+      "windows_description": "Installer mit automatischen Updates für Windows 10/11 (64 Bit).", "android_description": "Installiere ReAccept sicher über Google Play und erhalte automatische Updates."
     },
     "guide": {
       "title": "Dota-2-Match vom Handy annehmen — ReAccept", "description": "Nimm einen Dota-2-Ready-Check über dein Android-Handy oder Telegram an. Kopple ReAccept einmal mit deinem PC und antworte aus der Ferne.",
@@ -62,7 +62,7 @@
   "es": {
     "common": {
       "nav_how": "Cómo funciona", "nav_guide": "Guía para móvil", "nav_features": "Funciones", "nav_download": "Descargar",
-      "download_windows": "Descargar para Windows", "get_android": "Obtener la app Android", "download_apk": "Descargar APK",
+      "download_windows": "Descargar para Windows", "get_android": "Obtener la app Android", "download_apk": "Descargar en Google Play",
       "privacy_link": "Política de privacidad", "terms_link": "Términos de uso", "disclaimer_link": "Aviso legal", "contact": "Contacto", "changelog": "Cambios", "english": "inglés", "home": "Inicio",
       "independent_notice": "ReAccept es una aplicación independiente de terceros y no está afiliada ni respaldada por Valve Corporation.", "trademark_notice": "Dota y Dota 2 son marcas comerciales de Valve Corporation."
     },
@@ -97,7 +97,7 @@
         {"question": "¿Funciona con el móvil bloqueado?", "answer": "Sí, si permites las notificaciones y la actividad en segundo plano de ReAccept."},
         {"question": "¿Qué incluye gratis?", "answer": "Las notificaciones son siempre gratuitas. Incluye tres aceptaciones remotas; después se necesita una suscripción para seguir aceptando a distancia."}
       ],
-      "windows_description": "Instalador con actualizaciones automáticas para Windows 10/11 de 64 bits.", "android_description": "Instala la app Android directamente o mantenla actualizada mediante Google Play."
+      "windows_description": "Instalador con actualizaciones automáticas para Windows 10/11 de 64 bits.", "android_description": "Instala ReAccept de forma segura desde Google Play y recibe actualizaciones automáticas."
     },
     "guide": {
       "title": "Cómo aceptar una partida de Dota 2 desde el móvil — ReAccept", "description": "Acepta una confirmación de Dota 2 desde Android o Telegram. Vincula ReAccept con tu PC una vez y responde a distancia.",
@@ -117,7 +117,7 @@
   "id": {
     "common": {
       "nav_how": "Cara kerja", "nav_guide": "Panduan HP", "nav_features": "Fitur", "nav_download": "Unduh",
-      "download_windows": "Unduh untuk Windows", "get_android": "Dapatkan aplikasi Android", "download_apk": "Unduh APK",
+      "download_windows": "Unduh untuk Windows", "get_android": "Dapatkan aplikasi Android", "download_apk": "Dapatkan di Google Play",
       "privacy_link": "Kebijakan Privasi", "terms_link": "Ketentuan Penggunaan", "disclaimer_link": "Penafian", "contact": "Kontak", "changelog": "Catatan perubahan", "english": "bahasa Inggris", "home": "Beranda",
       "independent_notice": "ReAccept adalah aplikasi pihak ketiga independen dan tidak berafiliasi atau didukung oleh Valve Corporation.", "trademark_notice": "Dota dan Dota 2 adalah merek dagang Valve Corporation."
     },
@@ -152,7 +152,7 @@
         {"question": "Apakah bekerja saat HP terkunci?", "answer": "Ya, jika notifikasi dan aktivitas latar belakang ReAccept diizinkan."},
         {"question": "Apa yang gratis?", "answer": "Notifikasi match selalu gratis. Tiga remote accept tersedia gratis; setelah itu diperlukan langganan untuk accept jarak jauh berikutnya."}
       ],
-      "windows_description": "Installer dengan pembaruan otomatis untuk Windows 10/11 64-bit.", "android_description": "Instal aplikasi Android secara langsung atau perbarui melalui Google Play."
+      "windows_description": "Installer dengan pembaruan otomatis untuk Windows 10/11 64-bit.", "android_description": "Instal ReAccept dengan aman dari Google Play dan dapatkan pembaruan otomatis."
     },
     "guide": {
       "title": "Cara menerima match Dota 2 dari HP — ReAccept", "description": "Terima ready check Dota 2 melalui Android atau Telegram. Pasangkan ReAccept sekali dengan PC lalu jawab dari jarak jauh.",
@@ -172,7 +172,7 @@
   "pl": {
     "common": {
       "nav_how": "Jak to działa", "nav_guide": "Poradnik na telefon", "nav_features": "Funkcje", "nav_download": "Pobierz",
-      "download_windows": "Pobierz dla Windows", "get_android": "Pobierz aplikację Android", "download_apk": "Pobierz APK",
+      "download_windows": "Pobierz dla Windows", "get_android": "Pobierz aplikację Android", "download_apk": "Pobierz z Google Play",
       "privacy_link": "Polityka prywatności", "terms_link": "Warunki użytkowania", "disclaimer_link": "Zastrzeżenia", "contact": "Kontakt", "changelog": "Lista zmian", "english": "angielski", "home": "Strona główna",
       "independent_notice": "ReAccept jest niezależną aplikacją firmy trzeciej i nie jest powiązany ani wspierany przez Valve Corporation.", "trademark_notice": "Dota i Dota 2 są znakami towarowymi Valve Corporation."
     },
@@ -207,7 +207,7 @@
         {"question": "Czy działa przy zablokowanym telefonie?", "answer": "Tak, jeśli zezwolisz ReAccept na powiadomienia i działanie w tle."},
         {"question": "Co jest bezpłatne?", "answer": "Powiadomienia o meczach są zawsze bezpłatne. Otrzymujesz trzy zdalne akceptacje; później kolejne wymagają subskrypcji."}
       ],
-      "windows_description": "Instalator z automatycznymi aktualizacjami dla Windows 10/11 64-bit.", "android_description": "Zainstaluj aplikację Android bezpośrednio lub aktualizuj ją przez Google Play."
+      "windows_description": "Instalator z automatycznymi aktualizacjami dla Windows 10/11 64-bit.", "android_description": "Bezpiecznie zainstaluj ReAccept z Google Play i otrzymuj automatyczne aktualizacje."
     },
     "guide": {
       "title": "Jak zaakceptować mecz Dota 2 z telefonu — ReAccept", "description": "Zaakceptuj potwierdzenie Dota 2 przez Android lub Telegram. Raz sparuj ReAccept z komputerem i odpowiadaj zdalnie.",
@@ -227,7 +227,7 @@
   "pt-BR": {
     "common": {
       "nav_how": "Como funciona", "nav_guide": "Guia para celular", "nav_features": "Recursos", "nav_download": "Baixar",
-      "download_windows": "Baixar para Windows", "get_android": "Obter app Android", "download_apk": "Baixar APK",
+      "download_windows": "Baixar para Windows", "get_android": "Obter app Android", "download_apk": "Baixar no Google Play",
       "privacy_link": "Política de Privacidade", "terms_link": "Termos de Uso", "disclaimer_link": "Aviso legal", "contact": "Contato", "changelog": "Novidades", "english": "inglês", "home": "Início",
       "independent_notice": "ReAccept é um aplicativo independente de terceiros e não é afiliado nem endossado pela Valve Corporation.", "trademark_notice": "Dota e Dota 2 são marcas comerciais da Valve Corporation."
     },
@@ -262,7 +262,7 @@
         {"question": "Funciona com o celular bloqueado?", "answer": "Sim, se notificações e atividade em segundo plano estiverem permitidas para ReAccept."},
         {"question": "O que é grátis?", "answer": "As notificações são sempre grátis. Três aceites remotos estão incluídos; depois disso é necessária uma assinatura para continuar aceitando remotamente."}
       ],
-      "windows_description": "Instalador com atualizações automáticas para Windows 10/11 64 bits.", "android_description": "Instale o aplicativo Android diretamente ou mantenha-o atualizado pelo Google Play."
+      "windows_description": "Instalador com atualizações automáticas para Windows 10/11 64 bits.", "android_description": "Instale o ReAccept com segurança pelo Google Play e receba atualizações automáticas."
     },
     "guide": {
       "title": "Como aceitar uma partida de Dota 2 pelo celular — ReAccept", "description": "Aceite o ready check de Dota 2 pelo Android ou Telegram. Pareie ReAccept uma vez com o PC e responda remotamente.",
@@ -282,7 +282,7 @@
   "ru": {
     "common": {
       "nav_how": "Как это работает", "nav_guide": "Инструкция для телефона", "nav_features": "Возможности", "nav_download": "Скачать",
-      "download_windows": "Скачать для Windows", "get_android": "Установить Android-приложение", "download_apk": "Скачать APK",
+      "download_windows": "Скачать для Windows", "get_android": "Установить Android-приложение", "download_apk": "Скачать в Google Play",
       "privacy_link": "Политика конфиденциальности", "terms_link": "Условия использования", "disclaimer_link": "Отказ от ответственности", "contact": "Поддержка", "changelog": "История изменений", "english": "на английском", "home": "Главная",
       "independent_notice": "ReAccept — независимое стороннее приложение, не связанное с Valve Corporation и не одобренное ею.", "trademark_notice": "Dota и Dota 2 являются товарными знаками Valve Corporation."
     },
@@ -317,7 +317,7 @@
         {"question": "Работает ли при заблокированном телефоне?", "answer": "Да, если для ReAccept разрешены уведомления и фоновая работа."},
         {"question": "Что доступно бесплатно?", "answer": "Уведомления о матчах всегда бесплатны. Также доступны три удалённых принятия; после них для дальнейшего принятия нужна подписка."}
       ],
-      "windows_description": "Установщик с автоматическими обновлениями для 64-битных Windows 10/11.", "android_description": "Установите Android-приложение напрямую или обновляйте его через Google Play."
+      "windows_description": "Установщик с автоматическими обновлениями для 64-битных Windows 10/11.", "android_description": "Безопасно установите ReAccept из Google Play и получайте автоматические обновления."
     },
     "guide": {
       "title": "Как принять матч Dota 2 с телефона — ReAccept", "description": "Примите ready check Dota 2 через Android или Telegram. Один раз привяжите ReAccept к компьютеру и отвечайте удалённо.",
@@ -337,7 +337,7 @@
   "tr": {
     "common": {
       "nav_how": "Nasıl çalışır", "nav_guide": "Telefon rehberi", "nav_features": "Özellikler", "nav_download": "İndir",
-      "download_windows": "Windows için indir", "get_android": "Android uygulamasını edin", "download_apk": "APK indir",
+      "download_windows": "Windows için indir", "get_android": "Android uygulamasını edin", "download_apk": "Google Play'den indir",
       "privacy_link": "Gizlilik Politikası", "terms_link": "Kullanım Koşulları", "disclaimer_link": "Yasal Uyarı", "contact": "İletişim", "changelog": "Değişiklikler", "english": "İngilizce", "home": "Ana sayfa",
       "independent_notice": "ReAccept bağımsız bir üçüncü taraf uygulamasıdır; Valve Corporation ile bağlantılı değildir ve Valve tarafından desteklenmez.", "trademark_notice": "Dota ve Dota 2, Valve Corporation'ın ticari markalarıdır."
     },
@@ -372,7 +372,7 @@
         {"question": "Telefon kilitliyken çalışır mı?", "answer": "Evet, ReAccept için bildirimlere ve arka plan etkinliğine izin verirsen."},
         {"question": "Neler ücretsiz?", "answer": "Maç bildirimleri her zaman ücretsizdir. Üç uzaktan kabul dahildir; sonrasında uzaktan kabul için abonelik gerekir."}
       ],
-      "windows_description": "64 bit Windows 10/11 için otomatik güncellemeli kurulum.", "android_description": "Android uygulamasını doğrudan kur veya Google Play üzerinden güncel tut."
+      "windows_description": "64 bit Windows 10/11 için otomatik güncellemeli kurulum.", "android_description": "ReAccept'i Google Play'den güvenle yükle ve otomatik güncellemeleri al."
     },
     "guide": {
       "title": "Dota 2 maçını telefondan kabul etme — ReAccept", "description": "Dota 2 ready check'ini Android veya Telegram ile kabul et. ReAccept'i bilgisayarınla bir kez eşleştir ve uzaktan yanıtla.",
@@ -392,7 +392,7 @@
   "uk": {
     "common": {
       "nav_how": "Як це працює", "nav_guide": "Інструкція для телефона", "nav_features": "Можливості", "nav_download": "Завантажити",
-      "download_windows": "Завантажити для Windows", "get_android": "Установити Android-застосунок", "download_apk": "Завантажити APK",
+      "download_windows": "Завантажити для Windows", "get_android": "Установити Android-застосунок", "download_apk": "Завантажити з Google Play",
       "privacy_link": "Політика конфіденційності", "terms_link": "Умови використання", "disclaimer_link": "Відмова від відповідальності", "contact": "Підтримка", "changelog": "Історія змін", "english": "англійською", "home": "Головна",
       "independent_notice": "ReAccept — незалежний сторонній застосунок, не пов'язаний із Valve Corporation і не схвалений нею.", "trademark_notice": "Dota та Dota 2 є товарними знаками Valve Corporation."
     },
@@ -427,7 +427,7 @@
         {"question": "Чи працює із заблокованим телефоном?", "answer": "Так, якщо для ReAccept дозволені сповіщення та фонова робота."},
         {"question": "Що доступно безкоштовно?", "answer": "Сповіщення про матчі завжди безкоштовні. Також доступні три віддалені прийняття; після них потрібна підписка."}
       ],
-      "windows_description": "Інсталятор з автоматичними оновленнями для 64-бітних Windows 10/11.", "android_description": "Установіть Android-застосунок напряму або оновлюйте його через Google Play."
+      "windows_description": "Інсталятор з автоматичними оновленнями для 64-бітних Windows 10/11.", "android_description": "Безпечно встановіть ReAccept із Google Play і отримуйте автоматичні оновлення."
     },
     "guide": {
       "title": "Як прийняти матч Dota 2 з телефона — ReAccept", "description": "Прийміть ready check Dota 2 через Android або Telegram. Один раз прив'яжіть ReAccept до комп'ютера та відповідайте віддалено.",
@@ -447,7 +447,7 @@
   "vi": {
     "common": {
       "nav_how": "Cách hoạt động", "nav_guide": "Hướng dẫn điện thoại", "nav_features": "Tính năng", "nav_download": "Tải xuống",
-      "download_windows": "Tải cho Windows", "get_android": "Cài ứng dụng Android", "download_apk": "Tải APK",
+      "download_windows": "Tải cho Windows", "get_android": "Cài ứng dụng Android", "download_apk": "Tải trên Google Play",
       "privacy_link": "Chính sách quyền riêng tư", "terms_link": "Điều khoản sử dụng", "disclaimer_link": "Tuyên bố miễn trừ", "contact": "Liên hệ", "changelog": "Nhật ký thay đổi", "english": "tiếng Anh", "home": "Trang chủ",
       "independent_notice": "ReAccept là ứng dụng độc lập của bên thứ ba, không liên kết và không được Valve Corporation chứng thực.", "trademark_notice": "Dota và Dota 2 là nhãn hiệu của Valve Corporation."
     },
@@ -482,7 +482,7 @@
         {"question": "Có hoạt động khi điện thoại bị khóa không?", "answer": "Có, nếu bạn cho phép ReAccept gửi thông báo và chạy nền."},
         {"question": "Nội dung nào miễn phí?", "answer": "Thông báo trận luôn miễn phí. Bạn có ba lần chấp nhận từ xa; sau đó cần thuê bao để tiếp tục chấp nhận từ xa."}
       ],
-      "windows_description": "Trình cài đặt có cập nhật tự động cho Windows 10/11 64-bit.", "android_description": "Cài ứng dụng Android trực tiếp hoặc cập nhật qua Google Play."
+      "windows_description": "Trình cài đặt có cập nhật tự động cho Windows 10/11 64-bit.", "android_description": "Cài đặt ReAccept an toàn từ Google Play và nhận các bản cập nhật tự động."
     },
     "guide": {
       "title": "Cách chấp nhận trận Dota 2 bằng điện thoại — ReAccept", "description": "Chấp nhận ready check Dota 2 qua Android hoặc Telegram. Ghép nối ReAccept với PC một lần rồi phản hồi từ xa.",
