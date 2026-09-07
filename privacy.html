@@ -122,6 +122,13 @@
       denied and does not use this data for personalized advertising. The visitor's measurement
       choice is stored in the browser's first-party local storage. Privacy Policy, Terms of Use,
       and Disclaimer pages do not load the Google tag.</p>
+    <p>When a consented Google Ads visit contains a Google click identifier, ReAccept temporarily
+      stores that identifier encrypted on the backend and an opaque attribution token in the
+      visitor's browser. On the first launch of a newly installed desktop app, a one-time browser
+      handoff may associate the visit with the anonymous desktop installation. ReAccept then sends
+      the first desktop registration and first successful Android or Telegram pairing as conversion
+      events to Google Ads. Unclaimed attribution sessions expire after 7 days; one-time handoffs
+      expire after 10 minutes. ReAccept does not use IP-address matching for this attribution.</p>
 
     <h2>How we use data</h2>
     <p>ReAccept uses data to:</p>
@@ -182,6 +189,9 @@
         last-activity signal;</li>
       <li>expired pairing sessions, old revoked/unlinked relationships, and processed Google Play
         notification deduplication records are automatically deleted after 40 days;</li>
+      <li>unclaimed advertising-attribution sessions expire after 7 days, one-time browser
+        handoffs expire after 10 minutes, and claimed attribution and conversion-delivery records
+        are deleted after 90 days once no delivery retry remains pending;</li>
       <li>after a verified deletion request, ReAccept retains the existing one-way hashed Android
         or Telegram fingerprint and highest free-use count without the former Firebase UID,
         Telegram user ID, device ID, system ID, PC name, pairing, purchase token, or event history.

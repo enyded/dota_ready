@@ -39,6 +39,9 @@
       var choice = button.getAttribute('data-consent-choice');
       saveChoice(choice);
       updateConsent(choice);
+      if (choice === 'granted' && window.reacceptCaptureAttribution) {
+        window.reacceptCaptureAttribution();
+      }
       banner.hidden = true;
     });
   });
