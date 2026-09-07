@@ -5,10 +5,18 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    var reacceptMeasurementConsent = 'denied';
+    try {
+      if (window.localStorage.getItem('reaccept_google_measurement_consent') === 'granted') {
+        reacceptMeasurementConsent = 'granted';
+      }
+    } catch (error) {
+      reacceptMeasurementConsent = 'denied';
+    }
     gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied',
-      'ad_user_data': 'denied',
+      'ad_storage': reacceptMeasurementConsent,
+      'analytics_storage': reacceptMeasurementConsent,
+      'ad_user_data': reacceptMeasurementConsent,
       'ad_personalization': 'denied',
       'wait_for_update': 500
     });
@@ -44,7 +52,7 @@
   <meta name="twitter:description" content="Chấp nhận ready check Dota 2 qua Android hoặc Telegram. Ghép nối ReAccept với PC một lần rồi phản hồi từ xa.">
   <meta name="twitter:image" content="https://re-accept.com/assets/screenshots/en/og-cover.png?rev=20260820-1">
   <link rel="icon" href="../../assets/icon.png?rev=20260820-1">
-  <link rel="stylesheet" href="../../styles.css?rev=20260825-1">
+  <link rel="stylesheet" href="../../styles.css?rev=20260907-1">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
@@ -79,6 +87,11 @@
     <section class="section"><h2>Android hoặc Telegram</h2><div class="guide-panel"><p>Android cung cấp push notification, hộp thoại trong ứng dụng, giao dịch mua và thao tác từ xa.</p><p>Bạn cũng có thể liên kết Telegram từ desktop. Thông báo miễn phí; sau ba lần chấp nhận từ xa, sử dụng không giới hạn cần thuê bao.</p></div></section>
     <section class="section section-download"><h2>Thiết lập ReAccept</h2><p class="guide-intro">Cài ứng dụng Windows, ghép nối Android hoặc Telegram và thử một lần trước lần tìm trận tiếp theo.</p><div class="cta-row"><a class="btn btn-primary" href="https://re-accept.com/vi/#download">Đi đến tải xuống</a><a class="btn btn-secondary" href="https://re-accept.com/vi/#how-it-works">Xem hướng dẫn đầy đủ</a></div></section>
   </main>
-  <footer class="footer"><div class="footer-links"><a href="https://re-accept.com/vi/">Trang chủ</a><a href="https://re-accept.com/privacy.html">Chính sách quyền riêng tư (tiếng Anh)</a><a href="https://re-accept.com/terms.html">Điều khoản sử dụng (tiếng Anh)</a><a href="https://re-accept.com/disclaimer.html">Tuyên bố miễn trừ (tiếng Anh)</a><a href="mailto:support@re-accept.com">Liên hệ</a></div><p class="footer-note">ReAccept là ứng dụng độc lập của bên thứ ba, không liên kết và không được Valve Corporation chứng thực.</p><p class="footer-note">Dota và Dota 2 là nhãn hiệu của Valve Corporation.</p></footer>
+  <footer class="footer"><div class="footer-links"><a href="https://re-accept.com/vi/">Trang chủ</a><a href="https://re-accept.com/privacy.html">Chính sách quyền riêng tư (tiếng Anh)</a><a href="https://re-accept.com/terms.html">Điều khoản sử dụng (tiếng Anh)</a><a href="https://re-accept.com/disclaimer.html">Tuyên bố miễn trừ (tiếng Anh)</a><a href="mailto:support@re-accept.com">Liên hệ</a><button type="button" class="footer-link-button" data-consent-settings>Cài đặt đo lường</button></div><p class="footer-note">ReAccept là ứng dụng độc lập của bên thứ ba, không liên kết và không được Valve Corporation chứng thực.</p><p class="footer-note">Dota và Dota 2 là nhãn hiệu của Valve Corporation.</p></footer>
+  <aside class="consent-banner" data-consent-banner hidden aria-labelledby="consent-title" aria-live="polite">
+    <div class="consent-copy"><strong id="consent-title">Đo lường lượt tải xuống</strong><p>Chúng tôi sử dụng tính năng đo lường của Google Ads để hiểu chiến dịch nào dẫn đến lượt tải ứng dụng dành cho máy tính. Không có quảng cáo được cá nhân hóa. <a href="https://re-accept.com/privacy.html">Chính sách quyền riêng tư</a>.</p></div>
+    <div class="consent-actions"><button type="button" class="btn btn-secondary" data-consent-choice="denied">Từ chối</button><button type="button" class="btn btn-primary" data-consent-choice="granted">Cho phép đo lường</button></div>
+  </aside>
+  <script src="../../assets/consent.js"></script>
 </body>
 </html>

@@ -5,10 +5,18 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    var reacceptMeasurementConsent = 'denied';
+    try {
+      if (window.localStorage.getItem('reaccept_google_measurement_consent') === 'granted') {
+        reacceptMeasurementConsent = 'granted';
+      }
+    } catch (error) {
+      reacceptMeasurementConsent = 'denied';
+    }
     gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied',
-      'ad_user_data': 'denied',
+      'ad_storage': reacceptMeasurementConsent,
+      'analytics_storage': reacceptMeasurementConsent,
+      'ad_user_data': reacceptMeasurementConsent,
       'ad_personalization': 'denied',
       'wait_for_update': 500
     });
@@ -64,7 +72,7 @@
   <meta name="twitter:description" content="Dapatkan notifikasi dan terima match Dota 2, undangan party, atau jalankan game dari jarak jauh melalui PC milikmu sendiri.">
   <meta name="twitter:image" content="https://re-accept.com/assets/screenshots/en/og-cover.png?rev=20260820-1">
   <link rel="icon" href="../assets/icon.png">
-  <link rel="stylesheet" href="../styles.css?rev=20260825-1">
+  <link rel="stylesheet" href="../styles.css?rev=20260907-1">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -121,6 +129,11 @@
       <div class="download-card" id="download-android"><h3>Android</h3><p>Instal ReAccept dengan aman dari Google Play dan dapatkan pembaruan otomatis.</p><a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.dotaremoteaccept">Dapatkan di Google Play</a></div>
     </div></section>
   </main>
-  <footer class="footer"><div class="footer-links"><a href="https://github.com/enyded/dota_ready/releases">Catatan perubahan</a><a href="https://re-accept.com/privacy.html">Kebijakan Privasi (bahasa Inggris)</a><a href="https://re-accept.com/terms.html">Ketentuan Penggunaan (bahasa Inggris)</a><a href="https://re-accept.com/disclaimer.html">Penafian (bahasa Inggris)</a><a href="mailto:support@re-accept.com">Kontak</a></div><p class="footer-note">ReAccept adalah aplikasi pihak ketiga independen dan tidak berafiliasi atau didukung oleh Valve Corporation.</p><p class="footer-note">Dota dan Dota 2 adalah merek dagang Valve Corporation.</p></footer>
+  <footer class="footer"><div class="footer-links"><a href="https://github.com/enyded/dota_ready/releases">Catatan perubahan</a><a href="https://re-accept.com/privacy.html">Kebijakan Privasi (bahasa Inggris)</a><a href="https://re-accept.com/terms.html">Ketentuan Penggunaan (bahasa Inggris)</a><a href="https://re-accept.com/disclaimer.html">Penafian (bahasa Inggris)</a><a href="mailto:support@re-accept.com">Kontak</a><button type="button" class="footer-link-button" data-consent-settings>Pengaturan pengukuran</button></div><p class="footer-note">ReAccept adalah aplikasi pihak ketiga independen dan tidak berafiliasi atau didukung oleh Valve Corporation.</p><p class="footer-note">Dota dan Dota 2 adalah merek dagang Valve Corporation.</p></footer>
+  <aside class="consent-banner" data-consent-banner hidden aria-labelledby="consent-title" aria-live="polite">
+    <div class="consent-copy"><strong id="consent-title">Pengukuran unduhan</strong><p>Kami menggunakan pengukuran Google Ads untuk memahami kampanye yang menghasilkan unduhan desktop. Tanpa iklan yang dipersonalisasi. <a href="https://re-accept.com/privacy.html">Kebijakan Privasi</a>.</p></div>
+    <div class="consent-actions"><button type="button" class="btn btn-secondary" data-consent-choice="denied">Tolak</button><button type="button" class="btn btn-primary" data-consent-choice="granted">Izinkan pengukuran</button></div>
+  </aside>
+  <script src="../assets/consent.js"></script>
 </body>
 </html>

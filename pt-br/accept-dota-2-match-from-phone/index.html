@@ -5,10 +5,18 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    var reacceptMeasurementConsent = 'denied';
+    try {
+      if (window.localStorage.getItem('reaccept_google_measurement_consent') === 'granted') {
+        reacceptMeasurementConsent = 'granted';
+      }
+    } catch (error) {
+      reacceptMeasurementConsent = 'denied';
+    }
     gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied',
-      'ad_user_data': 'denied',
+      'ad_storage': reacceptMeasurementConsent,
+      'analytics_storage': reacceptMeasurementConsent,
+      'ad_user_data': reacceptMeasurementConsent,
       'ad_personalization': 'denied',
       'wait_for_update': 500
     });
@@ -44,7 +52,7 @@
   <meta name="twitter:description" content="Aceite o ready check de Dota 2 pelo Android ou Telegram. Pareie ReAccept uma vez com o PC e responda remotamente.">
   <meta name="twitter:image" content="https://re-accept.com/assets/screenshots/en/og-cover.png?rev=20260820-1">
   <link rel="icon" href="../../assets/icon.png?rev=20260820-1">
-  <link rel="stylesheet" href="../../styles.css?rev=20260825-1">
+  <link rel="stylesheet" href="../../styles.css?rev=20260907-1">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
@@ -79,6 +87,11 @@
     <section class="section"><h2>Android ou Telegram</h2><div class="guide-panel"><p>Android oferece push, diálogo no app, compras e ações remotas.</p><p>Você também pode vincular o Telegram pelo desktop. Notificações são grátis; depois de três aceites remotos, o uso ilimitado requer assinatura.</p></div></section>
     <section class="section section-download"><h2>Configure o ReAccept</h2><p class="guide-intro">Instale o agente Windows, pareie Android ou Telegram e faça um teste antes da próxima busca.</p><div class="cta-row"><a class="btn btn-primary" href="https://re-accept.com/pt-br/#download">Ir para downloads</a><a class="btn btn-secondary" href="https://re-accept.com/pt-br/#how-it-works">Ver configuração completa</a></div></section>
   </main>
-  <footer class="footer"><div class="footer-links"><a href="https://re-accept.com/pt-br/">Início</a><a href="https://re-accept.com/privacy.html">Política de Privacidade (inglês)</a><a href="https://re-accept.com/terms.html">Termos de Uso (inglês)</a><a href="https://re-accept.com/disclaimer.html">Aviso legal (inglês)</a><a href="mailto:support@re-accept.com">Contato</a></div><p class="footer-note">ReAccept é um aplicativo independente de terceiros e não é afiliado nem endossado pela Valve Corporation.</p><p class="footer-note">Dota e Dota 2 são marcas comerciais da Valve Corporation.</p></footer>
+  <footer class="footer"><div class="footer-links"><a href="https://re-accept.com/pt-br/">Início</a><a href="https://re-accept.com/privacy.html">Política de Privacidade (inglês)</a><a href="https://re-accept.com/terms.html">Termos de Uso (inglês)</a><a href="https://re-accept.com/disclaimer.html">Aviso legal (inglês)</a><a href="mailto:support@re-accept.com">Contato</a><button type="button" class="footer-link-button" data-consent-settings>Configurações de medição</button></div><p class="footer-note">ReAccept é um aplicativo independente de terceiros e não é afiliado nem endossado pela Valve Corporation.</p><p class="footer-note">Dota e Dota 2 são marcas comerciais da Valve Corporation.</p></footer>
+  <aside class="consent-banner" data-consent-banner hidden aria-labelledby="consent-title" aria-live="polite">
+    <div class="consent-copy"><strong id="consent-title">Medição de downloads</strong><p>Usamos a medição do Google Ads para entender quais campanhas geram downloads do app para desktop. Sem anúncios personalizados. <a href="https://re-accept.com/privacy.html">Política de Privacidade</a>.</p></div>
+    <div class="consent-actions"><button type="button" class="btn btn-secondary" data-consent-choice="denied">Recusar</button><button type="button" class="btn btn-primary" data-consent-choice="granted">Permitir medição</button></div>
+  </aside>
+  <script src="../../assets/consent.js"></script>
 </body>
 </html>

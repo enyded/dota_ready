@@ -5,10 +5,18 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    var reacceptMeasurementConsent = 'denied';
+    try {
+      if (window.localStorage.getItem('reaccept_google_measurement_consent') === 'granted') {
+        reacceptMeasurementConsent = 'granted';
+      }
+    } catch (error) {
+      reacceptMeasurementConsent = 'denied';
+    }
     gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied',
-      'ad_user_data': 'denied',
+      'ad_storage': reacceptMeasurementConsent,
+      'analytics_storage': reacceptMeasurementConsent,
+      'ad_user_data': reacceptMeasurementConsent,
       'ad_personalization': 'denied',
       'wait_for_update': 500
     });
@@ -64,7 +72,7 @@
   <meta name="twitter:description" content="Отримуйте сповіщення та приймайте знайдені матчі Dota 2 і запрошення до групи або запускайте гру віддалено на власному ПК.">
   <meta name="twitter:image" content="https://re-accept.com/assets/screenshots/en/og-cover.png?rev=20260820-1">
   <link rel="icon" href="../assets/icon.png">
-  <link rel="stylesheet" href="../styles.css?rev=20260825-1">
+  <link rel="stylesheet" href="../styles.css?rev=20260907-1">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -121,6 +129,11 @@
       <div class="download-card" id="download-android"><h3>Android</h3><p>Безпечно встановіть ReAccept із Google Play і отримуйте автоматичні оновлення.</p><a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.dotaremoteaccept">Завантажити з Google Play</a></div>
     </div></section>
   </main>
-  <footer class="footer"><div class="footer-links"><a href="https://github.com/enyded/dota_ready/releases">Історія змін</a><a href="https://re-accept.com/privacy.html">Політиці конфіденційності (англійською)</a><a href="https://re-accept.com/terms.html">Умови використання (англійською)</a><a href="https://re-accept.com/disclaimer.html">Відмова від відповідальності (англійською)</a><a href="mailto:support@re-accept.com">Підтримка</a></div><p class="footer-note">ReAccept — незалежний сторонній застосунок, не пов&#x27;язаний із Valve Corporation і не схвалений нею.</p><p class="footer-note">Dota та Dota 2 є товарними знаками Valve Corporation.</p></footer>
+  <footer class="footer"><div class="footer-links"><a href="https://github.com/enyded/dota_ready/releases">Історія змін</a><a href="https://re-accept.com/privacy.html">Політиці конфіденційності (англійською)</a><a href="https://re-accept.com/terms.html">Умови використання (англійською)</a><a href="https://re-accept.com/disclaimer.html">Відмова від відповідальності (англійською)</a><a href="mailto:support@re-accept.com">Підтримка</a><button type="button" class="footer-link-button" data-consent-settings>Налаштування вимірювання</button></div><p class="footer-note">ReAccept — незалежний сторонній застосунок, не пов&#x27;язаний із Valve Corporation і не схвалений нею.</p><p class="footer-note">Dota та Dota 2 є товарними знаками Valve Corporation.</p></footer>
+  <aside class="consent-banner" data-consent-banner hidden aria-labelledby="consent-title" aria-live="polite">
+    <div class="consent-copy"><strong id="consent-title">Вимірювання завантажень</strong><p>Ми використовуємо вимірювання Google Ads, щоб розуміти, які кампанії приводять до завантаження застосунку для ПК. Без персоналізованої реклами. <a href="https://re-accept.com/privacy.html">Політиці конфіденційності</a>.</p></div>
+    <div class="consent-actions"><button type="button" class="btn btn-secondary" data-consent-choice="denied">Відхилити</button><button type="button" class="btn btn-primary" data-consent-choice="granted">Дозволити вимірювання</button></div>
+  </aside>
+  <script src="../assets/consent.js"></script>
 </body>
 </html>

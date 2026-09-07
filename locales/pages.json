@@ -5,7 +5,9 @@
       "download_windows": "Für Windows herunterladen", "get_android": "Android-App holen", "download_apk": "Bei Google Play herunterladen",
       "privacy_link": "Datenschutzerklärung", "terms_link": "Nutzungsbedingungen", "disclaimer_link": "Haftungsausschluss", "contact": "Kontakt", "changelog": "Änderungen", "english": "Englisch", "home": "Startseite",
       "independent_notice": "ReAccept ist eine unabhängige Drittanbieter-Anwendung und ist weder mit Valve Corporation verbunden noch von ihr empfohlen.",
-      "trademark_notice": "Dota und Dota 2 sind Marken der Valve Corporation."
+      "trademark_notice": "Dota und Dota 2 sind Marken der Valve Corporation.",
+      "consent_title": "Download-Messung", "consent_text": "Wir verwenden Google Ads-Messung, um zu verstehen, welche Kampagnen zu Desktop-Downloads führen. Keine personalisierte Werbung.",
+      "consent_decline": "Ablehnen", "consent_accept": "Messung erlauben", "consent_settings": "Messeinstellungen"
     },
     "home": {
       "title": "ReAccept — Dota-2-Matches vom Handy annehmen",
@@ -64,7 +66,9 @@
       "nav_how": "Cómo funciona", "nav_guide": "Guía para móvil", "nav_features": "Funciones", "nav_download": "Descargar",
       "download_windows": "Descargar para Windows", "get_android": "Obtener la app Android", "download_apk": "Descargar en Google Play",
       "privacy_link": "Política de privacidad", "terms_link": "Términos de uso", "disclaimer_link": "Aviso legal", "contact": "Contacto", "changelog": "Cambios", "english": "inglés", "home": "Inicio",
-      "independent_notice": "ReAccept es una aplicación independiente de terceros y no está afiliada ni respaldada por Valve Corporation.", "trademark_notice": "Dota y Dota 2 son marcas comerciales de Valve Corporation."
+      "independent_notice": "ReAccept es una aplicación independiente de terceros y no está afiliada ni respaldada por Valve Corporation.", "trademark_notice": "Dota y Dota 2 son marcas comerciales de Valve Corporation.",
+      "consent_title": "Medición de descargas", "consent_text": "Usamos la medición de Google Ads para saber qué campañas generan descargas para escritorio. Sin anuncios personalizados.",
+      "consent_decline": "Rechazar", "consent_accept": "Permitir medición", "consent_settings": "Ajustes de medición"
     },
     "home": {
       "title": "ReAccept — Acepta partidas de Dota 2 desde el móvil", "description": "Recibe avisos y acepta partidas de Dota 2, invitaciones de grupo o inicia el juego de forma remota y segura en tu propio PC.", "offer_description": "Gratis: 3 aceptaciones remotas en total. Suscripción: aceptaciones remotas ilimitadas.",
@@ -119,7 +123,9 @@
       "nav_how": "Cara kerja", "nav_guide": "Panduan HP", "nav_features": "Fitur", "nav_download": "Unduh",
       "download_windows": "Unduh untuk Windows", "get_android": "Dapatkan aplikasi Android", "download_apk": "Dapatkan di Google Play",
       "privacy_link": "Kebijakan Privasi", "terms_link": "Ketentuan Penggunaan", "disclaimer_link": "Penafian", "contact": "Kontak", "changelog": "Catatan perubahan", "english": "bahasa Inggris", "home": "Beranda",
-      "independent_notice": "ReAccept adalah aplikasi pihak ketiga independen dan tidak berafiliasi atau didukung oleh Valve Corporation.", "trademark_notice": "Dota dan Dota 2 adalah merek dagang Valve Corporation."
+      "independent_notice": "ReAccept adalah aplikasi pihak ketiga independen dan tidak berafiliasi atau didukung oleh Valve Corporation.", "trademark_notice": "Dota dan Dota 2 adalah merek dagang Valve Corporation.",
+      "consent_title": "Pengukuran unduhan", "consent_text": "Kami menggunakan pengukuran Google Ads untuk memahami kampanye yang menghasilkan unduhan desktop. Tanpa iklan yang dipersonalisasi.",
+      "consent_decline": "Tolak", "consent_accept": "Izinkan pengukuran", "consent_settings": "Pengaturan pengukuran"
     },
     "home": {
       "title": "ReAccept — Terima match Dota 2 dari HP", "description": "Dapatkan notifikasi dan terima match Dota 2, undangan party, atau jalankan game dari jarak jauh melalui PC milikmu sendiri.", "offer_description": "Gratis: total 3 remote accept. Langganan: remote accept tanpa batas.",
@@ -174,7 +180,9 @@
       "nav_how": "Jak to działa", "nav_guide": "Poradnik na telefon", "nav_features": "Funkcje", "nav_download": "Pobierz",
       "download_windows": "Pobierz dla Windows", "get_android": "Pobierz aplikację Android", "download_apk": "Pobierz z Google Play",
       "privacy_link": "Polityka prywatności", "terms_link": "Warunki użytkowania", "disclaimer_link": "Zastrzeżenia", "contact": "Kontakt", "changelog": "Lista zmian", "english": "angielski", "home": "Strona główna",
-      "independent_notice": "ReAccept jest niezależną aplikacją firmy trzeciej i nie jest powiązany ani wspierany przez Valve Corporation.", "trademark_notice": "Dota i Dota 2 są znakami towarowymi Valve Corporation."
+      "independent_notice": "ReAccept jest niezależną aplikacją firmy trzeciej i nie jest powiązany ani wspierany przez Valve Corporation.", "trademark_notice": "Dota i Dota 2 są znakami towarowymi Valve Corporation.",
+      "consent_title": "Pomiar pobrań", "consent_text": "Używamy pomiarów Google Ads, aby sprawdzić, które kampanie prowadzą do pobrania aplikacji na komputer. Bez reklam spersonalizowanych.",
+      "consent_decline": "Odrzuć", "consent_accept": "Zezwól na pomiar", "consent_settings": "Ustawienia pomiaru"
     },
     "home": {
       "title": "ReAccept — Akceptuj mecze Dota 2 z telefonu", "description": "Otrzymuj powiadomienia i akceptuj znalezione mecze Dota 2, zaproszenia do drużyny oraz uruchamiaj grę zdalnie na własnym komputerze.", "offer_description": "Bezpłatnie: łącznie 3 zdalne akceptacje. Subskrypcja: nielimitowane zdalne akceptacje.",
@@ -229,7 +237,9 @@
       "nav_how": "Como funciona", "nav_guide": "Guia para celular", "nav_features": "Recursos", "nav_download": "Baixar",
       "download_windows": "Baixar para Windows", "get_android": "Obter app Android", "download_apk": "Baixar no Google Play",
       "privacy_link": "Política de Privacidade", "terms_link": "Termos de Uso", "disclaimer_link": "Aviso legal", "contact": "Contato", "changelog": "Novidades", "english": "inglês", "home": "Início",
-      "independent_notice": "ReAccept é um aplicativo independente de terceiros e não é afiliado nem endossado pela Valve Corporation.", "trademark_notice": "Dota e Dota 2 são marcas comerciais da Valve Corporation."
+      "independent_notice": "ReAccept é um aplicativo independente de terceiros e não é afiliado nem endossado pela Valve Corporation.", "trademark_notice": "Dota e Dota 2 são marcas comerciais da Valve Corporation.",
+      "consent_title": "Medição de downloads", "consent_text": "Usamos a medição do Google Ads para entender quais campanhas geram downloads do app para desktop. Sem anúncios personalizados.",
+      "consent_decline": "Recusar", "consent_accept": "Permitir medição", "consent_settings": "Configurações de medição"
     },
     "home": {
       "title": "ReAccept — Aceite partidas de Dota 2 pelo celular", "description": "Receba notificações e aceite partidas de Dota 2, convites de grupo ou inicie o jogo remotamente no seu próprio PC.", "offer_description": "Grátis: 3 aceites remotos no total. Assinatura: aceites remotos ilimitados.",
@@ -284,7 +294,9 @@
       "nav_how": "Как это работает", "nav_guide": "Инструкция для телефона", "nav_features": "Возможности", "nav_download": "Скачать",
       "download_windows": "Скачать для Windows", "get_android": "Установить Android-приложение", "download_apk": "Скачать в Google Play",
       "privacy_link": "Политика конфиденциальности", "terms_link": "Условия использования", "disclaimer_link": "Отказ от ответственности", "contact": "Поддержка", "changelog": "История изменений", "english": "на английском", "home": "Главная",
-      "independent_notice": "ReAccept — независимое стороннее приложение, не связанное с Valve Corporation и не одобренное ею.", "trademark_notice": "Dota и Dota 2 являются товарными знаками Valve Corporation."
+      "independent_notice": "ReAccept — независимое стороннее приложение, не связанное с Valve Corporation и не одобренное ею.", "trademark_notice": "Dota и Dota 2 являются товарными знаками Valve Corporation.",
+      "consent_title": "Измерение загрузок", "consent_text": "Мы используем измерение Google Ads, чтобы понимать, какие кампании приводят к загрузке приложения для ПК. Без персонализированной рекламы.",
+      "consent_decline": "Отклонить", "consent_accept": "Разрешить измерение", "consent_settings": "Настройки измерения"
     },
     "home": {
       "title": "ReAccept — Принять матч Dota 2 с телефона", "description": "Получайте уведомления и принимайте найденные матчи Dota 2 и приглашения в группу или запускайте игру удалённо на своём ПК.", "offer_description": "Бесплатно: всего 3 удалённых принятия. Подписка: неограниченные удалённые принятия.",
@@ -339,7 +351,9 @@
       "nav_how": "Nasıl çalışır", "nav_guide": "Telefon rehberi", "nav_features": "Özellikler", "nav_download": "İndir",
       "download_windows": "Windows için indir", "get_android": "Android uygulamasını edin", "download_apk": "Google Play'den indir",
       "privacy_link": "Gizlilik Politikası", "terms_link": "Kullanım Koşulları", "disclaimer_link": "Yasal Uyarı", "contact": "İletişim", "changelog": "Değişiklikler", "english": "İngilizce", "home": "Ana sayfa",
-      "independent_notice": "ReAccept bağımsız bir üçüncü taraf uygulamasıdır; Valve Corporation ile bağlantılı değildir ve Valve tarafından desteklenmez.", "trademark_notice": "Dota ve Dota 2, Valve Corporation'ın ticari markalarıdır."
+      "independent_notice": "ReAccept bağımsız bir üçüncü taraf uygulamasıdır; Valve Corporation ile bağlantılı değildir ve Valve tarafından desteklenmez.", "trademark_notice": "Dota ve Dota 2, Valve Corporation'ın ticari markalarıdır.",
+      "consent_title": "İndirme ölçümü", "consent_text": "Hangi kampanyaların masaüstü indirmelerine yol açtığını anlamak için Google Ads ölçümünü kullanıyoruz. Kişiselleştirilmiş reklam yoktur.",
+      "consent_decline": "Reddet", "consent_accept": "Ölçüme izin ver", "consent_settings": "Ölçüm ayarları"
     },
     "home": {
       "title": "ReAccept — Dota 2 maçını telefondan kabul et", "description": "Dota 2 maçları ve parti davetleri için bildirim al, kabul et veya oyunu kendi bilgisayarında uzaktan başlat.", "offer_description": "Ücretsiz: toplam 3 uzaktan kabul. Abonelik: sınırsız uzaktan kabul.",
@@ -394,7 +408,9 @@
       "nav_how": "Як це працює", "nav_guide": "Інструкція для телефона", "nav_features": "Можливості", "nav_download": "Завантажити",
       "download_windows": "Завантажити для Windows", "get_android": "Установити Android-застосунок", "download_apk": "Завантажити з Google Play",
       "privacy_link": "Політика конфіденційності", "terms_link": "Умови використання", "disclaimer_link": "Відмова від відповідальності", "contact": "Підтримка", "changelog": "Історія змін", "english": "англійською", "home": "Головна",
-      "independent_notice": "ReAccept — незалежний сторонній застосунок, не пов'язаний із Valve Corporation і не схвалений нею.", "trademark_notice": "Dota та Dota 2 є товарними знаками Valve Corporation."
+      "independent_notice": "ReAccept — незалежний сторонній застосунок, не пов'язаний із Valve Corporation і не схвалений нею.", "trademark_notice": "Dota та Dota 2 є товарними знаками Valve Corporation.",
+      "consent_title": "Вимірювання завантажень", "consent_text": "Ми використовуємо вимірювання Google Ads, щоб розуміти, які кампанії приводять до завантаження застосунку для ПК. Без персоналізованої реклами.",
+      "consent_decline": "Відхилити", "consent_accept": "Дозволити вимірювання", "consent_settings": "Налаштування вимірювання"
     },
     "home": {
       "title": "ReAccept — Прийняти матч Dota 2 з телефона", "description": "Отримуйте сповіщення та приймайте знайдені матчі Dota 2 і запрошення до групи або запускайте гру віддалено на власному ПК.", "offer_description": "Безкоштовно: загалом 3 віддалені прийняття. Підписка: необмежені віддалені прийняття.",
@@ -449,7 +465,9 @@
       "nav_how": "Cách hoạt động", "nav_guide": "Hướng dẫn điện thoại", "nav_features": "Tính năng", "nav_download": "Tải xuống",
       "download_windows": "Tải cho Windows", "get_android": "Cài ứng dụng Android", "download_apk": "Tải trên Google Play",
       "privacy_link": "Chính sách quyền riêng tư", "terms_link": "Điều khoản sử dụng", "disclaimer_link": "Tuyên bố miễn trừ", "contact": "Liên hệ", "changelog": "Nhật ký thay đổi", "english": "tiếng Anh", "home": "Trang chủ",
-      "independent_notice": "ReAccept là ứng dụng độc lập của bên thứ ba, không liên kết và không được Valve Corporation chứng thực.", "trademark_notice": "Dota và Dota 2 là nhãn hiệu của Valve Corporation."
+      "independent_notice": "ReAccept là ứng dụng độc lập của bên thứ ba, không liên kết và không được Valve Corporation chứng thực.", "trademark_notice": "Dota và Dota 2 là nhãn hiệu của Valve Corporation.",
+      "consent_title": "Đo lường lượt tải xuống", "consent_text": "Chúng tôi sử dụng tính năng đo lường của Google Ads để hiểu chiến dịch nào dẫn đến lượt tải ứng dụng dành cho máy tính. Không có quảng cáo được cá nhân hóa.",
+      "consent_decline": "Từ chối", "consent_accept": "Cho phép đo lường", "consent_settings": "Cài đặt đo lường"
     },
     "home": {
       "title": "ReAccept — Chấp nhận trận Dota 2 bằng điện thoại", "description": "Nhận thông báo và chấp nhận trận Dota 2, lời mời tổ đội hoặc khởi chạy trò chơi từ xa trên chính PC của bạn.", "offer_description": "Miễn phí: tổng cộng 3 lần chấp nhận từ xa. Thuê bao: chấp nhận từ xa không giới hạn.",

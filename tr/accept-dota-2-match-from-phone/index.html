@@ -5,10 +5,18 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    var reacceptMeasurementConsent = 'denied';
+    try {
+      if (window.localStorage.getItem('reaccept_google_measurement_consent') === 'granted') {
+        reacceptMeasurementConsent = 'granted';
+      }
+    } catch (error) {
+      reacceptMeasurementConsent = 'denied';
+    }
     gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied',
-      'ad_user_data': 'denied',
+      'ad_storage': reacceptMeasurementConsent,
+      'analytics_storage': reacceptMeasurementConsent,
+      'ad_user_data': reacceptMeasurementConsent,
       'ad_personalization': 'denied',
       'wait_for_update': 500
     });
@@ -44,7 +52,7 @@
   <meta name="twitter:description" content="Dota 2 ready check&#x27;ini Android veya Telegram ile kabul et. ReAccept&#x27;i bilgisayarınla bir kez eşleştir ve uzaktan yanıtla.">
   <meta name="twitter:image" content="https://re-accept.com/assets/screenshots/en/og-cover.png?rev=20260820-1">
   <link rel="icon" href="../../assets/icon.png?rev=20260820-1">
-  <link rel="stylesheet" href="../../styles.css?rev=20260825-1">
+  <link rel="stylesheet" href="../../styles.css?rev=20260907-1">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
@@ -79,6 +87,11 @@
     <section class="section"><h2>Android veya Telegram</h2><div class="guide-panel"><p>Android push bildirimleri, uygulama içi iletişim kutusu, satın alma ve uzaktan işlemler sunar.</p><p>Telegram&#x27;ı masaüstünden de bağlayabilirsin. Bildirimler ücretsizdir; üç uzaktan kabulden sonra sınırsız kullanım abonelik gerektirir.</p></div></section>
     <section class="section section-download"><h2>ReAccept&#x27;i kur</h2><p class="guide-intro">Windows aracını kur, Android veya Telegram&#x27;ı eşleştir ve sonraki aramadan önce bir test yap.</p><div class="cta-row"><a class="btn btn-primary" href="https://re-accept.com/tr/#download">İndirmelere git</a><a class="btn btn-secondary" href="https://re-accept.com/tr/#how-it-works">Tam kurulumu gör</a></div></section>
   </main>
-  <footer class="footer"><div class="footer-links"><a href="https://re-accept.com/tr/">Ana sayfa</a><a href="https://re-accept.com/privacy.html">Gizlilik Politikası (İngilizce)</a><a href="https://re-accept.com/terms.html">Kullanım Koşulları (İngilizce)</a><a href="https://re-accept.com/disclaimer.html">Yasal Uyarı (İngilizce)</a><a href="mailto:support@re-accept.com">İletişim</a></div><p class="footer-note">ReAccept bağımsız bir üçüncü taraf uygulamasıdır; Valve Corporation ile bağlantılı değildir ve Valve tarafından desteklenmez.</p><p class="footer-note">Dota ve Dota 2, Valve Corporation&#x27;ın ticari markalarıdır.</p></footer>
+  <footer class="footer"><div class="footer-links"><a href="https://re-accept.com/tr/">Ana sayfa</a><a href="https://re-accept.com/privacy.html">Gizlilik Politikası (İngilizce)</a><a href="https://re-accept.com/terms.html">Kullanım Koşulları (İngilizce)</a><a href="https://re-accept.com/disclaimer.html">Yasal Uyarı (İngilizce)</a><a href="mailto:support@re-accept.com">İletişim</a><button type="button" class="footer-link-button" data-consent-settings>Ölçüm ayarları</button></div><p class="footer-note">ReAccept bağımsız bir üçüncü taraf uygulamasıdır; Valve Corporation ile bağlantılı değildir ve Valve tarafından desteklenmez.</p><p class="footer-note">Dota ve Dota 2, Valve Corporation&#x27;ın ticari markalarıdır.</p></footer>
+  <aside class="consent-banner" data-consent-banner hidden aria-labelledby="consent-title" aria-live="polite">
+    <div class="consent-copy"><strong id="consent-title">İndirme ölçümü</strong><p>Hangi kampanyaların masaüstü indirmelerine yol açtığını anlamak için Google Ads ölçümünü kullanıyoruz. Kişiselleştirilmiş reklam yoktur. <a href="https://re-accept.com/privacy.html">Gizlilik Politikası</a>.</p></div>
+    <div class="consent-actions"><button type="button" class="btn btn-secondary" data-consent-choice="denied">Reddet</button><button type="button" class="btn btn-primary" data-consent-choice="granted">Ölçüme izin ver</button></div>
+  </aside>
+  <script src="../../assets/consent.js"></script>
 </body>
 </html>

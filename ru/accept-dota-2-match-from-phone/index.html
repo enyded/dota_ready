@@ -5,10 +5,18 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    var reacceptMeasurementConsent = 'denied';
+    try {
+      if (window.localStorage.getItem('reaccept_google_measurement_consent') === 'granted') {
+        reacceptMeasurementConsent = 'granted';
+      }
+    } catch (error) {
+      reacceptMeasurementConsent = 'denied';
+    }
     gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied',
-      'ad_user_data': 'denied',
+      'ad_storage': reacceptMeasurementConsent,
+      'analytics_storage': reacceptMeasurementConsent,
+      'ad_user_data': reacceptMeasurementConsent,
       'ad_personalization': 'denied',
       'wait_for_update': 500
     });
@@ -44,7 +52,7 @@
   <meta name="twitter:description" content="Примите ready check Dota 2 через Android или Telegram. Один раз привяжите ReAccept к компьютеру и отвечайте удалённо.">
   <meta name="twitter:image" content="https://re-accept.com/assets/screenshots/en/og-cover.png?rev=20260820-1">
   <link rel="icon" href="../../assets/icon.png?rev=20260820-1">
-  <link rel="stylesheet" href="../../styles.css?rev=20260825-1">
+  <link rel="stylesheet" href="../../styles.css?rev=20260907-1">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
@@ -79,6 +87,11 @@
     <section class="section"><h2>Android или Telegram</h2><div class="guide-panel"><p>Android предоставляет push-уведомления, диалог в приложении, покупки и удалённые действия.</p><p>Можно вместо этого привязать Telegram. Уведомления бесплатны; после трёх удалённых принятий для неограниченного использования нужна подписка.</p></div></section>
     <section class="section section-download"><h2>Настройте ReAccept</h2><p class="guide-intro">Установите приложение Windows, привяжите Android или Telegram и выполните тест перед следующим поиском.</p><div class="cta-row"><a class="btn btn-primary" href="https://re-accept.com/ru/#download">Перейти к загрузкам</a><a class="btn btn-secondary" href="https://re-accept.com/ru/#how-it-works">Посмотреть полную настройку</a></div></section>
   </main>
-  <footer class="footer"><div class="footer-links"><a href="https://re-accept.com/ru/">Главная</a><a href="https://re-accept.com/privacy.html">Политика конфиденциальности (на английском)</a><a href="https://re-accept.com/terms.html">Условия использования (на английском)</a><a href="https://re-accept.com/disclaimer.html">Отказ от ответственности (на английском)</a><a href="mailto:support@re-accept.com">Поддержка</a></div><p class="footer-note">ReAccept — независимое стороннее приложение, не связанное с Valve Corporation и не одобренное ею.</p><p class="footer-note">Dota и Dota 2 являются товарными знаками Valve Corporation.</p></footer>
+  <footer class="footer"><div class="footer-links"><a href="https://re-accept.com/ru/">Главная</a><a href="https://re-accept.com/privacy.html">Политика конфиденциальности (на английском)</a><a href="https://re-accept.com/terms.html">Условия использования (на английском)</a><a href="https://re-accept.com/disclaimer.html">Отказ от ответственности (на английском)</a><a href="mailto:support@re-accept.com">Поддержка</a><button type="button" class="footer-link-button" data-consent-settings>Настройки измерения</button></div><p class="footer-note">ReAccept — независимое стороннее приложение, не связанное с Valve Corporation и не одобренное ею.</p><p class="footer-note">Dota и Dota 2 являются товарными знаками Valve Corporation.</p></footer>
+  <aside class="consent-banner" data-consent-banner hidden aria-labelledby="consent-title" aria-live="polite">
+    <div class="consent-copy"><strong id="consent-title">Измерение загрузок</strong><p>Мы используем измерение Google Ads, чтобы понимать, какие кампании приводят к загрузке приложения для ПК. Без персонализированной рекламы. <a href="https://re-accept.com/privacy.html">Политика конфиденциальности</a>.</p></div>
+    <div class="consent-actions"><button type="button" class="btn btn-secondary" data-consent-choice="denied">Отклонить</button><button type="button" class="btn btn-primary" data-consent-choice="granted">Разрешить измерение</button></div>
+  </aside>
+  <script src="../../assets/consent.js"></script>
 </body>
 </html>

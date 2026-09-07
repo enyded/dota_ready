@@ -5,10 +5,18 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    var reacceptMeasurementConsent = 'denied';
+    try {
+      if (window.localStorage.getItem('reaccept_google_measurement_consent') === 'granted') {
+        reacceptMeasurementConsent = 'granted';
+      }
+    } catch (error) {
+      reacceptMeasurementConsent = 'denied';
+    }
     gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied',
-      'ad_user_data': 'denied',
+      'ad_storage': reacceptMeasurementConsent,
+      'analytics_storage': reacceptMeasurementConsent,
+      'ad_user_data': reacceptMeasurementConsent,
       'ad_personalization': 'denied',
       'wait_for_update': 500
     });
@@ -64,7 +72,7 @@
   <meta name="twitter:description" content="Receba notificações e aceite partidas de Dota 2, convites de grupo ou inicie o jogo remotamente no seu próprio PC.">
   <meta name="twitter:image" content="https://re-accept.com/assets/screenshots/en/og-cover.png?rev=20260820-1">
   <link rel="icon" href="../assets/icon.png">
-  <link rel="stylesheet" href="../styles.css?rev=20260825-1">
+  <link rel="stylesheet" href="../styles.css?rev=20260907-1">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -121,6 +129,11 @@
       <div class="download-card" id="download-android"><h3>Android</h3><p>Instale o ReAccept com segurança pelo Google Play e receba atualizações automáticas.</p><a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.dotaremoteaccept">Baixar no Google Play</a></div>
     </div></section>
   </main>
-  <footer class="footer"><div class="footer-links"><a href="https://github.com/enyded/dota_ready/releases">Novidades</a><a href="https://re-accept.com/privacy.html">Política de Privacidade (inglês)</a><a href="https://re-accept.com/terms.html">Termos de Uso (inglês)</a><a href="https://re-accept.com/disclaimer.html">Aviso legal (inglês)</a><a href="mailto:support@re-accept.com">Contato</a></div><p class="footer-note">ReAccept é um aplicativo independente de terceiros e não é afiliado nem endossado pela Valve Corporation.</p><p class="footer-note">Dota e Dota 2 são marcas comerciais da Valve Corporation.</p></footer>
+  <footer class="footer"><div class="footer-links"><a href="https://github.com/enyded/dota_ready/releases">Novidades</a><a href="https://re-accept.com/privacy.html">Política de Privacidade (inglês)</a><a href="https://re-accept.com/terms.html">Termos de Uso (inglês)</a><a href="https://re-accept.com/disclaimer.html">Aviso legal (inglês)</a><a href="mailto:support@re-accept.com">Contato</a><button type="button" class="footer-link-button" data-consent-settings>Configurações de medição</button></div><p class="footer-note">ReAccept é um aplicativo independente de terceiros e não é afiliado nem endossado pela Valve Corporation.</p><p class="footer-note">Dota e Dota 2 são marcas comerciais da Valve Corporation.</p></footer>
+  <aside class="consent-banner" data-consent-banner hidden aria-labelledby="consent-title" aria-live="polite">
+    <div class="consent-copy"><strong id="consent-title">Medição de downloads</strong><p>Usamos a medição do Google Ads para entender quais campanhas geram downloads do app para desktop. Sem anúncios personalizados. <a href="https://re-accept.com/privacy.html">Política de Privacidade</a>.</p></div>
+    <div class="consent-actions"><button type="button" class="btn btn-secondary" data-consent-choice="denied">Recusar</button><button type="button" class="btn btn-primary" data-consent-choice="granted">Permitir medição</button></div>
+  </aside>
+  <script src="../assets/consent.js"></script>
 </body>
 </html>

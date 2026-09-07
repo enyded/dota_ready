@@ -5,10 +5,18 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    var reacceptMeasurementConsent = 'denied';
+    try {
+      if (window.localStorage.getItem('reaccept_google_measurement_consent') === 'granted') {
+        reacceptMeasurementConsent = 'granted';
+      }
+    } catch (error) {
+      reacceptMeasurementConsent = 'denied';
+    }
     gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied',
-      'ad_user_data': 'denied',
+      'ad_storage': reacceptMeasurementConsent,
+      'analytics_storage': reacceptMeasurementConsent,
+      'ad_user_data': reacceptMeasurementConsent,
       'ad_personalization': 'denied',
       'wait_for_update': 500
     });
@@ -83,6 +91,11 @@ $hreflang
       <div class="download-card" id="download-android"><h3>Android</h3><p>$android_description</p><a class="btn btn-secondary" href="$play_store_url">$download_apk</a></div>
     </div></section>
   </main>
-  <footer class="footer"><div class="footer-links"><a href="https://github.com/enyded/dota_ready/releases">$changelog</a><a href="$privacy_url">$privacy_link ($english)</a><a href="$terms_url">$terms_link ($english)</a><a href="$disclaimer_url">$disclaimer_link ($english)</a><a href="mailto:support@re-accept.com">$contact</a></div><p class="footer-note">$independent_notice</p><p class="footer-note">$trademark_notice</p></footer>
+  <footer class="footer"><div class="footer-links"><a href="https://github.com/enyded/dota_ready/releases">$changelog</a><a href="$privacy_url">$privacy_link ($english)</a><a href="$terms_url">$terms_link ($english)</a><a href="$disclaimer_url">$disclaimer_link ($english)</a><a href="mailto:support@re-accept.com">$contact</a><button type="button" class="footer-link-button" data-consent-settings>$consent_settings</button></div><p class="footer-note">$independent_notice</p><p class="footer-note">$trademark_notice</p></footer>
+  <aside class="consent-banner" data-consent-banner hidden aria-labelledby="consent-title" aria-live="polite">
+    <div class="consent-copy"><strong id="consent-title">$consent_title</strong><p>$consent_text <a href="$privacy_url">$privacy_link</a>.</p></div>
+    <div class="consent-actions"><button type="button" class="btn btn-secondary" data-consent-choice="denied">$consent_decline</button><button type="button" class="btn btn-primary" data-consent-choice="granted">$consent_accept</button></div>
+  </aside>
+  <script src="${assets}consent.js"></script>
 </body>
 </html>

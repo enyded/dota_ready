@@ -5,10 +5,18 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    var reacceptMeasurementConsent = 'denied';
+    try {
+      if (window.localStorage.getItem('reaccept_google_measurement_consent') === 'granted') {
+        reacceptMeasurementConsent = 'granted';
+      }
+    } catch (error) {
+      reacceptMeasurementConsent = 'denied';
+    }
     gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied',
-      'ad_user_data': 'denied',
+      'ad_storage': reacceptMeasurementConsent,
+      'analytics_storage': reacceptMeasurementConsent,
+      'ad_user_data': reacceptMeasurementConsent,
       'ad_personalization': 'denied',
       'wait_for_update': 500
     });
@@ -44,7 +52,7 @@
   <meta name="twitter:description" content="Zaakceptuj potwierdzenie Dota 2 przez Android lub Telegram. Raz sparuj ReAccept z komputerem i odpowiadaj zdalnie.">
   <meta name="twitter:image" content="https://re-accept.com/assets/screenshots/en/og-cover.png?rev=20260820-1">
   <link rel="icon" href="../../assets/icon.png?rev=20260820-1">
-  <link rel="stylesheet" href="../../styles.css?rev=20260825-1">
+  <link rel="stylesheet" href="../../styles.css?rev=20260907-1">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
@@ -79,6 +87,11 @@
     <section class="section"><h2>Android lub Telegram</h2><div class="guide-panel"><p>Android zapewnia push, dialog w aplikacji, zakupy i zdalne działania.</p><p>Możesz też połączyć Telegram z desktopu. Powiadomienia są bezpłatne; po trzech zdalnych akceptacjach nielimitowane użycie wymaga subskrypcji.</p></div></section>
     <section class="section section-download"><h2>Skonfiguruj ReAccept</h2><p class="guide-intro">Zainstaluj agenta Windows, sparuj Android lub Telegram i wykonaj test przed następnym wyszukiwaniem.</p><div class="cta-row"><a class="btn btn-primary" href="https://re-accept.com/pl/#download">Przejdź do pobierania</a><a class="btn btn-secondary" href="https://re-accept.com/pl/#how-it-works">Zobacz pełną konfigurację</a></div></section>
   </main>
-  <footer class="footer"><div class="footer-links"><a href="https://re-accept.com/pl/">Strona główna</a><a href="https://re-accept.com/privacy.html">Polityka prywatności (angielski)</a><a href="https://re-accept.com/terms.html">Warunki użytkowania (angielski)</a><a href="https://re-accept.com/disclaimer.html">Zastrzeżenia (angielski)</a><a href="mailto:support@re-accept.com">Kontakt</a></div><p class="footer-note">ReAccept jest niezależną aplikacją firmy trzeciej i nie jest powiązany ani wspierany przez Valve Corporation.</p><p class="footer-note">Dota i Dota 2 są znakami towarowymi Valve Corporation.</p></footer>
+  <footer class="footer"><div class="footer-links"><a href="https://re-accept.com/pl/">Strona główna</a><a href="https://re-accept.com/privacy.html">Polityka prywatności (angielski)</a><a href="https://re-accept.com/terms.html">Warunki użytkowania (angielski)</a><a href="https://re-accept.com/disclaimer.html">Zastrzeżenia (angielski)</a><a href="mailto:support@re-accept.com">Kontakt</a><button type="button" class="footer-link-button" data-consent-settings>Ustawienia pomiaru</button></div><p class="footer-note">ReAccept jest niezależną aplikacją firmy trzeciej i nie jest powiązany ani wspierany przez Valve Corporation.</p><p class="footer-note">Dota i Dota 2 są znakami towarowymi Valve Corporation.</p></footer>
+  <aside class="consent-banner" data-consent-banner hidden aria-labelledby="consent-title" aria-live="polite">
+    <div class="consent-copy"><strong id="consent-title">Pomiar pobrań</strong><p>Używamy pomiarów Google Ads, aby sprawdzić, które kampanie prowadzą do pobrania aplikacji na komputer. Bez reklam spersonalizowanych. <a href="https://re-accept.com/privacy.html">Polityka prywatności</a>.</p></div>
+    <div class="consent-actions"><button type="button" class="btn btn-secondary" data-consent-choice="denied">Odrzuć</button><button type="button" class="btn btn-primary" data-consent-choice="granted">Zezwól na pomiar</button></div>
+  </aside>
+  <script src="../../assets/consent.js"></script>
 </body>
 </html>
