@@ -118,6 +118,9 @@ def validate_page(language: str, page: str, failures: list[str]) -> None:
         "indexable": "noindex" not in source.lower(),
         "Google Play Android distribution": PLAY_STORE_URL in parser.links,
         "no legacy GitHub APK link": "ReAccept.apk" not in source,
+        "attribution capture script": any(
+            urlparse(asset).path.endswith("assets/attribution.js") for asset in parser.assets
+        ),
     }
     for name, valid in checks.items():
         if not valid:
