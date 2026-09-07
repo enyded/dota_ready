@@ -17,6 +17,26 @@
   <script>
     gtag('js', new Date());
     gtag('config', 'AW-18415049603');
+
+    function gtag_report_conversion(url) {
+      var navigated = false;
+      var navigate = function () {
+        if (!navigated && typeof url !== 'undefined') {
+          navigated = true;
+          window.location = url;
+        }
+      };
+      var fallback = window.setTimeout(navigate, 1000);
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18415049603/pjyHCKyPs_AcEIO3_cxE',
+        'event_callback': function () {
+          window.clearTimeout(fallback);
+          navigate();
+        },
+        'event_timeout': 1000
+      });
+      return false;
+    }
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,7 +117,7 @@
 <details><summary>Funktioniert es bei gesperrtem Handy?</summary><p>Ja, wenn Hintergrundaktivität und Benachrichtigungen für ReAccept erlaubt sind.</p></details>
 <details><summary>Was ist kostenlos?</summary><p>Match-Benachrichtigungen bleiben kostenlos. Drei Remote-Annahmen sind enthalten; danach ist für weitere Remote-Annahmen ein Abonnement erforderlich.</p></details></div></section>
     <section id="download" class="section section-download"><h2>Download</h2><div class="download-grid">
-      <div class="download-card" id="download-windows"><h3>Windows</h3><p>Installer mit automatischen Updates für Windows 10/11 (64 Bit).</p><a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe">Für Windows herunterladen</a></div>
+      <div class="download-card" id="download-windows"><h3>Windows</h3><p>Installer mit automatischen Updates für Windows 10/11 (64 Bit).</p><a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe" onclick="return gtag_report_conversion(this.href);">Für Windows herunterladen</a></div>
       <div class="download-card" id="download-android"><h3>Android</h3><p>Installiere ReAccept sicher über Google Play und erhalte automatische Updates.</p><a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.dotaremoteaccept">Bei Google Play herunterladen</a></div>
     </div></section>
   </main>

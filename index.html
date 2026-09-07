@@ -17,6 +17,26 @@
   <script>
     gtag('js', new Date());
     gtag('config', 'AW-18415049603');
+
+    function gtag_report_conversion(url) {
+      var navigated = false;
+      var navigate = function () {
+        if (!navigated && typeof url !== 'undefined') {
+          navigated = true;
+          window.location = url;
+        }
+      };
+      var fallback = window.setTimeout(navigate, 1000);
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18415049603/pjyHCKyPs_AcEIO3_cxE',
+        'event_callback': function () {
+          window.clearTimeout(fallback);
+          navigate();
+        },
+        'event_timeout': 1000
+      });
+      return false;
+    }
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -326,7 +346,7 @@
         <div class="download-card" id="download-windows">
           <h3>Windows</h3>
           <p>Installer, with automatic updates. Windows 10/11, 64-bit.</p>
-          <a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe">
+          <a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe" onclick="return gtag_report_conversion(this.href);">
             Download for Windows
           </a>
         </div>

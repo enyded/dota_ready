@@ -17,6 +17,26 @@
   <script>
     gtag('js', new Date());
     gtag('config', 'AW-18415049603');
+
+    function gtag_report_conversion(url) {
+      var navigated = false;
+      var navigate = function () {
+        if (!navigated && typeof url !== 'undefined') {
+          navigated = true;
+          window.location = url;
+        }
+      };
+      var fallback = window.setTimeout(navigate, 1000);
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18415049603/pjyHCKyPs_AcEIO3_cxE',
+        'event_callback': function () {
+          window.clearTimeout(fallback);
+          navigate();
+        },
+        'event_timeout': 1000
+      });
+      return false;
+    }
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,7 +117,7 @@
 <details><summary>¿Funciona con el móvil bloqueado?</summary><p>Sí, si permites las notificaciones y la actividad en segundo plano de ReAccept.</p></details>
 <details><summary>¿Qué incluye gratis?</summary><p>Las notificaciones son siempre gratuitas. Incluye tres aceptaciones remotas; después se necesita una suscripción para seguir aceptando a distancia.</p></details></div></section>
     <section id="download" class="section section-download"><h2>Descargar</h2><div class="download-grid">
-      <div class="download-card" id="download-windows"><h3>Windows</h3><p>Instalador con actualizaciones automáticas para Windows 10/11 de 64 bits.</p><a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe">Descargar para Windows</a></div>
+      <div class="download-card" id="download-windows"><h3>Windows</h3><p>Instalador con actualizaciones automáticas para Windows 10/11 de 64 bits.</p><a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe" onclick="return gtag_report_conversion(this.href);">Descargar para Windows</a></div>
       <div class="download-card" id="download-android"><h3>Android</h3><p>Instala ReAccept de forma segura desde Google Play y recibe actualizaciones automáticas.</p><a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.dotaremoteaccept">Descargar en Google Play</a></div>
     </div></section>
   </main>

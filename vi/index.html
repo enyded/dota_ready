@@ -17,6 +17,26 @@
   <script>
     gtag('js', new Date());
     gtag('config', 'AW-18415049603');
+
+    function gtag_report_conversion(url) {
+      var navigated = false;
+      var navigate = function () {
+        if (!navigated && typeof url !== 'undefined') {
+          navigated = true;
+          window.location = url;
+        }
+      };
+      var fallback = window.setTimeout(navigate, 1000);
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18415049603/pjyHCKyPs_AcEIO3_cxE',
+        'event_callback': function () {
+          window.clearTimeout(fallback);
+          navigate();
+        },
+        'event_timeout': 1000
+      });
+      return false;
+    }
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,7 +117,7 @@
 <details><summary>Có hoạt động khi điện thoại bị khóa không?</summary><p>Có, nếu bạn cho phép ReAccept gửi thông báo và chạy nền.</p></details>
 <details><summary>Nội dung nào miễn phí?</summary><p>Thông báo trận luôn miễn phí. Bạn có ba lần chấp nhận từ xa; sau đó cần thuê bao để tiếp tục chấp nhận từ xa.</p></details></div></section>
     <section id="download" class="section section-download"><h2>Tải xuống</h2><div class="download-grid">
-      <div class="download-card" id="download-windows"><h3>Windows</h3><p>Trình cài đặt có cập nhật tự động cho Windows 10/11 64-bit.</p><a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe">Tải cho Windows</a></div>
+      <div class="download-card" id="download-windows"><h3>Windows</h3><p>Trình cài đặt có cập nhật tự động cho Windows 10/11 64-bit.</p><a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe" onclick="return gtag_report_conversion(this.href);">Tải cho Windows</a></div>
       <div class="download-card" id="download-android"><h3>Android</h3><p>Cài đặt ReAccept an toàn từ Google Play và nhận các bản cập nhật tự động.</p><a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.dotaremoteaccept">Tải trên Google Play</a></div>
     </div></section>
   </main>

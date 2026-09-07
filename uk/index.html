@@ -17,6 +17,26 @@
   <script>
     gtag('js', new Date());
     gtag('config', 'AW-18415049603');
+
+    function gtag_report_conversion(url) {
+      var navigated = false;
+      var navigate = function () {
+        if (!navigated && typeof url !== 'undefined') {
+          navigated = true;
+          window.location = url;
+        }
+      };
+      var fallback = window.setTimeout(navigate, 1000);
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18415049603/pjyHCKyPs_AcEIO3_cxE',
+        'event_callback': function () {
+          window.clearTimeout(fallback);
+          navigate();
+        },
+        'event_timeout': 1000
+      });
+      return false;
+    }
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,7 +117,7 @@
 <details><summary>Чи працює із заблокованим телефоном?</summary><p>Так, якщо для ReAccept дозволені сповіщення та фонова робота.</p></details>
 <details><summary>Що доступно безкоштовно?</summary><p>Сповіщення про матчі завжди безкоштовні. Також доступні три віддалені прийняття; після них потрібна підписка.</p></details></div></section>
     <section id="download" class="section section-download"><h2>Завантажити</h2><div class="download-grid">
-      <div class="download-card" id="download-windows"><h3>Windows</h3><p>Інсталятор з автоматичними оновленнями для 64-бітних Windows 10/11.</p><a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe">Завантажити для Windows</a></div>
+      <div class="download-card" id="download-windows"><h3>Windows</h3><p>Інсталятор з автоматичними оновленнями для 64-бітних Windows 10/11.</p><a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe" onclick="return gtag_report_conversion(this.href);">Завантажити для Windows</a></div>
       <div class="download-card" id="download-android"><h3>Android</h3><p>Безпечно встановіть ReAccept із Google Play і отримуйте автоматичні оновлення.</p><a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.dotaremoteaccept">Завантажити з Google Play</a></div>
     </div></section>
   </main>

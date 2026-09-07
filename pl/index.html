@@ -17,6 +17,26 @@
   <script>
     gtag('js', new Date());
     gtag('config', 'AW-18415049603');
+
+    function gtag_report_conversion(url) {
+      var navigated = false;
+      var navigate = function () {
+        if (!navigated && typeof url !== 'undefined') {
+          navigated = true;
+          window.location = url;
+        }
+      };
+      var fallback = window.setTimeout(navigate, 1000);
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18415049603/pjyHCKyPs_AcEIO3_cxE',
+        'event_callback': function () {
+          window.clearTimeout(fallback);
+          navigate();
+        },
+        'event_timeout': 1000
+      });
+      return false;
+    }
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,7 +117,7 @@
 <details><summary>Czy działa przy zablokowanym telefonie?</summary><p>Tak, jeśli zezwolisz ReAccept na powiadomienia i działanie w tle.</p></details>
 <details><summary>Co jest bezpłatne?</summary><p>Powiadomienia o meczach są zawsze bezpłatne. Otrzymujesz trzy zdalne akceptacje; później kolejne wymagają subskrypcji.</p></details></div></section>
     <section id="download" class="section section-download"><h2>Pobierz</h2><div class="download-grid">
-      <div class="download-card" id="download-windows"><h3>Windows</h3><p>Instalator z automatycznymi aktualizacjami dla Windows 10/11 64-bit.</p><a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe">Pobierz dla Windows</a></div>
+      <div class="download-card" id="download-windows"><h3>Windows</h3><p>Instalator z automatycznymi aktualizacjami dla Windows 10/11 64-bit.</p><a class="btn btn-primary" href="https://github.com/enyded/dota_ready/releases/latest/download/ReAccept-Setup.exe" onclick="return gtag_report_conversion(this.href);">Pobierz dla Windows</a></div>
       <div class="download-card" id="download-android"><h3>Android</h3><p>Bezpiecznie zainstaluj ReAccept z Google Play i otrzymuj automatyczne aktualizacje.</p><a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.dotaremoteaccept">Pobierz z Google Play</a></div>
     </div></section>
   </main>
