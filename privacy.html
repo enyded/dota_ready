@@ -57,23 +57,27 @@
       notification.</p>
 
     <h3>QR scanning and local app data</h3>
-    <p>The Android app uses the Google Play services code scanner. It does not request direct
-      camera permission and does not store QR images; it receives only the scanned, one-time
-      pairing value from the system scanner. Pairing settings, preferences, and recent local
-      history are stored on the device.</p>
+      <p>The Android app first uses the Google Play services code scanner. If that scanner is
+        unavailable or fails to start, the app may request camera permission and use its bundled
+        on-device QR scanner as a fallback. Camera frames and QR images are processed locally, are
+        not stored or uploaded, and only the scanned, one-time pairing value is used. Pairing
+        settings, preferences, and recent local history are stored on the device.</p>
 
-    <h3>Stability diagnostics and optional product analytics</h3>
+    <h3>Stability diagnostics and product analytics</h3>
     <p>Firebase Crashlytics automatically processes crash stack traces, exception details,
       relevant application and device state, device model and operating-system information,
       app/version information, timestamps, and per-installation/session identifiers to diagnose
       crashes and application-not-responding errors. ReAccept does not attach a Firebase user ID,
       support ID, custom user ID, custom keys, or application logs to Crashlytics reports.</p>
-    <p>The Android app offers optional Google Analytics for Firebase collection. Collection is
-      disabled until the user explicitly allows it and can be disabled again in Settings.
-      Advertising personalization remains disabled. When enabled, Google Analytics processes an
-      app-instance and device/advertising identifiers, app and device information, approximate
-      region derived from network information, campaign/referrer attribution, and the following
-      product events: pairing started/completed, match notification received, successful remote
+    <p>The Android app uses Google Analytics for Firebase with Advanced Consent Mode. Before consent
+      is granted, or when enhanced analytics is declined in Settings, Google receives limited
+      cookieless measurement events without a persistent app-instance, device, or advertising
+      identifier. These limited events support basic aggregate measurement and behavioral or
+      conversion modeling. If the user allows enhanced analytics, Google may process an app-instance
+      and device/advertising identifiers, app and device information, approximate region derived
+      from network information, and campaign/referrer attribution. Advertising personalization
+      remains disabled in either mode. The product events measured are: pairing started/completed,
+      match notification received, successful remote
       accept, remote game launch requested, free-use limit reached, paywall viewed, checkout
       begun, free/Premium state changed, and purchase restored. Google Analytics also collects
       its standard automatic app lifecycle and Google Play purchase events.</p>
@@ -138,15 +142,17 @@
       <li>enforce free and paid feature entitlements and restore verified purchases;</li>
       <li>prevent replay, duplicate purchase claims, fraud, and abuse;</li>
       <li>diagnose crashes, reliability problems, and support requests;</li>
-      <li>with consent, measure acquisition sources, activation, feature use, and subscription
-        conversion so ReAccept can improve the product and understand how users discover it;</li>
+      <li>measure acquisition sources, activation, feature use, and subscription conversion so
+        ReAccept can improve the product and understand how users discover it; without
+        enhanced-analytics consent, this is limited to cookieless measurement and modeling;</li>
       <li>maintain service security and comply with legal obligations.</li>
     </ul>
     <p>ReAccept does not sell personal data or display third-party ads. ReAccept links its Google
-      Analytics property to Google Ads. For users who consent to Analytics collection, this link
-      is used to attribute app installs, measure campaign performance and subscription conversions,
-      and optimize ReAccept acquisition campaigns. Analytics data is not used for personalized
-      advertising, remarketing, or cross-service tracking.</p>
+      Analytics property to Google Ads. Consented identifier-based data and limited cookieless
+      signals are used, as permitted by the applicable consent state, to attribute or model app
+      installs, measure campaign performance and subscription conversions, and optimize ReAccept
+      acquisition campaigns. Analytics data is not used for personalized advertising, remarketing,
+      or cross-service tracking.</p>
 
     <h2>Service providers and sharing</h2>
     <p>Data is shared only when needed to operate a requested feature, maintain the service, or
@@ -155,10 +161,11 @@
       <li><strong>QDE:</strong> production VPS hosting;</li>
       <li><strong>Cloudflare:</strong> DNS, TLS termination, reverse proxy, and DDoS protection;</li>
       <li><strong>Google Firebase:</strong> anonymous authentication, Crashlytics stability
-        diagnostics, and optional consent-based Google Analytics measurement;</li>
-      <li><strong>Google Ads:</strong> install attribution, campaign and conversion measurement,
-        and non-personalized acquisition-campaign optimization using consented Google Analytics
-        data;</li>
+        diagnostics, and Google Analytics measurement governed by the user's enhanced-analytics
+        consent state;</li>
+      <li><strong>Google Ads:</strong> install attribution or modeling, campaign and conversion
+        measurement, and non-personalized acquisition-campaign optimization using consented
+        identifier-based data and limited cookieless signals;</li>
       <li><strong>Google Play:</strong> app distribution, subscription checkout, purchase verification,
         and subscription lifecycle notifications when Play Billing is enabled;</li>
       <li><strong>Telegram:</strong> the optional bot, notifications, party-invite previews, and
@@ -202,9 +209,10 @@
         when the applicable purpose or retention obligation ends;</li>
       <li>local Android data remains until it is cleared in system settings or the app is uninstalled;</li>
       <li>Google Analytics data is retained according to the Firebase/Google Analytics property
-        settings and Google's applicable retention practices. Disabling analytics stops further
-        collection and resets the app's local Analytics identity; previously processed aggregate
-        or provider records may remain for their configured retention period;</li>
+        settings and Google's applicable retention practices. Switching off enhanced analytics
+        resets the app's local Analytics identity and continues only limited cookieless measurement;
+        previously processed aggregate or provider records may remain for their configured
+        retention period;</li>
       <li>the website measurement preference remains in the browser until the visitor changes it
         through <strong>Measurement settings</strong> in the website footer or clears browser storage;</li>
       <li>Firebase states that Crashlytics crash traces and associated Crashlytics/Firebase
@@ -215,10 +223,11 @@
     </ul>
 
     <h2 id="data-deletion">User choices, access, and deletion</h2>
-    <p>Users can enable or disable Google Analytics collection, Disarm event delivery, unlink
-      Telegram, or Unpair the phone and PC in Settings. Website visitors can change their Google
-      Ads measurement choice through <strong>Measurement settings</strong> in the footer of any
-      marketing page.
+    <p>Users can enable identifier-based enhanced analytics or select limited cookieless measurement,
+      Disarm event delivery, unlink Telegram, or Unpair the phone and PC in Settings. Advertising
+      personalization remains disabled in both analytics modes. Website visitors can change their
+      Google Ads measurement choice through <strong>Measurement settings</strong> in the footer of
+      any marketing page.
       Unpairing or unlinking revokes that connection but does not by itself erase historical
       backend or provider records.</p>
     <p>To request access, correction, or deletion of ReAccept data, email
