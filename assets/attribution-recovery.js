@@ -6,6 +6,19 @@
   var handoff = new URLSearchParams(window.location.hash.slice(1)).get('h');
   window.history.replaceState(null, '', window.location.pathname);
 
+  function recordOpen(token) {
+    window.fetch('https://api.re-accept.com/v1/attribution/handoffs/opened', {
+      method: 'POST',
+      mode: 'cors',
+      credentials: 'omit',
+      keepalive: true,
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({handoff_token: token})
+    }).catch(function () {
+      // Opening telemetry is best-effort and must never block attribution recovery.
+    });
+  }
+
   function readSession() {
     try {
       return window.localStorage.getItem(sessionKey);
@@ -23,7 +36,12 @@
   }
 
   var session = readSession();
-  if (!handoff || !session) {
+  if (!handoff) {
+    status.textContent = 'Desktop app installed. You can return to ReAccept.';
+    return;
+  }
+  recordOpen(handoff);
+  if (!session) {
     status.textContent = 'Desktop app installed. You can return to ReAccept.';
     return;
   }
